@@ -13,7 +13,7 @@ document.addEventListener("mousemove", function(dets) {
 
 
 gsap.to("#nav",{
-    backgroundColor: "#000",
+    backgroundColor: "#191818",
     height:"110px",
     duration:0.5,
     scrollTrigger:{
