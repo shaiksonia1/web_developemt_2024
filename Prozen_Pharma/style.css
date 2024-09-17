@@ -25,7 +25,7 @@ html,body{
 #cursor-blur {
     height: 400px;
     width: 400px;
-    background-color: #1e49c1; /* Added background color */
+    background-color: #4e6bc2; /* Added background color */
     border-radius: 50%;
     position: fixed;
     filter: blur(190px);
@@ -116,7 +116,31 @@ html,body{
     letter-spacing: 0.5px;
     padding-left: 100px;
 }
-
+.container {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2.5px;
+    background-color: #e8e8e8;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+    
 #logo img{
     height: 80px;
     padding-right: 590px;
@@ -124,11 +148,29 @@ html,body{
 
 }
 
-#nav h4 a:hover{
-    color: #95c11e;
+#nav h4 a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+
 
 
 }
+
+#nav h4 a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+
+  }
+
+
 #cursor {
     position: fixed;
     z-index: 99;
@@ -165,11 +207,9 @@ video{
 }
 #page1 h1{
     font-size: 90px;
-    /* width: 20%; */
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    /* text-align: left; */
     padding-right: 790px;
 }
 
@@ -236,18 +276,14 @@ video{
 }
 #about-us{
     display: flex;
-    justify-content: space-between; /* Ensures content is spaced between left and right*/
-    align-items: flex-start; 
+    flex-direction: row;
 }
 #about-us h1{
-    padding-top: 100px;
+    padding-top: 200px;
     padding-left: 100px;
     font-weight: 900;
     font-size: 70px;
-    position: relative;
     width: 40%;
-    
-
 }
 
 #about-us h1 span {
@@ -256,52 +292,63 @@ video{
     color: #95c11e;
 
 }
-#about-us h2 {
-   margin-top: 110px;
-   right: -300px;
-   color: #95c11e;
-   text-align: right; 
-   max-width: 100%;
-   position: relative;
-   white-space: nowrap;
-   font-size: 2.4rem;
-
+#about-us img {
+    margin-top: 7rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 100px #a7a7a7;
+    transition: transform 0.3s ease-in-out;
 }
 
-#about-us p {
-    font-size: 1rem;
-    margin-top: 13rem;
-    left: -160px;
+#about-us img:hover {
+    transform: scale(1.2);
+}
+#btn button {
     position: relative;
-    letter-spacing: 1px;
-    max-width: 500px;  
-}
-
-#btn button{
+    margin-top: 30rem;
+    right: 540px;
     height: 7vh;
-    width: 20vw;
+    font-size: 1.7rem;
     border: none;
-    margin-left: 1000px;
-    background-color: #1e49c1;
-    border-radius: 10px;
-
-
-}
-#btn button:hover{
-    color: #95c11e;
+    background: none;
+    text-decoration:underline;
+    text-underline-offset: 25px;
+    text-decoration-color: #95c11e; 
     
 }
+
+
+
+#section h3{
+    margin-top: 1rem;
+    text-transform: uppercase;
+    margin-left: 6.5rem;
+    font-size: 3.5rem;
+    color: #95c11e;
+}
+ #section p {
+    margin-left:6.5rem ;
+    margin-top: 1.5rem;
+    font-weight: 200;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-right: 50px;
+  
+}
+
+
 #page3{
     display: flex;
     z-index: 10;
     overflow: hidden;
     flex-wrap: wrap;
+    margin-top: 15rem;
 
     
 }
 #page3 #box1 {
     height: 70vh;
-    width: 25%;
+    width: 25vw;
     margin-left:100px ;
     border:0.5px solid #95c11e;
     margin-bottom: 30px;
@@ -330,8 +377,8 @@ video{
 }
 #page3 #box2 {
     height: 70vh;
-    width: 25%;
-    margin-left:70px ;
+    width: 25vw;
+    margin-left:100px ;
     border:0.5px solid #95c11e;
     margin-bottom: 30px;
 
@@ -357,8 +404,8 @@ video{
 }
 #page3 #box3 {
     height: 70vh;
-    width: 25%;
-    margin-left:70px ;
+    width: 25vw;
+    margin-left:100px ;
     border:0.5px solid #95c11e;
     margin-bottom: 30px;
 
@@ -392,14 +439,18 @@ video{
 #page3 #box1 #img1 img{
     height: 40vh;
     width: 100%;
+    object-fit: cover;
 }
 #page3 #box2 #img2 img{
     height: 40vh;
     width: 100%;
+    object-fit: cover;
 }
 #page3 #box3 #img3 img{
     height: 40vh;
     width: 100%;
+    object-fit: cover;
+    
 }
 
 #page4 #container1{
@@ -509,7 +560,7 @@ video{
 }
 
 #line1 {
-    border: 2px solid grey; 
+    border: 0.1px solid grey; 
     width: 95%; 
     margin: 10px auto; 
     margin-bottom: 90px; 
@@ -518,7 +569,7 @@ video{
     overflow: hidden;
 }
 #line2 {
-    border: 2px solid grey; 
+    border: 0.1px solid grey; 
     width: 95%; 
     margin: 10px auto; 
     margin-bottom: 90px; 
@@ -526,7 +577,7 @@ video{
     top: -200px;
 }
 #line3 {
-    border: 2px solid grey; 
+    border: 0.1px solid grey; 
     width: 95%; 
     margin: 10px auto; 
     margin-bottom: 90px; 
@@ -535,8 +586,8 @@ video{
 }
 
 #page4 #container1 .arrow-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #95c11e;
+    color: rgb(0, 0, 0);
     margin-top: 250px;
     margin-left: 400px;
     height: 8vh;
@@ -550,8 +601,8 @@ video{
     transition: background-color 0.3s ease;
 }
 #page4 #container2 .arrow-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #95c11e;
+    color: rgb(0, 0, 0);
     margin-left: 1480px;
     top: -300px;
     height: 8vh;
@@ -566,8 +617,8 @@ video{
     transition: background-color 0.3s ease;
 }
 #page4 #container3 .arrow-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #95c11e;
+    color: rgb(0, 0, 0);
     margin-left: 1470px;
     position: relative;
     top: -450px;
@@ -583,4 +634,198 @@ video{
 }
 .arrow-button:hover {
     background-color: #646464;
+}
+
+#page4 #btn-1 {
+    background-color: #95c11e;
+    margin-left: 5rem;
+    border: none;
+    color: #000000; 
+    padding: 10px 20px; 
+    text-align: center; 
+    cursor: pointer; 
+    display: inline-block;
+    font-size: 1.3rem; 
+    position: relative;
+    top: -27rem;
+    transition: background-color 0.3s ease; 
+}
+
+#footer-1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+
+
+}
+#line4{
+    height: 0.3vh;
+    width: 15vw;
+    background-color: #fff;
+    margin-left: 2.5rem;
+    padding-left: 40px;
+    position: relative;
+    margin-top: 4rem;
+}
+#footer-1 p{
+    height: 80px;
+    padding-left: 9rem;
+    font-size: 2rem;
+    padding-top: 50px;
+    padding-right: 150px;
+
+}
+
+#line5 {
+    height: 0.3vh;
+    width: 50vw;
+    background-color: #fff;
+    position: relative;
+    left: 0;      /* Reset the horizontal position */
+    margin-top: 4rem;  /* Adjusts the space above to move it lower */
+    margin-left: -20rem; /* Moves the line further to the left */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    #nav {
+        padding-left: 20px;
+    }
+
+    #logo img {
+        padding-right: 350px;
+    }
+
+    #page1 h1, #page1 h2 {
+        font-size: 60px;
+        padding-right: 500px;
+    }
+
+    #page1 h2 {
+        font-size: 50px;
+        padding-right: 400px;
+    }
+
+    #page3 #box1, #page3 #box2, #page3 #box3 {
+        width: 40vw;
+        margin-left: 50px;
+    }
+
+    #page4 #container1, #page4 #container2 {
+        flex-direction: column;
+    }
+
+    #page4 #container1 img, #page4 #container2 img {
+        height: 30vh;
+        width: 100%;
+    }
+
+    #page4 #container1 h3, #page4 #container2 h3 {
+        font-size: 1.8rem;
+    }
+
+    #page4 #container1 p {
+        font-size: 1rem;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #nav h4{
+        display: none;
+        
+    }
+
+    .container {
+        display: inline-block; /* Show menu icon */
+      }
+    
+      .navigation-links {
+        display: none; /* Hide navigation links on small screens */
+      }
+    
+      /* Dropdown content styling for mobile */
+      .dropdown-content, .dropdown-content1 {
+        display: none; 
+      }
+
+      
+    #logo img {
+        padding-right: 100px;
+    }
+
+    #page1 h1, #page1 h2 {
+        font-size: 30px;
+        padding-right: 100px;
+    }
+
+    #about-us h1, #about-us span{
+        font-size: 2.5rem;
+    }
+    #about-us img{
+
+        height: 30vh;
+        width: 40vw;
+        margin-top: 35rem;
+        left: -110px;
+        position: relative;
+    }
+
+    #section{
+        margin-top: 17rem;
+    }
+    
+    #page3 #box1, #page3 #box2, #page3 #box3 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #page4 #container1 img, #page4 #container2 img {
+        height: 20vh;
+        width: 100%;
+    }
+
+    #page4 #container1 h3, #page4 #container2 h3 {
+        font-size: 1.2rem;
+    }
+
+    #page4 #container1 p {
+        font-size: 0.8rem;
+        margin-left: 5px;
+    }
+
+    #btn-1 {
+        font-size: 0.9rem;
+        top: -5rem;
+    }
 }

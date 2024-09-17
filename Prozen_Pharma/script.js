@@ -38,3 +38,7 @@ gsap.to("#main",{
         scrub:2
     }
 })
+
+function myFunction(x) {
+    x.classList.toggle("change");
+  }
