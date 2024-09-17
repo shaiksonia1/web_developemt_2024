@@ -269,11 +269,12 @@ video{
 }
 
 #about-us p {
-    margin-top: 9rem;
-    font-size: 19px;
-    margin-right: 100px;
+    font-size: 1rem;
+    margin-top: 13rem;
+    left: -160px;
+    position: relative;
     letter-spacing: 1px;
-    max-width: 500px; 
+    max-width: 500px;  
 }
 
 #btn button{
