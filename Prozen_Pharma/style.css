@@ -99,7 +99,6 @@ video{
     font-size: 90px;
     /* width: 20%; */
     font-weight: 900;
-    position: relative;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     /* text-align: left; */
@@ -110,7 +109,6 @@ video{
     font-size: 75px;
     /* width: 20%; */
     font-weight: 900;
-    position: relative;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     /* text-align: left; */
@@ -247,8 +245,10 @@ video{
 }
 #page3{
     display: flex;
-     z-index: 10;
+    z-index: 10;
     overflow: hidden;
+    flex-wrap: wrap;
+
     
 }
 #page3 #box1 {
@@ -363,6 +363,7 @@ video{
     height: 10vh;
     width: 40vw;
     background-color: #95c11e;
+    overflow: hidden;
 }
 
 #page4 #boxes2 {
@@ -466,6 +467,7 @@ video{
     margin-bottom: 90px; 
     position: relative; 
     top: -70px; 
+    overflow: hidden;
 }
 #line2 {
     border: 2px solid grey; 
@@ -531,7 +533,6 @@ video{
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
-
 .arrow-button:hover {
     background-color: #646464;
 }
