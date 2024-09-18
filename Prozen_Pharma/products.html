@@ -4,27 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav-bar.css">
+    <link rel="stylesheet" href="products.css">
     
 </head>
 <body>
     <div id="nav">
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        
         <div id="logo">
             <a href="index.html">
-                <img src="/Animating_website/Prozen_media/Prozen Logo.png" alt="">
+                <img src="/Prozen_Pharma/Prozen_media/Prozen Logo.png" alt="Prozen Logo">
             </a>
         </div>
-        <h4><a href="home.html">About us</a></h4>
-        <h4><a href="products.html">Our Products</a></h4>
-        <h4><a href="careers.html">Careers</a></h4>
-        <h4><a href="about.html">Our impact</a></h4>
+        <h4><a href="home.html">Home</a></h4>
+        
+        <!-- Dropdown for Our Products -->
+        <div class="dropdown">
+            <h4><a href="products.html">Our Products</a></h4>
+            <div class="dropdown-content">
+                <a href="product1.html">overview</a>
+                <a href="product2.html">Products</a>
+                <a href="product3.html">Medical Information</a>
+            </div>
+        </div>
+        <div class="dropdown1">
+            <h4><a href="products.html">Careers</a></h4>
+            <div class="dropdown-content1">
+                <a href="product1.html">Nice to meet you</a>
+                <a href="product2.html">Prozen Experience</a>
+                <a href="product3.html">Early talent</a>
+            </div>
+        </div>
+        
+        <h4><a href="impact.html">Our Impact</a></h4>
         <h4><a href="contact.html">Contact Us</a></h4>
     </div>
-    <video src="/Animating_website/Prozen_media/video1.mp4" autoplay loop muted></video>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <!-- Background  -->
+<div id="header">
+        <h1>Our Products</h1>
+     </div>
 
 
 
-    
-    
+
+
+
+
+
+
+
+    <!-- gspa animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Your custom JavaScript -->
+    <script src="script.js"></script>
 </body>
+
 </html>
