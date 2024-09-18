@@ -11,6 +11,8 @@
 html,body{
     height: 100vh;
     width: 100vw;
+    scroll-behavior: smooth;
+
 }
 
 #cursor {
@@ -79,13 +81,50 @@ html,body{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #e2a46e;
-}
-.dropdown-content1 a:hover {
-    background-color: #e2a46e;
+
+
+.dropdown-content a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 
+.dropdown-content a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+
+  }
+.dropdown-content1 a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dropdown-content1 a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+
+  }
+.dropdown:hover h4  {
+    color: #b2d9ff;
+}
+.dropdown1:hover h4 a {
+    color: #b2d9ff;
+}
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
@@ -95,12 +134,7 @@ html,body{
 }
 
 /* Hover effect for the main dropdown link */
-.dropdown:hover h4 a {
-    color: #b2d9ff;
-}
-.dropdown1:hover h4 a {
-    color: #b2d9ff;
-}
+
 
 #nav{
     height: 100px;
@@ -110,7 +144,7 @@ html,body{
     align-items: center;
     padding: 0 50px;
     position: fixed;
-    gap: 50px;
+    gap: 2.5rem;
     justify-content: flex-start;
     z-index: 99;
     letter-spacing: 0.5px;
@@ -148,7 +182,7 @@ html,body{
 
 }
 
-#nav h4 a:after{
+#nav h4:after{
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -163,7 +197,7 @@ html,body{
 
 }
 
-#nav h4 a:hover:after { 
+#nav h4:hover:after { 
     width: 100%; 
     left: 0; 
     color: #95c11e;
@@ -178,8 +212,14 @@ html,body{
 #nav h4 a{
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 200;
+    font-size: 1rem;
+}
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 200;
+
+
 }
 video{
     height: 100%;
@@ -317,7 +357,22 @@ video{
     
 }
 
-
+#btn button:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#btn button:hover:after{
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+}
 
 #section h3{
     margin-top: 1rem;
@@ -361,7 +416,7 @@ video{
     font-size: 14px;
 
 }
-#page3 #box1 button{
+#page3 #box1 button {
     padding-top: 40px;
     padding-left: 40px;
     font-size: 19px;
@@ -452,6 +507,7 @@ video{
     object-fit: cover;
     
 }
+
 
 #page4 #container1{
     display: flex;
@@ -651,51 +707,181 @@ video{
     transition: background-color 0.3s ease; 
 }
 
-#footer-1{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
 
 
-}
-#line4{
-    height: 0.3vh;
-    width: 15vw;
-    background-color: #fff;
-    margin-left: 2.5rem;
-    padding-left: 40px;
-    position: relative;
-    margin-top: 4rem;
-}
-#footer-1 p{
+ .para{
     height: 80px;
     padding-left: 9rem;
     font-size: 2rem;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-right: 150px;
+    
 
 }
 
-#line5 {
-    height: 0.3vh;
-    width: 50vw;
+#line5{
+    height: 0.1vh;
+    width: 95vw;
     background-color: #fff;
+    margin-left: 2.5rem;
+    padding-left: 40px;
+    margin-top:80px;
     position: relative;
-    left: 0;      /* Reset the horizontal position */
-    margin-top: 4rem;  /* Adjusts the space above to move it lower */
-    margin-left: -20rem; /* Moves the line further to the left */
 }
-
-
-
-
-
-
-
-
-
-
-
+.footer-container {
+    /* background: #ffffff; */
+    color: #4c5166;
+    padding: 45px 15px;
+  }
+  
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    margin-bottom: 45px;
+  }
+  
+  .newsletter {
+    /* background: #ffffff; */
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .newsletter-input {
+    height: 50px;
+    /* border: 2px solid #cdcdcd; */
+    flex: 1;
+  }
+  
+  .newsletter-btn {
+    height: 50px;
+    padding: 0 20px;
+    /* background: #ffffff; */
+    color: #95c11e;
+    /* border: 2px solid #06965c; */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .newsletter-btn:hover {
+    background: #000000;
+    color: #fff;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  .footer-about h3,
+  .footer-links h3,
+  .footer-contact h3 {
+    margin-bottom: 20px;
+    color: #95c11e;
+    font-size: 22px;
+  }
+  
+  .footer-links a,
+  .footer-contact p {
+    margin-bottom: 10px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-links a:hover,
+  .footer-contact p:hover {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    /* or 267% */
+    letter-spacing: -0.03em;
+    text-decoration-line: underline;
+  
+    color: #95c11e;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #0085ff;
+  }
+  
+  .footer-social a:hover {
+    color: #dddddd;
+  }
+  
+  .footer-menu {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .f-menu a {
+    margin: 0 15px;
+    color: #b4b7bf;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
+  .f-menu a:hover {
+    color: #4c5166;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  .footer-copyright a {
+    color: #4c5166;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-copyright a:hover {
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-row {
+      flex-direction: column;
+    }
+  }
+  
 
 
 
