@@ -12,7 +12,283 @@ html,body{
     height: 100vh;
     width: 100vw;
     background-color: black;
+    scroll-behavior: smooth;
 }
 /* #header{
    margin-top: 90px;
 } */
+
+#nav {
+    position: fixed;  /* Makes the navbar stick to the top */
+    top: 0;
+    width: 100%;
+    z-index: 10; 
+    border: 2px #ffff;
+}
+
+#header {
+    margin-top: 100px; /* This gives space below the navbar */
+    text-align: left;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#header img{
+    margin-left: 5.8rem;
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+}
+
+#header h1 {
+    position: absolute; 
+    top: 200px; /* Moves the h1 down 500px from the top of the header */
+    left: 750px; /* Moves the h1 300px to the right */
+    background-color: #191818; /* Background color for visibility */
+    z-index: 2; /* Ensures h1 stays on top of the image */
+    font-weight: 200;
+    padding: 2rem;
+    height:65vh;
+    width: 43vw;
+    /* background-color: rgba(25, 24, 24, 0.8);  */
+    color: #95c11e;
+    font-size: 3rem;
+    font-weight: 600;
+    white-space: nowrap;
+    border-radius: 5px;
+    overflow: hidden;
+}
+p  {
+    z-index: 2; 
+    position: absolute; 
+    top: 300px; 
+    left: 750px;
+    display: inline;
+    padding-left: 2rem;
+    margin-right: 10.1rem;
+    font-weight: 200;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    overflow: hidden;
+    
+
+}
+button{
+    z-index: 2; 
+    position: absolute;
+    top: 600px; 
+    left: 750px;
+    background: none;
+    border: none;
+    color: #95c11e;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-left: 15rem;
+    
+
+}
+
+#page1{
+    margin-top: 20px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(152, 114, 114);
+    z-index: 2;
+    position: relative;
+    display: flex;
+}
+#box{
+    height: 14vh;
+    width: 100vw;
+    background-color: rgb(158, 71, 71);
+    z-index: 2;
+    position: relative;
+    flex-direction: column;
+    
+}
+ #content1 {
+    margin-top: 10rem;
+    height: 70vh;
+    width: 25vw;
+    border:0.5px solid #95c11e;
+    margin-bottom: 30px;
+    background-color: #c47600;
+    z-index: 2;
+
+
+}
+ #content2 {
+    margin-top: 10rem;
+    height: 70vh;
+    width: 25vw;
+    border:0.5px solid #95c11e;
+    margin-bottom: 30px;
+    background-color: #c47600;
+    z-index: 2;
+
+}
+ #content3 {
+    margin-top: 10rem;
+
+    height: 70vh;
+    width: 25vw;
+    border:0.5px solid #95c11e;
+    margin-bottom: 30px;
+    background-color: #c47600;
+    z-index: 2;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 480px) {
+    #header img{
+        margin-left: 3.5rem;
+        position: fixed;
+        width: 80vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    #header img{
+        margin-left: 3.5rem;
+        position: fixed;
+        width: 80vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+
+    #header h1 {
+        position: absolute; 
+        top: 500px; /* Moves the h1 down 500px from the top of the header */
+        left: 50px; /* Moves the h1 300px to the right */
+        background-color: #191818; /* Background color for visibility */
+        z-index: 2; /* Ensures h1 stays on top of the image */
+        font-weight: 200;
+        height:40vh;
+        width: 82vw;
+        
+        color: #95c11e;
+        font-size: 2rem;
+        font-weight: 500;
+        white-space: nowrap;
+        border-radius: 5px;
+    }
+    p  {
+        z-index: 2; 
+        position: absolute; 
+        top: 600px; 
+        left: 50px;
+        display: inline;
+        padding-left: 2rem;
+        margin-right: 10.1rem;
+        font-weight: 100;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        
+    
+    }
+}
+
+
+
+
+
+
+
+/* @media only screen and (min-width: 600px) {
+    #header img{
+        margin-left: 3.5rem;
+        position: fixed;
+        width: 80vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+  } */
+  /* @media only screen and (min-width: 768px) {
+    #header img{
+        margin-left: 3.5rem;
+        position: fixed;
+        width: 80vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+  } 
+   */
+  /* @media only screen and (min-width: 992px) {
+    #header img{
+        margin-left: 3.5rem;
+        position: fixed;
+        width: 80vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+  } 
+  
+  @media only screen and (min-width: 1200px) {
+    #header img{
+        margin-left: 3.5rem;
+        position: fixed;
+        width: 80vw;
+        height: 40vh;
+        object-fit: cover;
+    }
+  } */
