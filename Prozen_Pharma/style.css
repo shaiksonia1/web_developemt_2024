@@ -218,8 +218,6 @@ html,body{
 #nav h4 {
     text-transform: uppercase;
     font-weight: 200;
-
-
 }
 video{
     height: 100%;
@@ -302,9 +300,6 @@ video{
     /* -webkit-text-stroke: 2px #f9f9f9; */
 }
 
-#scroller h4:hover {
-    color: #95c11e; /* Apply hover effect to individual h4 elements */
-}
 
 @keyframes scroll {
     from {
