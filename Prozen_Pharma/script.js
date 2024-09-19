@@ -39,6 +39,8 @@ gsap.to("#main",{
     }
 })
 
+
+
 function myFunction(x) {
     x.classList.toggle("change");
   }
