@@ -15,13 +15,14 @@ html,body{
 
 }
 
+
 #cursor {
     height: 20px;
     width: 20px;
     /* background-color: #1e49c1;  */
     border-radius: 50%;
     position: fixed;
-    z-index: 99;
+    z-index: 100;
     pointer-events: none; /* Prevents the cursor from blocking clicks */
 }
 #cursor-blur {
@@ -31,7 +32,8 @@ html,body{
     border-radius: 50%;
     position: fixed;
     filter: blur(190px);
-    z-index: 9;
+    pointer-events: none;
+    z-index: 99;
     
 }
 
@@ -220,4 +222,12 @@ html,body{
     font-weight: 200;
 
 
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0); /* Start from the original position */
+    }
+    to {
+        transform: translateX(-100%); /* End with complete scroll */
+    }
 }
