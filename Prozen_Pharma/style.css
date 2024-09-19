@@ -21,7 +21,7 @@ html,body{
     /* background-color: #1e49c1;  */
     border-radius: 50%;
     position: fixed;
-    z-index: 99;
+    z-index: 100;
     pointer-events: none; /* Prevents the cursor from blocking clicks */
 }
 #cursor-blur {
@@ -31,7 +31,8 @@ html,body{
     border-radius: 50%;
     position: fixed;
     filter: blur(190px);
-    z-index: 9;
+    pointer-events: none;
+    z-index: 99;
     
 }
 
@@ -207,7 +208,9 @@ html,body{
 
 #cursor {
     position: fixed;
-    z-index: 99;
+    z-index: -1;
+    background-color: #0085ff;
+    pointer-events: none;
 }
 #nav h4 a{
     text-decoration: none;
@@ -299,7 +302,9 @@ video{
     color: white;
     /* -webkit-text-stroke: 2px #f9f9f9; */
 }
-
+#scroller h4:hover{
+    color: #95c11e;
+}
 
 @keyframes scroll {
     from {
@@ -346,9 +351,7 @@ video{
     font-size: 1.7rem;
     border: none;
     background: none;
-    text-decoration:underline;
-    text-underline-offset: 25px;
-    text-decoration-color: #95c11e; 
+
     
 }
 
@@ -411,6 +414,9 @@ video{
     font-size: 14px;
 
 }
+
+
+
 #page3 #box1 button {
     padding-top: 40px;
     padding-left: 40px;
@@ -818,7 +824,7 @@ video{
     line-height: 40px;
     /* or 267% */
     letter-spacing: -0.03em;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
   
     color: #95c11e;
   }
@@ -870,6 +876,28 @@ video{
   .footer-copyright a:hover {
     color: #fff;
   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   @media (max-width: 768px) {
     .footer-row {
