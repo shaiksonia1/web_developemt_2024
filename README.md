@@ -29,8 +29,7 @@ Prozen Pharmaceuticals aims to provide an intuitive and user-friendly platform f
 - **HTML5**: For structuring the website's content.
 - **CSS3**: For styling, including animations, overlays, and responsive design.
 - **JavaScript (GSAP)**: For smooth scroll-based animations and user interactions.
-- **Firebase**: For backend data storage.
-- **Figma**: Used to design the layout and user interface of the website.
+
 
 ## Installation
 
