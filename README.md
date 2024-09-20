@@ -9,9 +9,7 @@ Prozen Pharmaceuticals is an innovative website designed to showcase the capabil
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
+
 
 ## Overview
 
@@ -45,5 +43,11 @@ Prozen Pharmaceuticals aims to provide an intuitive and user-friendly platform f
 
 3. **Open the index.html file in your browser to view the website locally.**
 
+**Usage**
+Once installed, you can:
+
+Browse through the company's pharmaceutical products.
+Experience the smooth scrolling animations and hover interactions.
+Explore the navigation menu to learn more about Prozen's products and careers.
 
 
