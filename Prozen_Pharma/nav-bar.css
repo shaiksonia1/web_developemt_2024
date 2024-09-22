@@ -15,7 +15,6 @@ html,body{
 
 }
 
-
 #cursor {
     height: 20px;
     width: 20px;
@@ -124,7 +123,7 @@ html,body{
 .dropdown:hover h4  {
     color: #b2d9ff;
 }
-.dropdown1:hover h4  {
+.dropdown1:hover h4 a {
     color: #b2d9ff;
 }
 /* Show the dropdown menu on hover */
@@ -178,8 +177,8 @@ html,body{
   
     
 #logo img{
-    height: 80px;
-    padding-right: 590px;
+    height: 6rem;
+    padding-right: 9rem;
     
 
 }
@@ -209,7 +208,9 @@ html,body{
 
 #cursor {
     position: fixed;
-    z-index: 99;
+    z-index: -1;
+    background-color: #0085ff;
+    pointer-events: none;
 }
 #nav h4 a{
     text-decoration: none;
@@ -220,14 +221,4 @@ html,body{
 #nav h4 {
     text-transform: uppercase;
     font-weight: 200;
-
-
-}
-@keyframes scroll {
-    from {
-        transform: translateX(0); /* Start from the original position */
-    }
-    to {
-        transform: translateX(-100%); /* End with complete scroll */
-    }
 }
