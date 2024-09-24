@@ -42,26 +42,3 @@ gsap.to("#main2",{
 
 
 
-
-let lastScroll = 0;
-
-gsap.to("#page4", {
-    scrollTrigger: {
-        trigger: "#page4",
-        scroller: "body",
-        start: "top center",  // The action starts when #page4 reaches the center
-        end: "bottom center",  // Ends when #page4's bottom leaves the center
-        scrub: 2,
-        onUpdate: (self) => {
-            let currentScroll = self.scroll();
-            if (currentScroll > lastScroll) {
-                // Scrolling down - change #page4 to black
-                gsap.to("body", { backgroundColor: "#000", duration: 1 });
-            } else {
-                // Scrolling up - change #page4 to green
-                gsap.to("#page4", { backgroundColor: "#95c11e", duration: 1 });
-            }
-            lastScroll = currentScroll;
-        }
-    }
-});
