@@ -1,133 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prozen-Products</title>
-    <link rel="stylesheet" href="products.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
+    <link rel="stylesheet" href="/css/products.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <body>
-    <!-- Navigation Bar -->
-    <div id="nav">
-      <div class="container" onclick="myFunction(this)">
+</head>
+
+
+<body>
+
+<!-- Navigation Bar -->
+<div id="nav">
+    <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-
-      <div id="logo">
-        <a href="index.html">
-          <img src="./Public/images/Prozen Logo.png" alt="Prozen Logo" />
+    
+    <div id="logo">
+        <a href="/index.html">
+            <img src="../Public/images/Prozen Logo.png " alt="Prozen Logo">
         </a>
-      </div>
-      <h4><a href="home.html">Home</a></h4>
-
-      <!-- Dropdown for Our Products -->
-      <div class="dropdown">
+    </div>
+    <h4><a href="home.html">Home</a></h4>
+    
+    <!-- Dropdown for Our Products -->
+    <div class="dropdown">
         <h4>Our Products</h4>
         <div class="dropdown-content">
-          <a href="./overview.html">overview</a>
-          <a href="./products.html">Products</a>
-          <a href="./product-pages/product3.html">Medical Information</a>
+            <a href="overview.html">overview</a>
+            <a href="products.html">Products</a>
+            <a href="product3.html">Medical Information</a>
         </div>
-      </div>
-      <div class="dropdown1">
+    </div>
+    <div class="dropdown1">
         <h4>Careers</h4>
         <div class="dropdown-content1">
-          <a href="./product-pages/product1.html">Nice to meet you</a>
-          <a href="./product-pages/product2.html">Prozen Experience</a>
-          <a href="./product-pages/product3.html">Early talent</a>
+            <a href="product1.html">Nice to meet you</a>
+            <a href="product2.html">Prozen Experience</a>
+            <a href="product3.html">Early talent</a>
         </div>
-      </div>
-
-      <h4><a href="impact.html">Our Impact</a></h4>
-      <h4><a href="contact.html">Contact Us</a></h4>
     </div>
+    
+    <h4><a href="impact.html">Our Impact</a></h4>
+    <h4><a href="contact.html">Contact Us</a></h4>
+</div>
 
-    <!-- Cursor Elements (You may need to style these in CSS) -->
+
+<!-- Cursor Elements (You may need to style these in CSS) -->
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
 
-    <!-- main -->
+
+<!-- main -->
     <div id="main">
-      <div class="image-container">
+    <div class="image-container">
         <div class="content-container">
-          <h1 class="head">Reimagining medicine, together</h1>
-          <p class="head1">
-            Working together, we can reimagine medicine to improve and extend
-            people’s lives.
-          </p>
+            
+            <h1 class="head">Reimagining medicine, together</h1>
+            <p class="head1">Working together, we can reimagine medicine to improve and extend people’s lives.</p>
         </div>
-      </div>
-
-      <div class="page1">
-        <div class="header-page2">
-          <h1 class="heading-page2">Prozen Pharma Innovative Medicine</h1>
-        </div>
-      </div>
-      <div class="sub-page1">
-        <div class="content-page2">
-          <p class="para1">
-            Patients inform and inspire our science-based innovations, which
-            continue to change and save lives. Applying rigorous science and
-            compassion, we confidently address some of the most complex diseases
-            of our time and unlock the potential medicines of tomorrow.
-          </p>
-        </div>
-        <div class="content-page2">
-          <p class="para1">
-            Our diverse portfolio spans multiple therapeutic areas—Oncology,
-            Immunology, Neuroscience, Cardiovascular, Pulmonary Hypertension,
-            and Retina. We are continuously working to develop treatments,
-            aspiring to find cures, pioneering the path from lab to life, and
-            championing patients every step of the way.
-          </p>
-        </div>
-      </div>
-
-      <div class="page3">
-        <div class="container_page3">
-          <div class="sub-img1">
-            <img src="./Public/images/images/productslist-2.jpeg" alt="" />
-          </div>
-          <div class="sub-container">
-            <div class="sub1-container_page3">
-              <h2 class="heading">
-                Are super-personalized solutions the future of healthcare?
-              </h2>
-            </div>
-            <div class="sub2-container_page3">
-              <p class="heading">
-                The goal of precision medicine is to develop individualized
-                treatments based on a patient’s genetic profile. Here’s how
-                Johnson & Johnson is harnessing this cutting-edge field of
-                tailor-made medicine.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+
+    <div class="page1">
+        <div class="header-page2">
+            <h1 class="heading-page2">Prozen Pharma Innovative Medicine</h1>
+        </div>
+     
+    </div>
+    <div class="sub-page1">
+        <div class="content-page2">
+            <p class="para1">
+                Patients inform and inspire our science-based innovations, which continue to change and save lives. Applying rigorous science and compassion, we confidently address some of the most complex diseases of our time and unlock the potential medicines of tomorrow.
+
+            </p>
+        </div>
+        <div class="content-page2">
+            <p class="para1">
+                Our diverse portfolio spans multiple therapeutic areas—Oncology, Immunology, Neuroscience, Cardiovascular, Pulmonary Hypertension, and Retina.
+
+                We are continuously working to develop treatments, aspiring to find cures, pioneering the path from lab to life, and championing patients every step of the way.
+
+            </p>
+        </div>
+    </div>
+
+
+    <div class="page3">
+        <div class="container_page3">
+            <div class="sub-img1">
+                <img class="page3-img1" src="../Public/images/1726428249003.jpg" alt="">
+            </div>
+            <div class="sub-container">
+                <div class="sub1-container_page3">
+                    <h2 class="heading">
+                        MAHAFIT GOLD <span> THE MAHA COMBINATION THAT KEEPS THE WORLD FIT</span>
+                        
+
+                    </h2>
+                </div>
+                <div class="sub2-container_page3">
+                        <p class="sub-heading">
+                            <ol class="list">
+            <li>Methylcobalamin: Supports nerve health and boosts energy levels.
+            </li>
+            <li>Co-Enzyme Q10: Promotes heart health and enhances cellular energy production.
+            </li>
+            <li>Vitamin K27: Strengthens bones by improving calcium absorption.
+            </li>
+            <li>Alpha Lipoic Acid: Acts as an antioxidant, reduces inflammation, and supports metabolism.
+            </li>
+            <li>Benfotiamine: Protects nerves, beneficial for diabetic care.
+            </li>
+            <li>Folic Acid: Supports healthy cell division and DNA formation.
+            </li>
+            <li>Biotin: Enhances the health of skin, hair, and nails.
+            </li>
+            <li>Inositol: Boosts mood, cognitive function, and hormonal balance.
+            </li>
+            <li>Vitamin D3: Strengthens bones and boosts the immune system.
+            </li>
+        </ol>
+
+                        </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page4">
+        <div class="content-para">
+            <p class="para-7">We innovate with purpose to lead where medicine is going. Innovation requires thinking differently so we continue to reimagine the entire research, development and delivery process.</p>
+            <p class="para-7"> Cutting-edge technologies and expert insight help us understand and address the serious health problems of today and unlock the potential medicines of tomorrow. We pursue new pathways, collaborate closely with healthcare professionals, and decipher data to help people live fuller lives.</p>
+        </div>
+
+  
+
+    </div>
+    <div class="zulpod-cv">
+        <div class="zulpod-img">
+            <img class="img7" src="../Public/images/1726428249009.jpg" alt="zulpod-img">
+            <h2 class="sub-heading1">zulpod-cv</h2>
+            <p class="para-8">We are driven by our bold vision to eliminate cancer. Together, we work diligently to get in front of cancer and will never settle until the disease is behind everyone.
+
+                </p>
+        </div>
+      
+        <div class="zulfix-img">
+            <img class="img7" src="../Public/images/1726428249016.jpg" alt="zulfix-img">
+            <h2 class="sub-heading1">Zulfix-O</h2>
+            <p class="para-8">Driven by a relentless dissatisfaction with the status quo, our mission is to redefine treatments for immune diseases by delivering transformational </p>
+        </div>
+    </div>
+
+    <div class="page5">
+        <h1 class="head1-page5">
+            Good Health Can’t Wait,
+so our efforts are focused
+on helping communities
+that lack access to
+reliable healthcare
+
+        </h1>
+    </div>
+
+    <div class="page6">
+        <div class="products-list">
+            <div class="zulfix-img">
+                <img class="img8" src="../Public/images/1726428249021.jpg" alt="zulfix-img">
+                <h2 class="sub-heading2">Zulfix-O</h2>
+                <p class="para-9">Driven by a relentless dissatisfaction with the status quo, our mission is to redefine treatments for immune diseases by delivering transformational </p>
+            </div>
+        </div>
+        <div class="products-list1">
+            <div class="zulfix-img">
+                <img class="img9" src="../Public/images/1726428249025.jpg" alt="zulfix-img">
+                <h2 class="sub-heading2">Zulfix-O</h2>
+                <p class="para-9">Driven by a relentless dissatisfaction with the status quo, our mission is to redefine treatments for immune diseases by delivering transformational </p>
+            </div>
+        </div>
+        <div class="products-list2">
+            <div class="zulfix-img">
+                <img class="img10" src="../Public/images/1726428249031.jpg" alt="zulfix-img">
+                <h2 class="sub-heading3">Zulfix-O</h2>
+                <p class="para-10">Driven by a relentless dissatisfaction with the status quo, our mission is to redefine treatments for immune diseases by delivering transformational </p>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!--   JavaScript -->
     <script src="../js/products.js"></script>
-  </body>
+</body>
 </html>
