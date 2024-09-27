@@ -23,7 +23,7 @@ html,body{
     /* background-color: #1e49c1;  */
     border-radius: 50%;
     position: fixed;
-    z-index: 100;
+    z-index: -1;
     pointer-events: none; /* Prevents the cursor from blocking clicks */
 }
 #cursor-blur {
@@ -60,7 +60,7 @@ html,body{
 
 }
 #header {
-    margin-top: 100px; /* This gives space below the navbar */
+    margin-top: 7rem; /* This gives space below the navbar */
     text-align: left;
     color: white;
     height: 100vh;
@@ -163,7 +163,7 @@ button{
 }
 #heading h1{
     padding-top: 0.9rem ;
-    color: #4F8FBF;
+    color: #ffffff;
     align-content: center;
 }
 
@@ -198,7 +198,7 @@ h1{
 #content1,#content2 ,#content3,#content4 {
     height: 41vh;
     width:89vw;
-    border: 0.5px solid #4F8FBF;
+    border: 0.5px solid #95c11e;
     border-radius: 0.3rem;
     /* background-color: #7e6868; */
     z-index: 2;
@@ -239,13 +239,13 @@ h1{
 }
 #content3 p{
     /* background-color: #95c11e; */
-    margin-top: 65rem;
+    margin-top: 60rem;
     font-size: 1.2rem;
 
 }
 #content4 p{
     /* background-color: #95c11e; */
-    margin-top: 90rem;
+    margin-top: 80rem;
     font-size: 1.2rem;
 
 }
@@ -335,7 +335,8 @@ h2{
     margin-right: 10rem;
     position: absolute;
     display: inline;
-    overflow: hidden;    z-index: 0;
+    overflow: hidden;   
+     z-index: 0;
 
     
 }
@@ -447,8 +448,7 @@ h6{
 
 
 #page5{
-    height: 100vh;
-    width: 100vw;
+    height: 90vh;
 }
 
 
@@ -463,9 +463,10 @@ h6{
 
 
 #container1,#container2,#container3{
-    height: 80vh;
-    width: 50vw;
-    background-color: rgb(111, 124, 159);
+    margin-top: 2rem;
+    height: 60vh;
+    width: 60vw;
+    background-color: #191818;
 }
 h4{
     font-size: 1.5rem;
@@ -474,13 +475,11 @@ h4{
 }
 
 img{
-    height:70vh;
+    height:50vh;
     width: 27vw;
 }
 
-#page5{
-    height: 140vh;
-}
+
 ul{
     display: flex;
     list-style: none;
@@ -501,7 +500,9 @@ hr{
     width: 86%;
     margin-left: 6rem;
 }
-
+#page6{
+    margin-top: 13rem;
+}
 
 .img5{
     margin-left: 17rem;

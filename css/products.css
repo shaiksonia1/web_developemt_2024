@@ -23,12 +23,12 @@ html,body{
     border-radius: 50%;
     position: fixed;
     z-index: 100;
-    pointer-events: none; /* Prevents the cursor from blocking clicks */
+    /* pointer-events: none; */
 }
 #cursor-blur {
     height: 400px;
     width: 400px;
-    background-color: #4e6bc2; /* Added background color */
+    /* background-color: #4e6bc2;  */
     border-radius: 50%;
     position: fixed;
     filter: blur(190px);
@@ -229,7 +229,7 @@ html,body{
 } */
 
 .image-container {
-    background-image: url('/Prozen_Pharma/Prozen_media/images/productlist-1.jpeg');
+    background-image: url('../Public/images/productlist-1.jpeg');
     background-size:cover;          /* Makes the image cover the whole screen */
     background-position: center;     /* Centers the image */
     background-repeat: no-repeat;    /* Prevents the image from repeating */
@@ -265,10 +265,7 @@ html,body{
     font-size: 1.5rem;
     color: #ffffff;
 }
-.page1{
-/* display: flex; */
 
-}
 .header-page2{
     margin-top: 6rem;
     display: flex;
@@ -291,35 +288,239 @@ html,body{
 }
 .para1{
     font-size: 1.5rem;
+    letter-spacing: 0.1rem;
 }
 .page3{
     /* display: flex;
     flex-direction: row; */
     margin-top: 10rem;
-height: 120vh;
-/* width: 100vw; */
+height: 90vh;
+}
+.page3-img1{
+    height: 75vh;
+    object-fit: fill;
+    float: left;
+    width: 42vw;
+    /* border-radius: 1rem; */
 }
 .container_page3{
     display: flex;
-    height: 90vh;
+    height: 75vh;
     width: auto;
     background-color: rgba(34, 34, 34, 0.6); 
-    margin-left: 10rem;
+    margin-left: 6rem;
     justify-content: flex-end;  /* Aligns child elements to the right */
 
 }
 .sub-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 3rem;
+    padding-left: 2rem;
     align-items: center;
  
     
 }
 .heading{
     display: flex;
+    padding: 0;
     width: 50vw;
+    color: #95c11e;
+    display: inline;
+    font-size: 4rem;
 
     
+}
+span{
+    display: flex;
+    width: 50vw;
+    color: #95c11e;
+    font-size: 1.5rem;
+
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    list-style: none;
+    letter-spacing: 0.1rem;
+    display: flex;
+    width: 50vw;
+    padding-right: 4rem;
+    font-size: 1.2rem;
+
+    
+}
+.page4{
+    display: flex;
+}
+.content-para{
+    flex-direction: column;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+    font-size: 1.5rem;
+}
+.para-7{
+    padding-top: 2rem;
+    padding-right: 20rem;
+    letter-spacing: 0.1rem;
+    
+}
+.zulpod-cv{
+    margin-top: 10rem;
+    display:flex;
+}
+.img7{
+    margin-left: 6rem;
+    height: 50vh;
+    border-radius: 1rem;
+    width: 40vw;
+    margin-right: 4rem;
+}
+.sub-heading1{
+    margin-top: 1.5rem;
+    color: #95c11e;
+    margin-left: 6rem;
+    font-size: 2rem;
+    font-weight: 300;
+
+}
+.para-8{
+    padding-top: 2rem;
+    display: flex;
+    margin-left: 6rem;
+    font-size: 1.5rem;  
+    margin-right: 4rem;
+    letter-spacing: 0.01rem;
+
+}
+
+.img7:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+
+}
+
+.sub-heading1:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.sub-heading1:hover:after{
+    width: 23%; 
+    left: 0; 
+    color: #95c11e;
+}
+.page5{
+    display: flex;
+    margin-top: 10rem;
+    background-color: #95c11e;
+    height: 100vh;
+    width: 100vw;
+
+}
+.head1-page5{
+    display: flex;
+    width: 50vw;
+    font-weight: 300;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 27rem;
+    font-size: 3.5rem;
+}
+.page6{
+    margin-top: 10rem;
+}
+.products-list{
+    display: flex;
+    height: 70vh;
+    width: auto;
+    margin-right: 6rem;
+    background-color: #191818;
+}
+.img8{
+    float: right;
+    /* margin-right: 5rem; */
+    /* margin-top: 1.5rem; */
+    height: 70vh;
+    width: 50vw;
+}
+.sub-heading2{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    color: #95c11e;
+    margin-left: 6rem;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.para-9{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 6rem;
+    font-size: 1.5rem;  
+    letter-spacing: 0.01rem;
+}
+.products-list1{
+    margin-top: 10rem;
+    display: flex;
+    height: 70vh;
+    width: auto;
+    margin-left: 6rem;
+    background-color: #191818;
+}
+.img9{
+    float: left;
+    /* margin-right: 5rem; */
+    /* margin-top: 1.5rem; */
+    height: 70vh;
+    width: 50vw;
+}
+.page7{
+    
+    display: flex;
+}
+.products-list2{
+    margin-top: 10rem;
+    display: flex;
+    margin-left: 6rem;
+}
+.img10{
+    float: left;
+    /* margin-right: 5rem; */
+    /* margin-top: 1.5rem; */
+    border-radius: 1rem;
+
+    height: 40vh;
+    width: 40vw;
+    object-fit: fill;
+}
+.sub-heading3{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    color: #95c11e;
+    margin-left: 6rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.para-10{
+    display: flex;
+    justify-content: center;
+    text-align:left;
+    padding-left: 5rem;
+    margin-right: 3rem;
+    font-size: 1.5rem;  
+    letter-spacing: 0.01rem;
 }
