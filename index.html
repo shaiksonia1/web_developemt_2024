@@ -1,318 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prozen-Home</title>
-    <link rel="stylesheet" href="style.css">    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
 
-</head>
-
-
-<body>
-
-<!-- Navigation Bar -->
-<div id="nav">
-    <div class="container" onclick="myFunction(this)">
+  <body>
+    <!-- Navigation Bar -->
+    <div id="nav">
+      <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-    
-    <div id="logo">
+
+      <div id="logo">
         <a href="index.html">
-            <img src="/Prozen_Pharma/Prozen_media/Prozen Logo.png" alt="Prozen Logo">
+          <img src="./Public/images/Prozen Logo.png" alt="Prozen Logo" />
         </a>
-    </div>
-    <h4><a href="home.html">Home</a></h4>
-    
-    <!-- Dropdown for Our Products -->
-    <div class="dropdown">
+      </div>
+      <h4><a href="home.html">Home</a></h4>
+
+      <!-- Dropdown for Our Products -->
+      <div class="dropdown">
         <h4>Our Products</h4>
         <div class="dropdown-content">
-            <a href="overview.html">overview</a>
-            <a href="products.html">Products</a>
-            <a href="product3.html">Medical Information</a>
+          <a href="./pages/overview.html">overview</a>
+          <a href="./pages/products.html">Products</a>
+          <a href="./pages/product3.html">Medical Information</a>
         </div>
-    </div>
-    <div class="dropdown1">
+      </div>
+      <div class="dropdown1">
         <h4>Careers</h4>
         <div class="dropdown-content1">
-            <a href="product1.html">Nice to meet you</a>
-            <a href="product2.html">Prozen Experience</a>
-            <a href="product3.html">Early talent</a>
+          <a href="./pages/product-pages/product1.html">Nice to meet you</a>
+          <a href="./pages/product-pages/product2.html">Prozen Experience</a>
+          <a href="./pages/product-pages/product3.html">Early talent</a>
         </div>
+      </div>
+
+      <h4><a href="impact.html">Our Impact</a></h4>
+      <h4><a href="contact.html">Contact Us</a></h4>
     </div>
-    
-    <h4><a href="impact.html">Our Impact</a></h4>
-    <h4><a href="contact.html">Contact Us</a></h4>
-</div>
 
     <!-- Cursor Elements (You may need to style these in CSS) -->
     <div id="cursor"></div>
     <div id="cursor-blur"></div>
 
     <!-- Background Video -->
-    <video src="/Prozen_Pharma/Prozen_media/video1.mp4" autoplay loop muted></video>
+    <video src="./Public/videos/video1.mp4" autoplay loop muted></video>
 
     <div id="main">
-        <!-- Page 1 -->
-        <div id="page1">
-            <h1>Pledged to</h1>
-            <h2>Quality and Trust</h2>
+      <!-- Page 1 -->
+      <div id="page1">
+        <h1>Pledged to</h1>
+        <h2>Quality and Trust</h2>
+      </div>
+
+      <!-- Page 2 - Scroller for Products -->
+      <div id="page2">
+        <div id="scroller">
+          <div id="scroller-in">
+            <h4>MAHAFIT-GOLD</h4>
+            <h4>BOLT-P</h4>
+            <h4>ZIFLO</h4>
+            <h4>ZELVE-5</h4>
+            <h4>ZIKRIL</h4>
+            <h4>ZULOML</h4>
+            <h4>ZULMOX</h4>
+            <h4>ZULFIX</h4>
+            <h4>ZEFRON</h4>
+          </div>
+          <!-- Duplicate scroller-in for scrolling effect -->
+          <div id="scroller-in">
+            <h4>MAHAFIT-GOLD</h4>
+            <h4>BOLT-P</h4>
+            <h4>ZIFLO</h4>
+            <h4>ZELVE-5</h4>
+            <h4>ZIKRIL</h4>
+            <h4>ZULOML</h4>
+            <h4>ZULMOX</h4>
+            <h4>ZULFIX</h4>
+            <h4>ZEFRON</h4>
+          </div>
         </div>
 
-        <!-- Page 2 - Scroller for Products -->
-        <div id="page2">
-            <div id="scroller">
-                <div id="scroller-in">
-                    <h4>MAHAFIT-GOLD</h4>
-                    <h4>BOLT-P</h4>
-                    <h4>ZIFLO</h4>
-                    <h4>ZELVE-5</h4>
-                    <h4>ZIKRIL</h4>
-                    <h4>ZULOML</h4>
-                    <h4>ZULMOX</h4>
-                    <h4>ZULFIX</h4>
-                    <h4>ZEFRON</h4>
-                </div>
-                <!-- Duplicate scroller-in for scrolling effect -->
-                <div id="scroller-in">
-                    <h4>MAHAFIT-GOLD</h4>
-                    <h4>BOLT-P</h4>
-                    <h4>ZIFLO</h4>
-                    <h4>ZELVE-5</h4>
-                    <h4>ZIKRIL</h4>
-                    <h4>ZULOML</h4>
-                    <h4>ZULMOX</h4>
-                    <h4>ZULFIX</h4>
-                    <h4>ZEFRON</h4>
-                </div>
-            </div>
-
-            <!-- About Us Section -->
-         <div id="about-us">
-    <h1>Hello! We are <span>Prozen Pharmaceuticals</span></h1>
-    <div id="btn">
-        <button>Get to Know Us <i class='fas fa-arrow-right'></i></button>
-    </div>
-    <img src="/Prozen_Pharma/Prozen_media/images/image_2.jpeg" alt="">
-</div>
-
-
-         
+        <!-- About Us Section -->
+        <div id="about-us">
+          <h1>Hello! We are <span>Prozen Pharmaceuticals</span></h1>
+          <div id="btn">
+            <button>Get to Know Us <i class="fas fa-arrow-right"></i></button>
+          </div>
+          <img src="./Public/images/image_2.jpeg" alt="" />
         </div>
-        <div id="section">
-            <h3>Our Vision</h3>
-              <p> To be a global leader in advancing healthcare by providing innovative, affordable, and life-changing pharmaceutical solutions that improve the quality of life for people around the world.</p>
-                
-               <h3>Our Mission</h3> 
-               <p>Our mission is to develop, manufacture, and deliver high-quality pharmaceutical products that address the most critical health challenges. We are committed to scientific excellence, patient safety, and ethical practices, ensuring access to effective and affordable treatments for all.</p>
-    
-        </div>
-     
-        <!-- Page 3 - Image Boxes -->
-        <div id="page3">
-            <div id="box1">
-                <div id="img1">
-                    <img src="/Prozen_Pharma/Prozen_media/images/image4.jpeg" alt="Brand Image 1">
-                </div>
-                <p>Prozen has a strong portfolio of brands and is well-positioned to play a vital role for people around the world.</p>
-                <button>Our Products <i class='fas fa-arrow-right'></i></button>
-            </div>
+      </div>
+      <div id="section">
+        <h3>Our Vision</h3>
+        <p>
+          To be a global leader in advancing healthcare by providing innovative,
+          affordable, and life-changing pharmaceutical solutions that improve
+          the quality of life for people around the world.
+        </p>
 
-            <div id="box2">
-                <div id="img2">
-                    <img src="/Prozen_Pharma/Prozen_media/images/image3.jpg" alt="Brand Image 2">
-                </div>
-                <p>The future of everyday health is changing, and we’re the people changing it. You can be part of this.</p>
-                <button>Careers <i class='fas fa-arrow-right'></i></button>
+        <h3>Our Mission</h3>
+        <p>
+          Our mission is to develop, manufacture, and deliver high-quality
+          pharmaceutical products that address the most critical health
+          challenges. We are committed to scientific excellence, patient safety,
+          and ethical practices, ensuring access to effective and affordable
+          treatments for all.
+        </p>
+      </div>
 
-            </div>
-
-            <div id="box3">
-                <div id="img3">
-                    <img src="/Prozen_Pharma/Prozen_media/images/image5.jpeg" alt="Brand Image 3">
-                </div>
-                <p>Prozen has a unique opportunity to help break down the social and environmental barriers that hold people back from better everyday health.</p>
-                <button>Our Impact <i class='fas fa-arrow-right'></i></button>
-
-            </div>
+      <!-- Page 3 - Image Boxes -->
+      <div id="page3">
+        <div id="box1">
+          <div id="img1">
+            <img src="./Public/images/image4.jpeg" alt="Brand Image 1" />
+          </div>
+          <p>
+            Prozen has a strong portfolio of brands and is well-positioned to
+            play a vital role for people around the world.
+          </p>
+          <button>Our Products <i class="fas fa-arrow-right"></i></button>
         </div>
 
-        <!-- Page 4 - Latest Stories -->
-        <div id="page4">
-            <div id="boxes1"></div>
-            <div id="boxes2"></div>
-            <h1>Latest Stories</h1>
-            <div id="container1">
-                <div id="btn2">
-                    
-                </div>
-                <img src="/Prozen_Pharma/Prozen_media/1726428249003.jpg" alt="">
-                <h3>2024 Half Year Results</h3> 
-                  
-                <p>Six months ended 30 June 2024.</p>
-
-                <button class="arrow-button">→</button> <!-- Arrow button -->
-
-                
-
-            </div>
-            <div id="line1">
-                
-            </div>
-            <div id="container2">
-                <img src="/Prozen_Pharma/Prozen_media/1726428249016.jpg" alt="">
-                <h3>Prozen to divest nicotine replacement therapy business outside of the US to Dr. Reddy's.</h3>    
-                <button class="arrow-button"> → </button> <!-- Arrow button -->
-        
-
-            </div>
-            <div id="line2">
-
-            </div>
-            <div id="container3">
-                <img src="/Prozen_Pharma/Prozen_media/Prozen_Pedia_page-0007.jpg" alt="">
-                <h3>
-                    2024 Q1 Trading Statement. Three months ended 31 March 2024.</h3>
-                    <button class="arrow-button">→</button> <!-- Arrow button -->
-
-            </div>
-            <div id="line3"></div>
-            
-            <div id="btn-1">
-                View all stories
-            </div>
-        </div>
-       
-        <p class="para">At Prozen, we strive to deliver quality medicines to patients around the world with integrity and ethical business practices. What we do is important, but how we do it is just as important. Learn more.</p>
-        <div id="line5">
-           
+        <div id="box2">
+          <div id="img2">
+            <img src="./Public/images/image3.jpg" alt="Brand Image 2" />
+          </div>
+          <p>
+            The future of everyday health is changing, and we’re the people
+            changing it. You can be part of this.
+          </p>
+          <button>Careers <i class="fas fa-arrow-right"></i></button>
         </div>
 
-        <div class="footer-container">
-            <div class="footer">
-              <div class="footer-content">
-                <div class="newsletter">
-                  <h2>Subscribe to Our Newsletter</h2>
-                  <div class="newsletter-form">
-                    <input class="newsletter-input" placeholder="Email here" />
-                    <button class="newsletter-btn">Submit</button>
-                  </div>
-                </div>
-                <div class="footer-row">
-                  <div class="footer-column">
-                    <div class="footer-about">
-                      <h3>About Us</h3>
-        
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla a consectetur dictum, metus elit hendrerit lectus, et venenatis elit dui nec lorem. 
-                      </p>
-        
-                    </div>
-                  </div>
-        
-                  <div class="footer-column">
-                    <div class="footer-links">
-                      <h3>Useful Links</h3>
-                      <a href="/">Home</a>
-                      <a href="/aboutus">About</a>
-                      <a href="/services">Products & Services</a>
-                      <a href="#">Client Testimonials</a>
-                      <a href="/contact">Contact Us</a>
-                    </div>
-                  </div>
-                  <div class="footer-column">
-                    <div class="footer-links">
-                      <h3>Service Area</h3>
-                      <a href="#">Mehndipatnam</a>
-                      <a href="#">Sadia Hospitals</a>
-                      <a href="#">Jublie hills</a>
-                    </div>
-                  </div>
-                  <div class="footer-column">
-                    <div class="footer-contact">
-                      <h3>Get In Touch</h3>
-                      <p>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                        Admin Office : T-12/308. Sion Kolivada, Mumbai-400 002
-                        
-                      </p>
-                      <p>
-                        <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                        Regional Office: H.No : 2-1298/1/1,Mnc,Nagole-500068
-                        
-                      </p>
-                      <p>
-                        <i class="fa fa-phone" aria-hidden="true"></i> +91 8008156642
-                      </p>
-                      <p>
-                        <i class="fa fa-envelope"></i> abcd@example.com
-                      </p>
-                      <div class="footer-social">
-                   
-                        <a href="#">
-                          <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fab fa-youtube"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                          <i class="fab fa-linkedin-in"></i>
-                        </a>
-                       
-                      </div>
-                    </div>
-                  </div>
+        <div id="box3">
+          <div id="img3">
+            <img src="./Public/images/image5.jpeg" alt="Brand Image 3" />
+          </div>
+          <p>
+            Prozen has a unique opportunity to help break down the social and
+            environmental barriers that hold people back from better everyday
+            health.
+          </p>
+          <button>Our Impact <i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Page 4 - Latest Stories -->
+      <div id="page4">
+        <div id="boxes1"></div>
+        <div id="boxes2"></div>
+        <h1>Latest Stories</h1>
+        <div id="container1">
+          <div id="btn2"></div>
+          <img src="./Public/images/1726428249003.jpg" alt="" />
+          <h3>2024 Half Year Results</h3>
+
+          <p>Six months ended 30 June 2024.</p>
+
+          <button class="arrow-button">→</button>
+          <!-- Arrow button -->
+        </div>
+        <div id="line1"></div>
+        <div id="container2">
+          <img src="./Public/images/1726428249016.jpg" alt="" />
+          <h3>
+            Prozen to divest nicotine replacement therapy business outside of
+            the US to Dr. Reddy's.
+          </h3>
+          <button class="arrow-button">→</button>
+          <!-- Arrow button -->
+        </div>
+        <div id="line2"></div>
+        <div id="container3">
+          <img src="./Public/images/Prozen_Pedia_page-0007.jpg" alt="" />
+          <h3>2024 Q1 Trading Statement. Three months ended 31 March 2024.</h3>
+          <button class="arrow-button">→</button>
+          <!-- Arrow button -->
+        </div>
+        <div id="line3"></div>
+
+        <div id="btn-1">View all stories</div>
+      </div>
+
+      <p class="para">
+        At Prozen, we strive to deliver quality medicines to patients around the
+        world with integrity and ethical business practices. What we do is
+        important, but how we do it is just as important. Learn more.
+      </p>
+      <div id="line5"></div>
+
+      <div class="footer-container">
+        <div class="footer">
+          <div class="footer-content">
+            <div class="newsletter">
+              <h2>Subscribe to Our Newsletter</h2>
+              <div class="newsletter-form">
+                <input class="newsletter-input" placeholder="Email here" />
+                <button class="newsletter-btn">Submit</button>
+              </div>
+            </div>
+            <div class="footer-row">
+              <div class="footer-column">
+                <div class="footer-about">
+                  <h3>About Us</h3>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus imperdiet, nulla a consectetur dictum, metus elit
+                    hendrerit lectus, et venenatis elit dui nec lorem.
+                  </p>
                 </div>
               </div>
-              <div class="footer-menu">
-                <div class="f-menu">
-                  <a href="#">Terms of Use</a>
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Cookies</a>
-                  <a href="#">Help</a>
-                  <a href="#">FAQs</a>
+
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Useful Links</h3>
+                  <a href="/">Home</a>
+                  <a href="/aboutus">About</a>
+                  <a href="/services">Products & Services</a>
+                  <a href="#">Client Testimonials</a>
+                  <a href="/contact">Contact Us</a>
                 </div>
               </div>
-              <div class="footer-copyright">
-                <div class="footer-row">
-                  <div class="footer-column">
-                    <p>
-                      &copy; <a href="#">Shaik Sonia Made with Dedication</a>, All Rights
-                      Reserved.
-                    </p>
-                  </div>
-                  <div class="footer-column">
-                    <p>
-                      Developed & Maintained By
-                      <a href="#">SS Technology</a>
-                    </p>
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Service Area</h3>
+                  <a href="#">Mehndipatnam</a>
+                  <a href="#">Sadia Hospitals</a>
+                  <a href="#">Jublie hills</a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-contact">
+                  <h3>Get In Touch</h3>
+                  <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Admin Office : T-12/308. Sion Kolivada, Mumbai-400 002
+                  </p>
+                  <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Regional Office: H.No : 2-1298/1/1,Mnc,Nagole-500068
+                  </p>
+                  <p>
+                    <i class="fa fa-phone" aria-hidden="true"></i> +91
+                    8008156642
+                  </p>
+                  <p><i class="fa fa-envelope"></i> abcd@example.com</p>
+                  <div class="footer-social">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        
+          <div class="footer-menu">
+            <div class="f-menu">
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookies</a>
+              <a href="#">Help</a>
+              <a href="#">FAQs</a>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="footer-row">
+              <div class="footer-column">
+                <p>
+                  &copy; <a href="#">Shaik Sonia Made with Dedication</a>, All
+                  Rights Reserved.
+                </p>
+              </div>
+              <div class="footer-column">
+                <p>
+                  Developed & Maintained By
+                  <a href="#">SS Technology</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-
-    
     <!-- GSAP for animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
     <!-- Your custom JavaScript -->
-    <script src="script.js"></script>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
