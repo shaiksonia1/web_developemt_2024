@@ -530,31 +530,65 @@ span{
     font-size: 1.5rem;  
     letter-spacing: 0.01rem;
 }
-.page7{
+.page7 {
     margin-top: 10rem;
     display: flex;
     height: 100vh;
-
 }
 
-.product-lists1{
-display: flex;
-}
-.list-1{
-display: flex;
-}
-
-.img11{
+.product-lists1 {
     margin-left: 6rem;
     display: flex;
-    height:60vh;
-    width: 20vw;
+    gap: 1rem; /* Space between images */
+}
+
+.list1 {
+    position: relative; /* Position relative for overlay */
+    width: 30%; /* Adjust as necessary */
+    overflow: hidden; /* Hide overflow for better styling */
+}
+
+.img11 {
+    width: 30vw; /* Full width of the container */
+    height: 100vh; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.list1:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    color: white; /* White text color */
+    font-size: 1.2rem; /* Font size */
+    text-align: center; /* Center align text */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.list1:hover .overlay-text {
+    opacity: 1; /* Show text on hover */
 }
 
 
 
 .footer-container {
-    background: #000000;
+    /* background: #000000; */
     color: #4c5166;
     padding: 45px 15px;
   }
