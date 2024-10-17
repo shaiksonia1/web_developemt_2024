@@ -29,7 +29,7 @@ html,body{
 #cursor-blur {
     height: 400px;
     width: 400px;
-    background-color: #4e6bc2; /* Added background color */
+    background-color: #4e6bc2;
     border-radius: 50%;
     position: fixed;
     filter: blur(190px);
@@ -88,7 +88,7 @@ html,body{
     width: 43vw;
     /* background-color: rgba(25, 24, 24, 0.8);  */
     color: #95c11e;
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 1.3px;
     font-weight: 600;
     white-space: nowrap;
@@ -239,13 +239,13 @@ h1{
 }
 #content3 p{
     /* background-color: #95c11e; */
-    margin-top: 60rem;
+    margin-top: 65rem;
     font-size: 1.2rem;
 
 }
 #content4 p{
     /* background-color: #95c11e; */
-    margin-top: 80rem;
+    margin-top: 95rem;
     font-size: 1.2rem;
 
 }

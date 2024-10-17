@@ -27,7 +27,7 @@ html,body{
 #cursor-blur {
     height: 400px;
     width: 400px;
-    background-color: #4e6bc2; /* Added background color */
+    /* background-color: #4e6bc2;  */
     border-radius: 50%;
     position: fixed;
     filter: blur(190px);
@@ -46,7 +46,9 @@ html,body{
     position: relative;
     display: inline-block;
 }
-
+.link1{
+    text-decoration: none;
+}
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -492,6 +494,12 @@ video{
 #page3 #box3 button:hover {
     text-decoration-color: green; 
 }
+#page3 #box2 button:hover {
+    text-decoration-color: green; 
+}
+#page3 #box1 button:hover {
+    text-decoration-color: green; 
+}
 
 #page3 #box1 #img1 img{
     height: 40vh;
@@ -699,6 +707,8 @@ video{
     cursor: pointer; 
     display: inline-block;
     font-size: 1.3rem; 
+    width: 15vw;
+    text-align: center;
 
     transition: background-color 0.3s ease; 
 }
