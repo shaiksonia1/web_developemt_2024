@@ -313,20 +313,17 @@ video {
 
 .overlay-text {
     position: absolute;
-    margin-top: 16rem;
-    z-index: 4;
-    top: 20rem; /* Center vertically */
-    left: 26rem; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset the center */
+    top: 50%;  /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Perfect centering */
     color: white;
-    font-size: 3rem; /* Adjust size as needed */
     text-align: center;
     width: 40vw; /* Width of the overlay text */
-    padding: 1rem;
     overflow: hidden;
     letter-spacing: 1px;
     font-weight: 300;
 }
+
 h2{
     display: flex;
     margin-left: 60rem;
