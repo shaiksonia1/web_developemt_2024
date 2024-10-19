@@ -375,21 +375,39 @@ video{
     color: #95c11e;
 }
 
-#section h3{
-    margin-top: 1rem;
+
+.heading-3{
+    margin-top: 6rem;
     text-transform: uppercase;
     margin-left: 6.5rem;
     font-size: 3.5rem;
     color: #95c11e;
 }
- #section p {
-    margin-left:6.5rem ;
-    margin-top: 1.5rem;
-    font-weight: 200;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    margin-right: 50px;
+#section{
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 6rem;
+}
+.vision {
+    display: flex;
+
+}
+.vision1{
+    display:flex ;
   
+
+}
+.p1{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-align: left;
+}
+.vision img{
+    height: 100vh;
+    width: 40vw;
 }
 
 
@@ -398,7 +416,6 @@ video{
     z-index: 10;
     overflow: hidden;
     flex-wrap: wrap;
-    margin-top: 15rem;
 
     
 }
@@ -528,7 +545,7 @@ video{
     flex-direction: column;
 }
 #page4 #boxes1 {
-    margin-top: 100px;
+    margin-top: 3rem;
     height: 10vh;
     width: 40vw;
     background-color: #95c11e;
@@ -545,7 +562,7 @@ video{
 
 
 #page4 h1{
-    margin-top: 15rem;
+    margin-top: 8rem;
     font-size: 5rem;
     font-weight: 500;
     padding-left: 6rem;
@@ -553,167 +570,83 @@ video{
     text-underline-offset: 25px;
     text-decoration-color: #95c11e; 
 }
-#page4 #container1 img {
-    height: 35vh;
-    width: 30vw;
-    margin-top: 2rem;
-    margin-left: 6rem;
-}
 
-
-#page4 #container2 img {
-    height: 35vh;
-    width: 30vw;
-    margin-left: 6rem;
-    margin-top: 1rem;
-
-    
+.btn-2 {
+    background:none;
+    font-size: 1.2rem;
+    border: none;
+    text-decoration: underline #95c11e;
 
 }
-#page4 #container3 img {
-    height: 35vh;
-    width: 30vw;
-    margin-left: 6rem;
-    margin-top: 6rem;
-
- 
-    
-
+.btn-2 button:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
-#page4 #container1  {
-    margin-top: 60px;
+.btn-2 button:hover:after{
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+}
+.page7 {
+    margin-top: 3rem;
+    display: flex;
     height: 50vh;
-    width: 100vw;
-}
-#page4 #container2  {
-    margin-top: 60px;
-    height: 50vh;
-    width: 100vw;
 }
 
-
-#page4 #container1 h3 {
-  font-size: 2.3rem;
-  font-weight: 300;
-  margin-top: 2.5rem;
-  margin-left: 5rem;
-
-
-}
-
-#page4 #container2 h3 {
-  font-size: 2.3rem;
-  font-weight: 300;
-  margin-left: 45rem;
-  margin-right: 10rem;
-  position: absolute;
-
-
-
-}
-#page4 #container3 h3 {
-    font-size: 2.3rem;
-    font-weight: 300;
-    margin-left: 45rem;
-    margin-right: 10rem;
-
-
-
-}
-#page4 #container1 p {
-  font-size: 1.3rem;
-  font-weight: 300;
-  margin-top: 6rem;
-  margin-left: 43rem;
-  position: absolute;
-
-
-}
-
-#line1 {
-    border: 0.1px solid grey; 
-    width: 95%; 
-    margin: 10px auto; 
-    overflow: hidden;
-}
-#line2 {
-    border: 0.1px solid grey; 
-    width: 95%; 
-    margin: 10px auto; 
-
-}
-#line3 {
-    border: 0.1px solid grey; 
-    width: 95%; 
-    margin: 10px auto; 
-  
-}
-
-#page4 #container1 .arrow-button {
-    background-color: #95c11e;
-    color: rgb(0, 0, 0);
-    margin-top: 20rem;
-    margin-left: 25rem;
-    height: 8vh;
-    width: 5vw;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-#page4 #container2 .arrow-button {
-    background-color: #95c11e;
-    color: rgb(0, 0, 0);
-    margin-top: 20rem;
-    margin-left: 55rem;
-    height: 8vh;
-    width: 5vw;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-#page4 #container3 .arrow-button {
-    background-color: #95c11e;
-    color: rgb(0, 0, 0);
-    margin-left: 90rem;
-    height: 8vh;
-    width: 5vw;
-    border: none;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 2rem;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: background-color 0.3s ease;
-}
-.arrow-button:hover {
-    background-color: #646464;
-}
-
-#page4 #btn-1 {
-    background-color: #95c11e;
+.product-lists1 {
     margin-left: 6rem;
-    margin-top: 2rem;
-    border: none;
-    color: #000000; 
-    padding: 10px 20px; 
-    cursor: pointer; 
-    display: inline-block;
-    font-size: 1.3rem; 
-    width: 15vw;
-    text-align: center;
-
-    transition: background-color 0.3s ease; 
+    display: flex;
+    gap: 1rem; /* Space between images */
 }
 
+.list1 {
+    position: relative; /* Position relative for overlay */
+    overflow: hidden; /* Hide overflow for better styling */
+}
 
+.img11 {
+    width: 30vw; /* Full width of the container */
+    height: 60vh; /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0; /* Initially hidden */
+    background-color: rgba(0, 0, 0, 0.37); /* Semi-transparent background */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.list1:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay-text {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    color: white; /* White text color */
+    font-size: 1.3rem; /* Font size */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.list1:hover .overlay-text {
+    opacity: 1; /* Show text on hover */
+}
 
  .para{
     height: 40vh;
