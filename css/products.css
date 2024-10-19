@@ -571,18 +571,63 @@ span{
 
 .overlay-text {
     position: absolute;
-    top: 25%;
+    text-align: left;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* Center text */
     color: white; /* White text color */
-    font-size: 1.2rem; /* Font size */
-    text-align: center; /* Center align text */
+    font-size: 1.3rem; /* Font size */
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease; /* Smooth transition */
 }
 
 .list1:hover .overlay-text {
     opacity: 1; /* Show text on hover */
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;  /* Adjust as needed */
+    margin: auto;
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    height: 80vh;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* For 3 images */
+}
+.carousel-track img {
+    width: 100%; /* Make images responsive */
+    flex: 0 0 100%; /* Ensure each image takes up full width */
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    background: none;
+    transform: translateY(-50%);
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 2rem;
+    z-index: 1;
+}
+.carousel-btn:hover{
+    background-color: #95c11e;
+    border-radius: 10rem;
+    height: 10vh;
+    width: 5vw;
+    transition: transform 0.5s ease-in-out;
+
+
+}
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 

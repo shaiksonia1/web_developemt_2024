@@ -34,3 +34,24 @@ gsap.to("#main",{
         scrub:2
     }
 })
+
+const track = document.querySelector('.carousel-track');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+let currentIndex = 0;
+const slideWidth = track.querySelector('img').clientWidth;
+
+nextBtn.addEventListener('click', () => {
+    if (currentIndex < 11) { // Assuming n slides
+        currentIndex++;
+        track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
+});
+
+prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+    }
+});
