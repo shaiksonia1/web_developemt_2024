@@ -542,6 +542,9 @@ span{
     gap: 1rem; /* Space between images */
 }
 
+.btn-2 {
+
+}
 .list1 {
     position: relative; /* Position relative for overlay */
     width: 30%; /* Adjust as necessary */
@@ -618,7 +621,7 @@ span{
     border-radius: 10rem;
     height: 10vh;
     width: 5vw;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 
 
 }
