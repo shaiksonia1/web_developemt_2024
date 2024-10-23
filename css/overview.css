@@ -138,14 +138,6 @@ button{
     align-items: center; /* Centers content horizontally */
 }
 
-/* Adjust the box at the top */
-#box {
-    height: 14vh;
-    width: 100vw;
-    /* background-color: rgb(0, 0, 0); */
-    z-index: 2;
-    position: relative;
-}
 
 /* Center the heading */
 #heading {
@@ -158,12 +150,12 @@ button{
     width: 100vw;
     /* background-color: #95c11e; */
     position: relative;
-    /* margin-top: 7rem; */
-    margin-bottom: 15rem; /* Adds space below the heading */
+    padding: 5rem;
 }
 #heading h1{
-    padding-top: 0.9rem ;
-    color: #ffffff;
+    color: #95c11e;
+    text-decoration:underline #fff 1px;
+    text-underline-offset: 10px;
     align-content: center;
 }
 
@@ -194,8 +186,11 @@ h1{
     text-transform: uppercase;
 }
 
+
 /* Align the content boxes */
 #content1,#content2 ,#content3,#content4 {
+    display: flex;
+
     height: 41vh;
     width:89vw;
     border: 0.5px solid #95c11e;
@@ -225,27 +220,26 @@ h1{
 
 #content1 p{
     /* background-color: #95c11e; */
-    margin-top: 16rem;
     font-size: 1.2rem;
-    overflow: hidden;
     
+
 }
 #content2 p{
     /* background-color: #95c11e; */
-    margin-top: 40rem;
+    margin-top: 20rem;
     font-size: 1.2rem;
     
 
 }
 #content3 p{
     /* background-color: #95c11e; */
-    margin-top: 65rem;
+    margin-top: 45rem;
     font-size: 1.2rem;
 
 }
 #content4 p{
     /* background-color: #95c11e; */
-    margin-top: 95rem;
+    margin-top: 75rem;
     font-size: 1.2rem;
 
 }
@@ -295,7 +289,10 @@ h1{
     z-index: 2; /* Lower z-index if you want it behind other layers */
     position: relative; /* or absolute based on your layout */
 }
+#sub-page1{
+    display: flex;
 
+}
 video {
     width: 40vw; /* Full width or adjust as needed */
     height: 100vh;
@@ -312,17 +309,22 @@ video {
 
 
 .overlay-text {
+    
     position: absolute;
-    top: 50%;  /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Perfect centering */
-    color: white;
+    top: 50%; 
+    left: 27%;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: #0C1844;
+    width: 40vw;
+    font-size: 3rem;
     text-align: center;
-    width: 40vw; /* Width of the overlay text */
-    overflow: hidden;
-    letter-spacing: 1px;
-    font-weight: 300;
-}
+    padding: 10px 20px;
+    border-radius: 10px;
+    z-index: 5;
+    
+  }
 
 h2{
     display: flex;
@@ -336,6 +338,15 @@ h2{
      z-index: 0;
 
     
+}
+.side-para h2{
+    padding-left: 4rem;
+    text-decoration: underline #fff 1px;
+    text-underline-offset: 10px;
+    text-align: center;
+    color: #95c11e;
+    font-size: 4rem;
+    text-transform: uppercase;
 }
 
 .side-para p{
@@ -401,7 +412,11 @@ h3::after {
     z-index: 1;
 }
 
-
+a {
+    text-decoration: none; /* Removes underline from <a> tag */
+}
+.btn-1 h4{
+}
 
 .btn-1{
     margin-top: 1.5rem;
@@ -418,6 +433,11 @@ h3::after {
  
 
 }
+.btn-1:hover {
+    text-decoration: underline;
+    text-decoration-color: #95c11e;
+    text-underline-offset: 10px;
+}
 
 
 #page4 {
@@ -430,21 +450,32 @@ h3::after {
 
 
 .head1{
-    color: #ffffff;
-    padding-top:20rem;
+    text-transform:uppercase;
+
+    color: #0C1844;
+    padding-top:10rem;
+    text-decoration: underline;
+    text-underline-offset: 15px ;
+    font-size: 4rem;
+    text-align: center;
 }
 
+
 h6{
+    color: #000000;
+    text-align: center;
     font-size: 2rem;
+    font-weight: 400;
     padding-top: 1rem;
-    font-size: 1rem;
-    width: 40vw;
-    margin-left: 33rem;
+    font-size: 1.4rem;
+    width: 60vw;
+    margin-left: 20rem;
 }
 
 
 
 #page5{
+    margin-top: 10rem;
     height: 90vh;
 }
 
@@ -476,7 +507,16 @@ img{
     width: 27vw;
 }
 
-
+.lists1{
+    font-size: 1.2rem;
+    list-style:circle;
+    font-weight:300;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55rem;
+    padding-top: 20rem;
+}
+ 
 ul{
     display: flex;
     list-style: none;
@@ -507,6 +547,9 @@ hr{
     width: 40vw;
     height: 50vh;
     object-fit: fill;
+}
+.page5 h1{
+    margin-top: 10rem;
 }
 .page5-para{
     padding-left: 7rem;
