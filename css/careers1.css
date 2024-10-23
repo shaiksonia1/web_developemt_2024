@@ -226,9 +226,8 @@ html,body{
 .image-container {
     background-image: url('../Public/images/careers3.png');
     background-repeat: no-repeat;   
-    height: 100vh;
+    height: auto;
     width: 100vw;
-    background-size: contain;
 
 }
 .content-container {
@@ -238,7 +237,7 @@ html,body{
     align-items: flex-start;       /* Keeps the content left-aligned */
     padding-left: 6rem;           
     background-color: #ffff;
-    height: 89vh;
+    height: 90vh;
     width: auto;
     background-size: contain;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: A subtle shadow for emphasis */
@@ -282,7 +281,7 @@ html,body{
 }
 
 .content-1{
-    margin-top: 2rem;
+    margin-top: 5rem;
     display: flex;
 }
 .head-1{
@@ -350,23 +349,26 @@ html,body{
 
 }
 .containers4{
-    margin-top: 13rem;
+    margin-top: 10rem;
     display: flex;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     
 }
+.head-5{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 .container1 {
     display: flex;
-    height: 70vh;
-    background-color: #95c11e;
+    height: 50vh;
+    background-color: #191818;
     margin-left: 6rem;
-    margin-right: 6rem;
 }
 .img1{
-    height: 60vh;
-    width: 20vw;
-    object-fit: contain;
+    height: 30vh;
+    width: 25vw;
 }
 .page5{
     background-color: #191818;
