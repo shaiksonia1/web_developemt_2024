@@ -27,7 +27,7 @@ gsap.to("#nav",{
 })
 
 
-gsap.to("section",{
+gsap.to("#page1",{
     backgroundColor:"#000",
     scrollTrigger:{
         trigger:"#main",
