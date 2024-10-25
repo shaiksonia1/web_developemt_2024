@@ -346,6 +346,7 @@ video{
 }
 .aboutUsh1{
   color: #95c11e;
+  white-space: nowrap;
 }
 #page1 h1 span {
     display: block; 
@@ -362,9 +363,9 @@ video{
 
 }
 #about-us img {
-    margin-top: 9rem;
+  margin-top: 9rem;
     height: 65vh;
-    margin-left: 9rem;
+    margin-left: 10rem;
     object-fit: contain;
     border-radius: 0.5rem;
     transition: transform 0.3s ease-in-out;
@@ -373,7 +374,7 @@ video{
 #about-us img:hover {
     transform: scale(1.2);
 }
-#btn button {
+.btn  {
     position: relative;
     margin-top: 35rem;
     right: 540px;
@@ -385,7 +386,7 @@ video{
     
 }
 
-#btn button:after{
+.btn:after{
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -396,7 +397,7 @@ video{
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
 }
-#btn button:hover:after{
+.btn :hover:after{
     width: 100%; 
     left: 0; 
     color: #95c11e;
@@ -662,12 +663,14 @@ video{
 
 #page4 h1{
     margin-top: 8rem;
-    font-size: 5rem;
+    font-size: 3rem;
+    color: #95c11e;
+    text-transform: uppercase;
     font-weight: 500;
     padding-left: 6rem;
-    text-decoration:underline;
-    text-underline-offset: 25px;
-    text-decoration-color: #95c11e; 
+    text-decoration:underline 1px;
+    text-underline-offset: 15px;
+    text-decoration-color: #dddddd; 
 }
 
 .btn-2 {
@@ -1061,9 +1064,28 @@ video{
   font-weight: 900;
  
 }
-#about-us h1, #about-us span{
+#page1 h1{
+  text-align: center;
+  padding-left: 3rem;
+}
+#page1 .aboutUs-h1  {
+  font-size: 3rem;
+}
+#page1 .page1-h1{
+  font-size: 3rem;
+
+}
+
+
+#about-us h1 {
   font-size: 2.5rem;
-  white-space: nowrap;
+  width: 100vw;
+  padding-right: 4rem;
+}
+
+
+#about-us .btn {
+  display: none;
 }
 #about-us img{
 
@@ -1219,8 +1241,7 @@ display: none;
 .para{
   font-size: 1rem;
 }
-.line5{
-}
+
   }
 /* Small devices (large phones) */
 @media (min-width: 576px) and (max-width: 767px) {
@@ -1252,25 +1273,42 @@ display: none;
     padding-right: 2rem;
   
 }
+#page1 h1{
+  text-align: center;
+  padding-left: 3rem;
+}
+#page1 .aboutUs-h1  {
+  font-size: 3rem;
+}
+#page1 .page1-h1{
+  font-size: 3rem;
 
+}
+
+
+#about-us h1 {
+  font-size: 3rem;
+  width: 100vw;
+}
+#about-us .btn{
+  font-size: 1rem;
+}
 #scroller h4 {
-    display: inline;
     font-size: 3rem;
-
+margin-top: 0;
 }
 
-
-#about-us h1, #about-us span{
-    font-size: 4rem;
-    white-space: nowrap;
-}
 #about-us img{
 
  display: none;
 }
 
-
-
+.sub-head1{
+  font-size: 2rem;
+}
+.sub-para{
+  font-size: 1rem;
+}
 #page3 #box1, #page3 #box2, #page3 #box3 {
     width: 70%;
     margin-left: 6rem;
@@ -1283,7 +1321,7 @@ display: none;
 
 
 #page4 h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
     padding-left: 2rem;
   
@@ -1321,6 +1359,7 @@ display: none;
 .product-lists1 {
     margin-left: 2rem;
     display: flex;
+    flex-direction: column;
 }
 
 .list1 {
@@ -1329,8 +1368,8 @@ display: none;
 }
 
 .img11 {
-    width: 30vw; /* Full width of the container */
-    height: 60vh; /* Maintain aspect ratio */
+    max-width: 100%; /* Full width of the container */
+    max-height: 100%; /* Maintain aspect ratio */
     object-fit: contain;
 }
 
@@ -1361,7 +1400,6 @@ display: none;
     transition: opacity 0.3s ease; /* Smooth transition */
 }
 #section {
-    margin-top: 5rem;
     display: flex;
     justify-content:center;
     align-items: center;
@@ -1372,11 +1410,15 @@ display: none;
 
   
   .vision {
-    gap: 2rem; /* Space between image and text */
+    display: flex;
+    flex-direction: column;
   }
   
   .vision img {
-    width: 15rem;
+    display: flex;
+    margin-left: 6rem;
+    width: 55vw;
+    margin-bottom: 0;
     height: auto;
     object-fit: cover;
     border-radius: 1rem;
@@ -1387,14 +1429,13 @@ display: none;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    max-width: 30rem;
+    max-width: 40rem;
   }
   
   .text-content p {
     padding-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .vision1 {
@@ -1402,9 +1443,8 @@ display: none;
     text-transform: uppercase;
     margin: 0;
     white-space:nowrap ;
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: bold;
-    text-align: left;
   }
   
   #section1 {
@@ -1416,7 +1456,10 @@ display: none;
     padding: 1rem;
   }
   .mission img {
-    width: 15rem;
+    display: flex;
+    margin-left: 6rem;
+    width: 55vw;
+    margin-bottom: 0;
     height: auto;
     object-fit: cover;
     border-radius: 1rem;
@@ -1425,7 +1468,7 @@ display: none;
 
   .mission {
     display: flex;
-    gap: 2rem; /* Space between image and text */
+    flex-direction: column;
   }
   .text-content1 {
     align-items: center;
@@ -1433,13 +1476,13 @@ display: none;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    max-width: 30rem;
+    max-width: 40rem;
   }
   
   .text-content1 p {
     padding-top: 2rem;
     margin-bottom: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   
   .mission1 {
@@ -1447,14 +1490,13 @@ display: none;
     text-transform: uppercase;
     margin: 0;
     white-space:nowrap ;
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-weight: bold;
     text-align: left;
   }
   
 .para{
-font-size: 1rem;
-margin-left: 2rem;
+font-size: 1.2rem;
 margin: 2rem;
 text-align: center;
 
