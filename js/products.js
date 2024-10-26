@@ -43,7 +43,7 @@ let currentIndex = 0;
 const slideWidth = track.querySelector('img').clientWidth;
 
 nextBtn.addEventListener('click', () => {
-    if (currentIndex < 9) { // Assuming n slides
+    if (currentIndex < 5) { // Assuming n slides
         currentIndex++;
         track.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
     }
