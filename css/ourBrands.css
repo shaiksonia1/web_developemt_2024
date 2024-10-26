@@ -10,7 +10,6 @@
 
 html,body{
     background-color: #000;
-
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
@@ -221,13 +220,13 @@ html,body{
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 200;
-    color: #95c11e;
+    color: #fff;
     font-size: 1rem;
 }
 #nav h4 {
     text-transform: uppercase;
     font-weight: 200;
-    color: #95c11e;
+    color: #fff;
 
 }
 
@@ -433,6 +432,62 @@ img{
    
 }
 .zulmol-para{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 90%;
+}
+.zelve-head{
+    color: #95c11e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 4rem;
+
+
+}
+
+
+.zelve-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    gap: 1rem;
+}
+.zelve-section img{
+  height: 100%;
+  width: 100%;
+}
+#zelve{
+    margin: 6rem;
+    background-color: #191818;
+    border-radius: 2rem;
+   
+}
+.zulmol-img{
+    transition: transform 0.2s;
+    z-index: 0;
+
+}
+.zulmol-img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.zelve-img{
+    transition: transform 0.2s;
+    z-index: 0;
+}
+.zelve-img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+.zelve-para{
     padding: 2rem;
     display: flex;
     justify-content: center;
