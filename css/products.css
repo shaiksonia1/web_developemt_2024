@@ -47,6 +47,9 @@ html,body{
     position: relative;
     display: inline-block;
 }
+.dropdown1 a {
+   text-decoration: none;
+}
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
@@ -256,15 +259,15 @@ html,body{
     display: flex;
     color: #95c11e;    
     font-size: 4rem;
-    width: 50vw;
+    width: 60vw;
    
 
           
 }
-.head1{
+/* .head1{
     font-size: 1.5rem;
     color: #ffffff;
-}
+} */
 
 .header-page2{
     margin-top: 6rem;
@@ -277,6 +280,8 @@ html,body{
 }
 .heading-page2{
     color: #95c11e;
+    font-size: 2rem;
+    white-space: nowrap;
 
 }
 .sub-page1{
@@ -284,9 +289,14 @@ html,body{
     margin-left: 4rem;
     gap: 4rem;
     padding: 2rem;
+    width: 90vw;
 
 }
 .para1{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+.para2{
     font-size: 1.5rem;
     letter-spacing: 0.1rem;
 }
@@ -525,7 +535,15 @@ span{
     font-size: 2rem;
     font-weight: 500;
 }
-.sub-heading4{}
+.sub-title{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    font-size: 6rem;
+    color: #0085ff;
+    width: 50vw;
+
+}
 .para-10{
     display: flex;
     justify-content: center;
