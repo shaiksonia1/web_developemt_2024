@@ -1051,21 +1051,6 @@ video{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   @media (max-width: 768px) {
     .footer-row {
       flex-direction: column;
@@ -1114,39 +1099,6 @@ video{
         margin-left: 30px;
     }
 }
-
-
-
-/* 
-@media (max-width:320px)and (min-width:375px) {
-  #nav h4{
-    display: none;
-  }
-  #page1 h1, #page1 h2 {
-    font-size:1rem;
-    padding-right: 2.5rem;
-  
-}
-#scroller h4 {
-  font-size: 2.5rem;
-  font-weight: 900;
- 
-}
-#page1 h1{
-  text-align: center;
-  padding-left: 1rem;
-  font-size: 1rem;
-}
-#page1 .aboutUs-h1  {
-  font-size: 3rem;
-}
-#page1 .page1-h1{
-  font-size: 1rem;
-
-}
-
-  
-} */
 
 
 
@@ -2301,8 +2253,3 @@ margin-left: 2rem;
     
 }
 
-
-@media (max-width: 600px) {
-
-
-}
