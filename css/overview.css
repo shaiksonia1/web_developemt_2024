@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:' sans-serif','montserrat';   
+    font-family: 'sans-serif', 'montserrat';
     color: #ffff;
 }
 
@@ -56,7 +56,7 @@ html,body{
     position: absolute;
     background-color: #191818;
     min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
 }
@@ -140,6 +140,8 @@ html,body{
 /* Hover effect for the main dropdown link */
 
 
+
+
 #nav{
     height: 100px;
     width: 100%;
@@ -210,12 +212,7 @@ html,body{
   }
 
 
-#cursor {
-    position: fixed;
-    z-index: -1;
-    background-color: #0085ff;
-    pointer-events: none;
-}
+
 #nav h4 a{
     text-decoration: none;
     text-transform: uppercase;
@@ -245,7 +242,9 @@ html,body{
         transform: translateX(-100%); /* End with complete scroll */
     }
 }
-
+.content-section{
+    display: flex;
+}
 #main2{
     position: relative;
     /* background-color: rgba(0, 0, 0, 0.37); */
@@ -272,51 +271,74 @@ html,body{
 #header h1 {
     position: absolute; 
     top: 200px; /* Moves the h1 down 500px from the top of the header */
-    left: 750px; /* Moves the h1 300px to the right */
+    left: 850px; /* Moves the h1 300px to the right */
     background-color: #191818; 
     z-index: 2; /* Ensures h1 stays on top of the image */
     font-weight: 200;
     padding: 2rem;
-    height:65vh;
-    width: 43vw;
-    /* background-color: rgba(25, 24, 24, 0.8);  */
+    height:50vh;
+    width: 40vw;
+    background-color: rgba(25, 24, 24, 0.7); 
     color: #95c11e;
     font-size: 2rem;
     letter-spacing: 1.3px;
     font-weight: 600;
     white-space: nowrap;
-    border-radius: 5px;
+    border-radius: 1rem;
     overflow: hidden;
 }
-p  {
+.header-para {
     z-index: 2; 
     position: absolute; 
     top: 300px; 
-    left: 750px;
+    left: 850px;
+    overflow: hidden;
     display: inline;
-    padding-left: 2rem;
+    padding-left: 4rem;
     margin-right: 10.1rem;
     font-weight: 200;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     letter-spacing: 1px;
     overflow: hidden;
     
 
 }
-button{
+.content-para{
+    z-index: 2; 
+    position: absolute; 
+    top: 300px; 
+    left: 850px;
+    overflow: hidden;
+    display: inline;
+    padding-left: 4rem;
+    margin-right: 10.1rem;
+    font-weight: 200;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    overflow: hidden;
+    
+
+}
+#header .btn{
     z-index: 2; 
     position: absolute;
-    top: 600px; 
-    left: 750px;
-    background: none;
+    top: 500px; 
+    background-color: #697565;
+    left: 850px;
     border: none;
-    color: #95c11e;
-    font-size: 1.5rem;
-    font-weight: 200;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
     margin-left: 15rem;
     letter-spacing: 1px;
     
 
+}
+#header .btn:hover{
+    background-color: #95c11e;
+    color: #181C14;
 }
 
 #page1 {
@@ -412,8 +434,9 @@ h1{
 }
 
 #content1 p{
-    /* background-color: #95c11e; */
+    margin-bottom: 3rem;
     font-size: 1.2rem;
+    overflow: hidden;
     
 
 }
@@ -469,7 +492,7 @@ h1{
     display: flex; /* Flexbox layout */
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center items horizontally */
-    width: 100vw; /* Full width of the viewport */
+    width: a; /* Full width of the viewport */
     margin-top: 2rem; /* Adds space between the heading and content */
     gap: 1rem;
 }
@@ -519,7 +542,7 @@ video {
     
   }
 
-h2{
+.values{
     display: flex;
     margin-left: 60rem;
     font-size: 2.4rem;
@@ -529,6 +552,15 @@ h2{
     display: inline;
     overflow: hidden;   
      z-index: 0;
+
+    
+}
+h2{
+   
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+   
 
     
 }
@@ -554,9 +586,9 @@ h2{
     position: relative;
 }
 
-h3 {
+.heading-2 {
+margin-left: 6rem;
     font-size: 3rem;
-    margin-left: 6rem;
     text-align: left;
     margin-bottom: 1rem;
     color: #ffffff;
@@ -566,7 +598,7 @@ h3 {
     position: relative;
 }
 
-h3::after {
+.heading-2::after {
     content: "";
     position: absolute;
     left: 0;
@@ -688,28 +720,113 @@ a {
   
   
   
-.btn-1{
-    margin-top: 1.5rem;
-    border: none;
-    padding: 10px;
+.content-section a .btn-1 {
+    margin-top: 1.5rem; /* Space above the button */
+    background-color: transparent; /* Initial background color */
+    padding: 0.75rem 1rem; /* Vertical and horizontal padding */
+    border: 2px solid #dddddd; /* Adding border thickness */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #95c11e; /* Text color */
+    text-align: center; /* Center text alignment */
+    position: relative; /* For positioning context */
+    display: inline-block; /* Use inline-block for block-level behavior */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1rem; /* Font size */
+    overflow: hidden; /* Hide overflow */
+    margin-top: 15rem;
+    margin-left: 11rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.content-section .btn-1:hover {
+    background-color: #95c11e; /* Background color on hover */
+    color: white; /* Text color on hover */
     cursor: pointer;
-    text-align: center;
-    left: -15rem;
-    top: -0rem;
-    position: relative;
-    display: inline;
-    white-space:nowrap;
-    font-size: 1rem;
- 
 
 }
-.btn-1:hover {
-    text-decoration: underline;
-    text-decoration-color: #95c11e;
+  .content-section1 .btn-2 {
+    margin-top: 1.5rem; /* Space above the button */
+    background-color: transparent; /* Initial background color */
+    padding: 0.75rem 1rem; /* Vertical and horizontal padding */
+    border: 2px solid #dddddd; /* Adding border thickness */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #95c11e; /* Text color */
+    text-align: center; /* Center text alignment */
+    position: relative; /* For positioning context */
+    display: inline-block; /* Use inline-block for block-level behavior */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1rem; /* Font size */
+    overflow: hidden; /* Hide overflow */
+    margin-top: 15rem;
+    margin-left: 11rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.content-section1 .btn-2:hover {
+    background-color: #95c11e; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+  .content-section2 .btn-3 {
+    margin-top: 1.5rem; /* Space above the button */
+    background-color: transparent; /* Initial background color */
+    padding: 0.75rem 1rem; /* Vertical and horizontal padding */
+    border: 2px solid #dddddd; /* Adding border thickness */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #95c11e; /* Text color */
+    text-align: center; /* Center text alignment */
+    position: relative; /* For positioning context */
+    display: inline-block; /* Use inline-block for block-level behavior */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1rem; /* Font size */
+    overflow: hidden; /* Hide overflow */
+    margin-top: 15rem;
+    margin-left: 11rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.content-section2 .btn-3:hover {
+    background-color: #95c11e; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+  .content-section3 .btn-4 {
+    margin-top: 1.5rem; /* Space above the button */
+    background-color: transparent; /* Initial background color */
+    padding: 0.75rem 1rem; /* Vertical and horizontal padding */
+    border: 2px solid #dddddd; /* Adding border thickness */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: #95c11e; /* Text color */
+    text-align: center; /* Center text alignment */
+    position: relative; /* For positioning context */
+    display: inline-block; /* Use inline-block for block-level behavior */
+    white-space: nowrap; /* Prevent text wrapping */
+    font-size: 1rem; /* Font size */
+    overflow: hidden; /* Hide overflow */
+    margin-top: 15rem;
+    margin-left: 11rem;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.content-section3 .btn-4:hover {
+    background-color: #95c11e; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+.images1 .btn-5{
+    background: none;
+    border: none;
+    padding-top: 1rem;
+    margin-left: 3rem;
+}
+.btn-5 h4{
+    color: #95c11e;
     text-underline-offset: 10px;
+    text-decoration: underline white 1px;
+    cursor: pointer;
 }
 
-
+.images1 .btn-5:hover{
+    color: #ffff;
+}
 #page4 {
     height: 100vh;
     width: 100vw;
@@ -950,7 +1067,7 @@ hr{
     transition: 0.3s;
   }
   .footer-p {
-    margin-top: 470rem;
+    margin-top: 970rem;
     font-size: 1rem;
 
   }

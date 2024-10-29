@@ -34,3 +34,14 @@ gsap.to("#main3",{
         scrub:2
     }
 })
+function toggleMenu() {
+    const navLinks = document.getElementById("navLinks");
+    const hamburger = document.getElementById("hamburger");
+  
+    // Toggle the visibility of the navigation links
+    navLinks.classList.toggle("show");
+  
+    // Toggle the "open" class on the hamburger icon to animate it
+    hamburger.classList.toggle("open");
+  }
+  
