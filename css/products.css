@@ -232,7 +232,7 @@ html,body{
 } */
 
 .image-container {
-    background-image: url('../Public/images/productlist-1.jpeg');
+    background-image: url('../Public/images/products-bg.jpg');
     background-size:cover;          /* Makes the image cover the whole screen */
     background-position: center;     /* Centers the image */
     background-repeat: no-repeat;    /* Prevents the image from repeating */
