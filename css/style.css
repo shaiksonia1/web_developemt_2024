@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* overflow-x: hidden; */
     font-family:' sans-serif','montserrat';   
     color: #ffff;
 }
@@ -12,6 +13,8 @@ html,body{
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 
 }
 
