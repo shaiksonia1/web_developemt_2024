@@ -9,6 +9,7 @@
 // });
 
 // Ensure GSAP and ScrollTrigger are loaded
+// Ensure GSAP and ScrollTrigger are loaded
 gsap.to("#nav", {
     backgroundColor: "#191818",
     height: "110px",
@@ -22,7 +23,7 @@ gsap.to("#nav", {
     }
 });
 
-gsap.to("#main3", {
+gsap.to("#main", {
     backgroundColor: "#000",
     scrollTrigger: {
         trigger: "#main",
