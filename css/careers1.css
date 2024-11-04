@@ -13,6 +13,7 @@ html,body{
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
 }
 
@@ -47,7 +48,9 @@ html,body{
     position: relative;
     display: inline-block;
 }
-
+.link1{
+  text-decoration: none;
+}
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
@@ -150,6 +153,7 @@ html,body{
     justify-content: flex-start;
     z-index: 99;
     letter-spacing: 0.5px;
+    text-decoration: none;
     padding-left: 100px;
 }
 .container {
@@ -179,7 +183,7 @@ html,body{
     
 #logo img{
     height: 5rem;
-    /* padding-right:35rem; */
+    padding-right:35rem;
     
 
 }
@@ -218,10 +222,13 @@ html,body{
     text-transform: uppercase;
     font-weight: 200;
     font-size: 1rem;
+    
 }
 #nav h4 {
     text-transform: uppercase;
     font-weight: 200;
+    text-decoration: none;
+
 }
 .image-container {
     background-image: url('../Public/images/careers3.png');
@@ -326,8 +333,8 @@ html,body{
  
 }
 .video1{
-    height: auto;
-    width: 85vw;
+    height: 100vh;
+    width: 90vw;
   
 }
 .content-3{
@@ -437,84 +444,11 @@ margin-right: 6rem;
 
 
 
-/* Navbar Styles */
-#nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  color: #fff;
-  position: fixed;
-}
 
 
 
-/* Nav links container */
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
 
 
-
-/* Hamburger Icon Styles */
-.hamburger {
-  display: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 5px;
-  transition: transform 0.4s;
-}
-
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #fff;
-  transition: 0.4s;
-}
-
-/* Hamburger animation to "X" */
-.hamburger.open .bar:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.open .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.open .bar:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    /* gap: 1rem; */
-    height: 70vh;
-    width: 80%;
-    position: absolute;
-    top: 30px;
-    right: 2rem;
-    background-color: #191818;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-}
-
-a {
-  text-decoration: none;
-}
 
 
 
@@ -708,3 +642,892 @@ a {
     color: #fff;
   }
   
+
+/* Navbar Styles */
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #fff;
+  position: fixed;
+}
+
+
+
+/* Nav links container */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+
+
+/* Hamburger Icon Styles */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  transition: transform 0.4s;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+
+/* Hamburger animation to "X" */
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    /* gap: 1rem; */
+    height: 70vh;
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    right: 2rem;
+    background-color: #191818;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+@media (min-width:250px)and (max-width:320px){
+  .image-container {
+    background-size: contain; /* Ensures the image fits within the container without cropping */
+    background-position: center;
+    height: auto; /* Set a fixed height, you can adjust this based on how much of the image you want visible */
+    width: 352vw; /* Maintain full width of the viewport */
+}
+#logo img {
+  height: 5rem;
+}
+.content-container {
+
+padding-left: 2rem;
+  height: 88vh;
+  width: auto;
+
+}
+.head{
+  font-size: 1.5rem;
+}
+.head1 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #001F3F;
+}
+.content-1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.head-1 {
+  margin-left: 2rem;
+  width: 74vw;
+  font-size: 1.3rem;
+}
+.para-1 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 80vw;
+}
+.content-2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.para-2 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.head-2 {
+  /* margin-right: 1rem; */
+  margin-left: 2rem;
+  width: 50vw;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+
+
+.video {
+  display: flex;
+  margin-top: 0rem;
+  /* height: 50vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.career-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: #0085ff;
+  text-transform: uppercase;
+  text-decoration: underline #fff 1px;
+  text-underline-offset: 1rem;
+}
+.page5 {
+  margin-top: 0rem;
+  background-color: #191818;
+  height: auto;
+  padding: 1rem;
+}
+.head-4 {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #95c11e;
+
+}
+.para-4 {
+  margin-left: 1rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .image-container {
+    background-size: contain; /* Ensures the image fits within the container without cropping */
+    background-position: center;
+    height: auto; /* Set a fixed height, you can adjust this based on how much of the image you want visible */
+    width: 352vw; /* Maintain full width of the viewport */
+}
+#logo img {
+  height: 5rem;
+}
+.content-container {
+
+padding-left: 2rem;
+  height: 88vh;
+  width: auto;
+
+}
+.head{
+  font-size: 1.5rem;
+}
+.head1 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #001F3F;
+}
+.content-1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.head-1 {
+  margin-left: 2rem;
+  width: 85vw;
+  font-size: 1.4rem;
+}
+.para-1 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 80vw;
+}
+.content-2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.para-2 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.head-2 {
+  /* margin-right: 1rem; */
+  margin-left: 2rem;
+  width: 50vw;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+
+
+.video {
+  display: flex;
+  margin-top: 0rem;
+  /* height: 50vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.career-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #0085ff;
+  text-transform: uppercase;
+  text-decoration: underline #fff 1px;
+  text-underline-offset: 1rem;
+}
+.page5 {
+  margin-top: 0rem;
+  background-color: #191818;
+  height: auto;
+  padding: 1rem;
+}
+.head-4 {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #95c11e;
+
+}
+.para-4 {
+  margin-left: 1rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+}
+
+
+
+@media (min-width:481px) and (max-width: 575px) {
+  .image-container {
+    background-size: contain; /* Ensures the image fits within the container without cropping */
+    background-position: center;
+    height: auto; /* Set a fixed height, you can adjust this based on how much of the image you want visible */
+    width: 352vw; /* Maintain full width of the viewport */
+}
+#logo img {
+  height: 5rem;
+}
+.content-container {
+
+padding-left: 2rem;
+  height: 88vh;
+  width: auto;
+
+}
+.head{
+  font-size: 1.5rem;
+}
+.head1 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #001F3F;
+}
+.content-1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.head-1 {
+  margin-left: 2rem;
+  width: 74vw;
+  font-size: 1.3rem;
+}
+.para-1 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 80vw;
+}
+.content-2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.para-2 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.head-2 {
+  /* margin-right: 1rem; */
+  margin-left: 2rem;
+  width: 50vw;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+
+
+.video {
+  display: flex;
+  margin-top: 0rem;
+  /* height: 50vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.career-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #0085ff;
+  text-transform: uppercase;
+  text-decoration: underline #fff 1px;
+  text-underline-offset: 1rem;
+}
+.page5 {
+  margin-top: 0rem;
+  background-color: #191818;
+  height: auto;
+  padding: 1rem;
+}
+.head-4 {
+  padding-top: 2rem;
+  font-size: 1.3rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #95c11e;
+
+}
+.para-4 {
+  margin-left: 1rem;
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+}
+
+/* Small devices (large phones) */
+@media (min-width: 576px) and (max-width: 767px){
+  .image-container {
+    background-size: contain; /* Ensures the image fits within the container without cropping */
+    background-position: center;
+    height: auto; /* Set a fixed height, you can adjust this based on how much of the image you want visible */
+    width: 183vw; /* Maintain full width of the viewport */
+}
+#logo img {
+  height: 5rem;
+}
+.content-container {
+
+padding-left: 2rem;
+  height: 88vh;
+  width: auto;
+
+}
+.head{
+  font-size: 3rem;
+}
+.head1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #001F3F;
+}
+.content-1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.head-1 {
+  margin-left: 2rem;
+  width: 74vw;
+  font-size: 3rem;
+}
+.para-1 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  width: 80vw;
+}
+.content-2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.para-2 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.head-2 {
+  /* margin-right: 1rem; */
+  margin-left: 2rem;
+  width: 50vw;
+  font-size: 3rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+
+
+.video {
+  display: flex;
+  margin-top: 0rem;
+  /* height: 50vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.career-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  color: #0085ff;
+  text-transform: uppercase;
+  text-decoration: underline #fff 1px;
+  text-underline-offset: 1rem;
+}
+.page5 {
+  margin-top: 0rem;
+  background-color: #191818;
+  height: auto;
+  padding: 1rem;
+}
+.head-4 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #95c11e;
+
+}
+.para-4 {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+}
+
+
+
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Nav links container */
+.nav-links {
+  gap: 1rem;
+ 
+
+}
+#nav h4 a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 0.7rem;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-decoration: none;
+  font-size: 0.7rem;
+  white-space: nowrap;
+}
+
+
+  .image-container {
+    background-size: contain; /* Ensures the image fits within the container without cropping */
+    background-position: center;
+    height: auto; /* Set a fixed height, you can adjust this based on how much of the image you want visible */
+    width: 171vw; /* Maintain full width of the viewport */
+}
+#logo img {
+  height: 5rem;
+  padding-right: 10rem;
+}
+.content-container {
+
+padding-left: 2rem;
+  height: 88vh;
+  width: auto;
+
+}
+.head{
+  font-size: 4rem;
+}
+.head1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #001F3F;
+}
+.content-1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.head-1 {
+  margin-left: 2rem;
+  width: 74vw;
+  font-size: 3rem;
+}
+.para-1 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  width: 80vw;
+}
+.content-2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.para-2 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.head-2 {
+  /* margin-right: 1rem; */
+  margin-left: 2rem;
+  width: 50vw;
+  font-size: 4rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+
+
+.video {
+  display: flex;
+  margin-top: 0rem;
+  /* height: 50vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.career-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 3.5rem;
+  color: #0085ff;
+  text-transform: uppercase;
+  text-decoration: underline #fff 1px;
+  text-underline-offset: 1rem;
+}
+.page5 {
+  margin-top: 0rem;
+  background-color: #191818;
+  height: auto;
+  padding: 1rem;
+}
+.head-4 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #95c11e;
+
+}
+.para-4 {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+}
+
+
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px)  {
+  .image-container {
+    background-size: contain; /* Ensures the image fits within the container without cropping */
+    background-position: center;
+    height: auto; /* Set a fixed height, you can adjust this based on how much of the image you want visible */
+    width: 171vw; /* Maintain full width of the viewport */
+}
+#logo img {
+  height: 5rem;
+  padding-right: 10rem;
+}
+.content-container {
+
+padding-left: 2rem;
+  height: 88vh;
+  width: auto;
+
+}
+.head{
+  font-size: 4rem;
+}
+.head1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  color: #001F3F;
+}
+.content-1 {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.head-1 {
+  margin-left: 2rem;
+  width: 74vw;
+  font-size: 3rem;
+}
+.para-1 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  width: 80vw;
+}
+.content-2 {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.para-2 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.head-2 {
+  /* margin-right: 1rem; */
+  margin-left: 2rem;
+  width: 50vw;
+  font-size: 4rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+
+
+.video {
+  display: flex;
+  margin-top: 0rem;
+  /* height: 50vh; */
+  justify-content: center;
+  align-items: center;
+}
+
+.career-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 3.5rem;
+  color: #0085ff;
+  text-transform: uppercase;
+  text-decoration: underline #fff 1px;
+  text-underline-offset: 1rem;
+}
+.page5 {
+  margin-top: 0rem;
+  background-color: #191818;
+  height: auto;
+  padding: 1rem;
+}
+.head-4 {
+  padding-top: 2rem;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #95c11e;
+
+}
+.para-4 {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+}
+
+}
+
+@media (min-width:1200px) {
+
+#logo img {
+  height: 5rem;
+  padding-right: 10rem;
+}
+.content-container {
+
+padding-left: 2rem;
+  height: 88vh;
+  width: auto;
+
+}
+.head{
+  font-size: 4rem;
+  margin-left: 3rem;
+}
+.head1 {
+  padding-top: 2rem;
+  font-size: 3rem;
+  color: #001F3F;
+  margin-left: 3rem;
+
+}
+.content-1 {
+  margin-top: 5rem;
+  display: flex;
+  margin-right: 4rem;
+  /* flex-direction: column; */
+}
+.head-1 {
+  margin-left: 2rem;
+  width: 74vw;
+  font-size: 4rem;
+}
+.para-1 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 0rem;
+  padding-top: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  width: 80vw;
+}
+.content-2 {
+  margin-top: 3rem;
+  display: flex;
+  margin-right: 4rem;
+  /* flex-direction: column; */
+}
+.para-2 {
+  /* text-align: left; */
+  margin-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+}
+
+
+.head-2 {
+  /* margin-right: 1rem; */
+  margin-right: 2rem;
+  width: 50vw;
+  font-size: 4rem;
+  margin-top: 1rem;
+  white-space: nowrap;
+}
+
+
+
+
+/* 
+.career-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: 6rem;
+  color: #0085ff;
+  text-transform: uppercase;
+  text-decoration: underline #fff 1px;
+  text-underline-offset: 1rem;
+}
+.page5 {
+  margin-top: 0rem;
+  background-color: #191818;
+  height: auto;
+  padding: 1rem;
+}
+.head-4 {
+  padding-top: 2rem;
+  font-size: 4rem;
+  margin-left: 1rem;
+  font-weight: 300;
+  color: #95c11e;
+
+}
+.para-4 {
+  margin-left: 1rem;
+  font-size: 2.3rem;
+  margin-right: 1rem;
+} */
+
+}
