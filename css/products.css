@@ -1138,10 +1138,7 @@ margin: 3rem;
 
 
   @media (min-width:250px)and (max-width:320px){
-    *{
-        /* overflow-x: hidden; */
 
-    }
     #logo img {
         height: 5rem;
         /* padding-right: 14rem; */
@@ -1585,9 +1582,7 @@ span {
     margin: 1rem;
     /* padding-bottom: 4rem; */
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -2058,9 +2053,7 @@ span {
     margin: 1rem;
     /* padding-bottom: 4rem; */
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -2108,10 +2101,7 @@ span {
   
   
   @media (min-width:481px) and (max-width: 575px) {
-    *{
-        /* overflow-x: hidden; */
 
-    }
     #logo img {
         height: 5rem;
         /* padding-right: 14rem; */
@@ -2521,9 +2511,7 @@ span {
     margin: 1rem;
     /* padding-bottom: 4rem; */
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -2570,10 +2558,7 @@ span {
 
 /* Small devices (large phones) */
 @media (min-width: 576px) and (max-width: 767px){
-    *{
-        /* overflow-x: hidden; */
 
-    }
     #logo img {
         height: 5rem;
         padding-right: 20rem;
@@ -3423,9 +3408,7 @@ span {
     margin: 1rem;
     padding-bottom: 4rem;
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -3877,9 +3860,7 @@ span {
     margin: 1rem;
     padding-bottom: 4rem;
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */

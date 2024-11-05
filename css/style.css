@@ -1108,8 +1108,291 @@ video{
 /* Extra small devices (phones) */
 
 
-@media (max-width: 575px) {
-    /* Styles for phones */
+@media (min-width:250px)and (max-width:320px){
+  #page1 h1 {
+    font-size: 1.5rem;
+    padding-right: 0;
+}
+
+
+#page1 .aboutUs-h1 {
+  font-size: 3rem;
+}
+
+#page1 .page1-h1 {
+  text-align: center;
+  font-size: 1.6rem;
+
+}
+#scroller h4 {
+  font-size: 3rem;
+}
+
+
+#about-us h1 {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  width: 68%;
+}
+.sub-head1 {
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+.sub-para {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  /* padding-top: 2rem; */
+  padding-bottom: 4rem;
+}
+#page3 #box1, #page3 #box2, #page3 #box3 {
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#page4 h1 {
+  font-size: 1.2rem;
+  
+  white-space: nowrap;
+  padding-left: 2rem;
+
+}
+.product-lists1 {
+ margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.vision {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.vision img {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 85vw;
+  height: auto;
+
+}
+.vision1 {
+  color: #95c11e;
+  text-transform: uppercase;
+  /* margin: 0; */
+  white-space: nowrap;
+  font-size: 2.4rem;
+  /* font-weight: bold; */
+  /* text-align: left; */
+}
+
+.text-content p {
+  padding-top: 3rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+
+.mission1 {
+  color: #95c11e;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+
+
+
+.text-content1 p {
+  padding-top: 0rem;
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+  margin: 3rem;
+  width: 90vw;
+  margin: 2rem;
+}
+.mission img {
+  margin-top: 0rem;
+  width: 90vw;
+  margin-left: 2rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
+.para {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.4rem;
+}
+
+
+}
+
+@media (min-width: 321px) and (max-width: 480px){
+  #page1 h1 {
+    font-size: 1.5rem;
+    padding-right: 0;
+}
+
+
+#page1 .aboutUs-h1 {
+  font-size: 3rem;
+}
+
+#page1 .page1-h1 {
+  text-align: center;
+  font-size: 1.6rem;
+
+}
+#scroller h4 {
+  font-size: 3rem;
+}
+
+
+#about-us h1 {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  width: 68%;
+}
+.sub-head1 {
+  margin-bottom: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.4rem;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+.sub-para {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  /* padding-top: 2rem; */
+  padding-bottom: 4rem;
+}
+#page3 #box1, #page3 #box2, #page3 #box3 {
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#page4 h1 {
+  font-size: 1.2rem;
+  
+  white-space: nowrap;
+  padding-left: 2rem;
+
+}
+.product-lists1 {
+ margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.vision {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.vision img {
+  margin-top: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 85vw;
+  height: auto;
+
+}
+.vision1 {
+  color: #95c11e;
+  text-transform: uppercase;
+  /* margin: 0; */
+  white-space: nowrap;
+  font-size: 2.4rem;
+  /* font-weight: bold; */
+  /* text-align: left; */
+}
+
+.text-content p {
+  padding-top: 3rem;
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+
+
+.mission1 {
+  color: #95c11e;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  font-size: 2rem;
+}
+
+
+
+
+.text-content1 p {
+  padding-top: 0rem;
+  margin-bottom: 0rem;
+  font-size: 1.3rem;
+  margin: 3rem;
+  width: 90vw;
+  margin: 2rem;
+}
+.mission img {
+  margin-top: 0rem;
+  width: 90vw;
+  margin-left: 2rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+
+.para {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.4rem;
+}
+
+
+}
+
+/* Extra small devices (phones) */
+
+
+@media (min-width:481px) and (max-width: 575px){
+  /* Styles for phones */
  
 
    .container {
