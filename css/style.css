@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
     font-family:' sans-serif','montserrat';   
     color: #ffff;
 }
@@ -14,7 +13,6 @@ html,body{
     width: 100vw;
     scroll-behavior: smooth;
     overflow-x: hidden;
-
 
 }
 
@@ -154,7 +152,7 @@ html,body{
     justify-content: flex-start;
     z-index: 99;
     letter-spacing: 0.5px;
-    padding-left: 100px;
+    padding-left: 500px;
 }
 .container {
     display: none; /* Hidden by default */
@@ -183,7 +181,7 @@ html,body{
     
 #logo img{
     height: 5rem;
-    /* padding-right:5rem; */
+    padding-right:35rem;
     
 
 }
@@ -284,7 +282,7 @@ video{
 }
 
 #page2 {
-    height: 100vh;
+    height: auto;
     width: 100%;
     z-index: 10;
     overflow: hidden; /* Ensure no scrollbars appear on page */
@@ -366,8 +364,9 @@ video{
 
 }
 #about-us img {
-  margin-top: 9rem;
-    height: 65vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+    height: 60vh;
     margin-left: 10rem;
     object-fit: contain;
     border-radius: 0.5rem;
@@ -862,7 +861,7 @@ video{
   margin-bottom: 4rem;
   letter-spacing: 0.1rem;
   font-size: 3rem;
-  margin-top: 10rem;
+  margin-top: 5rem;
   margin-left: 6rem;
   padding-top: 5rem;
 }
@@ -1054,6 +1053,21 @@ video{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media (max-width: 768px) {
     .footer-row {
       flex-direction: column;
@@ -1103,9 +1117,6 @@ video{
     }
 }
 
-
-
-/* Extra small devices (phones) */
 
 
 @media (min-width:250px)and (max-width:320px){
@@ -1198,7 +1209,7 @@ video{
   padding-top: 2rem;
   margin-bottom: 1rem;
   font-size: 1.2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .mission {
@@ -1246,6 +1257,36 @@ video{
 }
 
 
+#about-us {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  position: static;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  right: 550px;
+  height: auto;
+  font-size: 1.2rem;
+  border: none;
+  background: none;
+}
+#about-us img {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: auto;
+  margin-left: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  /* object-fit: contain; */
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.sub-head1 {
+
+  margin-top: 0;
+
+}
 }
 
 @media (min-width: 321px) and (max-width: 480px){
@@ -1253,6 +1294,7 @@ video{
     font-size: 1.5rem;
     padding-right: 0;
 }
+
 
 
 #page1 .aboutUs-h1 {
@@ -1385,7 +1427,30 @@ video{
   font-size: 1.4rem;
 }
 
-
+#about-us {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  position: static;
+  margin-top: 1rem;
+  margin-left: 9rem;
+  right: 550px;
+  height: auto;
+  font-size: 1.2rem;
+  border: none;
+  background: none;
+}
+#about-us img {
+  margin-top: 3rem;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  width: 50%;
+  /* object-fit: contain; */
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
 }
 
 /* Extra small devices (phones) */
