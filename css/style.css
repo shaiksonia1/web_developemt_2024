@@ -1491,7 +1491,17 @@ video{
   .dropdown-content, .dropdown-content1 {
     display: none; 
   }
-
+  #about-us img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: auto;
+    margin-left: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    /* object-fit: contain; */
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+  }
 
 
   #page1 h1, #page1 h2 {
@@ -1517,7 +1527,10 @@ video{
 
 }
 
-
+#about-us {
+  display: flex;
+  flex-direction: column;
+}
 #about-us h1 {
   font-size: 2rem;
   width: 100vw;
@@ -1525,13 +1538,30 @@ video{
 }
 
 
-#about-us .btn {
-  display: none;
+.btn {
+  position: relative;
+  margin-top: 1rem;
+  right: -6.5rem;
+  height: auto;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  border: none;
+  background: none;
 }
-#about-us img{
+#about-us img {
+  /* margin-top: 2rem; */
+  /* margin-bottom: 2rem; */
+  height: auto;
+  margin-left: 3rem;
+  /* margin-left: 3rem; */
+  /* margin-right: 3rem; */
+  margin: 5rem;
+  width: 60%;
+  /* object-fit: contain; */
+  /* border-radius: 0.5rem; */
+  /* transition: transform 0.3s ease-in-out; */
+}
 
-display: none;
-}
 .sub-head1{
   font-size: 1.5rem;
 }
@@ -1734,24 +1764,42 @@ display: none;
 
 }
 
-
+#about-us{
+  display: flex;
+  flex-direction: column;
+}
 #about-us h1 {
   font-size: 3rem;
   width: 100vw;
 }
-#about-us .btn{
-display: none;
-}
+
 #scroller h4 {
 font-size: 3.6rem;
 margin-top: 0;
 }
 
-#about-us img{
-
- display: none;
+.btn {
+  position:unset;
+  margin-top: 1rem;
+  right: -7rem;
+  height: auto;
+  margin-left: 6rem;
+  font-size: 1.7rem;
+  border: none;
+  background: none;
 }
-
+#about-us img {
+  /* margin-top: 5rem; */
+  /* margin-bottom: 5rem; */
+  height: auto;
+  margin: 4rem;
+  width: 33%;
+  margin-left: 7rem;
+  /* margin-left: -4rem; */
+  object-fit: contain;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
 .sub-head1{
   font-size: 2.5rem;
 }
@@ -1966,6 +2014,16 @@ margin-left: 2rem;
 }
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
+  .btn {
+    position: unset;
+    margin-top: 3rem;
+    margin-left: 27rem;
+    height: auto;
+    font-size: 1.7rem;
+    border: none;
+    white-space: nowrap;
+    background: none;
+}
      #nav h4 a{
       font-size: 0.9rem;
       white-space: nowrap;
@@ -1979,9 +2037,23 @@ margin-left: 2rem;
     padding-right: 3rem;
 }
   
+#about-us {
+  display: flex;
+  flex-direction: column;
+}
 
-
- 
+#about-us img {
+  /* margin-top: 5rem; */
+  /* margin-bottom: 5rem; */
+  height: auto;
+  width: 45%;
+  margin: 7rem;
+  margin-left: 20rem;
+  /* margin-left: 10rem; */
+  object-fit: contain;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
   
   #page1 h1, #page1 h2 {
       font-size:3rem;
@@ -2000,14 +2072,13 @@ margin-left: 2rem;
   
   }
   
-  
+
   #about-us h1 {
-    font-size: 3rem;
-    width: 100vw;
-  }
-  #about-us .btn{
-    font-size: 1rem;
-  }
+    font-size: 2.5rem;
+    padding-left: 8rem;
+    width: auto;
+}
+
   #scroller h4 {
       font-size: 3rem;
   margin-top: 0;
@@ -2015,7 +2086,6 @@ margin-left: 2rem;
   
   #about-us img{
   
-   display: none;
   }
   
   .sub-head1{
@@ -2025,8 +2095,8 @@ margin-left: 2rem;
     font-size: 1rem;
   }
   #page3 #box1, #page3 #box2, #page3 #box3 {
-      width: 70%;
-      margin-left: 6rem;
+      width: 65%;
+      margin-left: 10rem;
   }
   
   #page4{
@@ -2270,9 +2340,16 @@ margin-left: 2rem;
     font-size: 3rem;
     width: 100vw;
   }
-  #about-us .btn{
-    font-size: 1rem;
-  }
+  .btn {
+    position: relative;
+    margin-top: 25rem;
+    right: 540px;
+    height: auto;
+    white-space: nowrap;
+    font-size: 1.7rem;
+    border: none;
+    background: none;
+}
   #scroller h4 {
       font-size: 3rem;
   margin-top: 0;
@@ -2298,7 +2375,15 @@ margin-left: 2rem;
       display: flex;
       flex-direction: column;
   }
-  
+  #about-us img {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    height: 38vh;
+    margin-left: 0rem;
+    object-fit: contain;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
   
   #page4 h1{
       font-size: 2.5rem;

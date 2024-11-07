@@ -1138,7 +1138,7 @@ margin: 3rem;
 
 
   @media (min-width:250px)and (max-width:320px){
-
+  
     #logo img {
         height: 5rem;
         /* padding-right: 14rem; */
@@ -1373,12 +1373,17 @@ span {
     letter-spacing: 0.01rem;
 }
 .product-lists1 {
-    margin-left: 3rem;
-    /* margin-right: 6rem; */
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 1rem;
+}
+.list1 {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    margin: 0;
 }
 
 .para-9 {
@@ -1399,10 +1404,10 @@ span {
     /* background-color: #191818; */
 }
 .img10 {
-    margin: 1rem auto;
+    margin: 0rem;
     height: auto;
-    width: 100%;
-    margin-left: 0rem;
+    width: 150%;
+    margin-left: -2rem;
 }
 .img11{
     /* margin-top: 6rem; */
@@ -1513,6 +1518,7 @@ span {
     border-radius: 1rem;
     margin: 0rem;
     width: 100%;
+    margin-left: 0.9rem;
     height: auto;
 }
 .mahafit-images1 {
@@ -1520,7 +1526,8 @@ span {
     margin-top: 10rem;
     background-color: #191818;
     height: 100vh;
-    width: 100%;
+    width: 90vw;
+    margin-left: -4rem;
     border-radius: 1rem;
 }
 .mahafit-images-section1 {
@@ -1539,8 +1546,8 @@ span {
     justify-content: center;
     border-radius: 1rem;
     margin: 4rem;
-    margin-left: 2rem;
-    width: 80%;
+    margin-left: 0rem;
+    width: 100%;
     height: 60%;
 }
 .carousel-container {
@@ -1554,16 +1561,17 @@ span {
     justify-content: center;
     border-radius: 1rem;
     margin: 4rem;
-    width: 80%;
-    margin-left: 2rem;
-    height: 50%;
+    width: 100%;
+    margin-left: 0rem;
+    height: auto;
 }
 
 .mahafit-images2 {
     display: flex;
     background-color: #191818;
     height: 100vh;
-    width: auto;
+    width: 90vw;
+    margin-left: -4rem;
     border-radius: 1rem;
 }
 .mahafitPara {
@@ -1653,7 +1661,13 @@ span {
       .nav-links.show {
         display: flex;
       }
-
+      .list1 {
+        position: relative;
+        width: auto;
+        overflow:unset;
+        margin-left: 1rem;
+        margin-right: -3rem;
+    }
     .head {
         margin-top: 4rem;
         display: flex;
@@ -1966,9 +1980,10 @@ span {
 }
 
 #page9 {
-    height: 300vh;
+    height: auto;
     display: flex;
     flex-direction: column;
+    margin-top: 15rem;
 }
 .mahafit-img-caps {
     display: flex;
@@ -2093,7 +2108,7 @@ span {
 .carousel-container {
     position: relative;
     width: 80%;
-    margin-top: 95rem;
+    margin-top: 0rem;
     overflow: hidden;
 }
 }
@@ -2101,7 +2116,10 @@ span {
   
   
   @media (min-width:481px) and (max-width: 575px) {
+    *{
+        /* overflow-x: hidden; */
 
+    }
     #logo img {
         height: 5rem;
         /* padding-right: 14rem; */
@@ -2376,7 +2394,7 @@ span {
     color: #FABC3F;
     border-style: solid;
     border-width: 2px;
-    margin: 6rem;
+    margin: 2rem;
     padding: 1rem;
     border-color: #95c11e;
 }
@@ -2405,11 +2423,11 @@ span {
     align-items: center;
     color: #95c11e;
     font-weight: 500;
-    margin-left: 0rem;
+    margin-left: -2rem;
     margin-top: 0;
     width: auto;
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
 
 }
 .mahafit-images {
@@ -2432,17 +2450,18 @@ span {
     display: flex;
     justify-content: center;
     border-radius: 1rem;
-    margin: 4rem;
-    width: 80%;
-    height: 60%;
+    margin: 2rem;
+    width: 90%;
+    height: auto;
+
 }
 .mahafit-img-inj {
-    display: flex;
-    justify-content: center;
-    border-radius: 1rem;
-    margin: 4rem;
-    width: 80%;
-    height: 60%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* border-radius: 1rem; */
+    margin: 0rem;
+    width: 100%;
+    height: auto;
 }
 .mahafit-images1 {
     display: flex;
@@ -2464,13 +2483,13 @@ span {
     /* border-radius: 1rem; */
 }
 .mahafit-img-softgel {
-    display: flex;
-    justify-content: center;
-    border-radius: 1rem;
-    margin: 4rem;
-    margin-left: 2rem;
-    width: 80%;
-    height: 60%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* border-radius: 1rem; */
+    margin: 2rem;
+    margin-left: 0rem;
+    width: 100%;
+    height: auto;
 }
 .carousel-container {
     position: relative;
@@ -2479,15 +2498,14 @@ span {
     overflow: hidden;
 }
 .mahafit-img-syrup {
-    display: flex;
-    justify-content: center;
-    border-radius: 1rem;
-    margin: 4rem;
-    width: 80%;
-    margin-left: 2rem;
-    height: 50%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* border-radius: 1rem; */
+    margin: 2rem;
+    width: 100%;
+    margin-left: 0rem;
+    height: auto;
 }
-
 .mahafit-images2 {
     display: flex;
     background-color: #191818;
@@ -2511,7 +2529,9 @@ span {
     margin: 1rem;
     /* padding-bottom: 4rem; */
 }
-
+.mahfit-bg{
+    
+}
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -2535,11 +2555,11 @@ span {
     border-radius: 1rem;
     /* justify-content: center; */
     /* align-items: center; */
-    margin-left: 2rem;
-    margin-top: 2rem;
+    margin-left: 0rem;
+    margin-top: 0rem;
     /* margin-bottom: 4rem; */
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: auto;
 }
 .carousel-track {
     display: flex;
@@ -2550,15 +2570,32 @@ span {
 .carousel-container {
     position: relative;
     width: 80%;
-    margin-top: 95rem;
+    margin-top: 0rem;
     overflow: hidden;
 }
+.list1 {
+    position: relative;
+    width: auto;
+    overflow: unset;
+    margin-left: 1rem;
+    margin-right: -2rem;
+}
+#page9 {
+    margin-top: 15rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 }
 
 
 /* Small devices (large phones) */
 @media (min-width: 576px) and (max-width: 767px){
+    *{
+        /* overflow-x: hidden; */
 
+    }
     #logo img {
         height: 5rem;
         padding-right: 20rem;
@@ -3408,7 +3445,9 @@ span {
     margin: 1rem;
     padding-bottom: 4rem;
 }
-
+.mahfit-bg{
+    
+}
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -3860,7 +3899,9 @@ span {
     margin: 1rem;
     padding-bottom: 4rem;
 }
-
+.mahfit-bg{
+    
+}
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
