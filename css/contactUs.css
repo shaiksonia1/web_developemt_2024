@@ -325,6 +325,12 @@ html,body{
 p .linkCareer {
     text-decoration: none;
     color: #95c11e;
+    
+}
+p .linkCareer:hover {
+    text-decoration: none;
+    color: #4b6900;
+
 }
 p a {
     text-decoration: none;
@@ -353,7 +359,7 @@ p a {
   label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    font-weight: 400;
   }
   
   input,
