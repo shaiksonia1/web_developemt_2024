@@ -231,7 +231,7 @@ html,body{
 
 }
 .image-container {
-    background-image: url('../Public/images/careers3.png');
+    background-image: url('../Public/images/backgroundImg/careers3.png');
     background-repeat: no-repeat;   
     width: 100vw; /* Full viewport width */
     max-width: 100%; 
@@ -1498,36 +1498,5 @@ padding-left: 2rem;
 
 
 
-/* 
-.career-head {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2rem;
-  font-size: 6rem;
-  color: #0085ff;
-  text-transform: uppercase;
-  text-decoration: underline #fff 1px;
-  text-underline-offset: 1rem;
-}
-.page5 {
-  margin-top: 0rem;
-  background-color: #191818;
-  height: auto;
-  padding: 1rem;
-}
-.head-4 {
-  padding-top: 2rem;
-  font-size: 4rem;
-  margin-left: 1rem;
-  font-weight: 300;
-  color: #95c11e;
-
-}
-.para-4 {
-  margin-left: 1rem;
-  font-size: 2.3rem;
-  margin-right: 1rem;
-} */
 
 }
