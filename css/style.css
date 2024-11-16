@@ -1266,13 +1266,12 @@ video{
 }
 
 #about-us img {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   height: auto;
-  margin-left: 3rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
-  /* object-fit: contain; */
+  width: 70%;
+  margin-left: 0rem;
+  margin-right: 0rem;
   border-radius: 0.5rem;
   transition: transform 0.3s ease-in-out;
 }
@@ -1443,23 +1442,18 @@ video{
   display: flex;
   flex-direction: column;
 }
-.btn {
-  position: static;
-  margin-top: 1rem;
-  margin-left: 5rem;
-  right: 550px;
-  height: auto;
-  font-size: 1.2rem;
-  border: none;
-  background: none;
+#about-us .btn {
+  margin-top: 0rem;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  margin-left: 0rem;
 }
 #about-us img {
-  margin-top: 3rem;
+  margin-top: 0rem;
   height: auto;
-  margin-left: 5rem;
-  margin-right: 3rem;
-  width: 50%;
-  /* object-fit: contain; */
+  margin-left: 0rem;
+  margin-right: 0rem;
+  width: 60%;
   border-radius: 0.5rem;
   transition: transform 0.3s ease-in-out;
 }
