@@ -736,21 +736,6 @@ video{
     display: flex;
     flex-direction: column;
 }
-#page4 #boxes1 {
-    margin-top: 3rem;
-    height: 10vh;
-    width: 40vw;
-    background-color: #95c11e;
-    overflow: hidden;
-}
-
-#page4 #boxes2 {
-    margin-left: 40vw;
-    height: 10vh;
-    width: 70vw;
-    padding-left: 500px;
-    background-color: #95c11e;
-}
 
 
 #page4 h1{
