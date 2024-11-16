@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prozen - Home</title>
+  <link rel="stylesheet" href="../css/contactUs.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4f8BXBYzmAEf2dxPSNGXG2BeMvvb96TxGmG9U2UVF0xq2zZq6WEhtGJ8Zq3BAXMSe1w0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div id="nav">
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+    <div id="logo">
+      <a href="../index.html">
+        <img src="../Public/images/Prozen Logo.png" alt="Prozen Pharmaceuticals Logo" />
+      </a>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <h4><a href="../index.html">Home</a></h4>
+      <div class="dropdown">
+        <h4>Our Products</h4>
+        <div class="dropdown-content">
+          <a href="../pages/overview.html">Overview</a>
+          <a href="../pages/products.html">Products</a>
+        </div>
+      </div>
+
+      <h4><a href="../pages/careers1.html">Careers</a></h4>
+      <h4><a href="impact.html">Our Impact</a></h4>
+      <h4><a href="../pages/contactUs.html">Contact Us</a></h4>
+    </div>
+  </div>
+
+  <div id="main">
+    <div class="contactUs">
+        <div class="contactUs-content">
+          <h2 class="head">Connect with us</h2>
+          <p class="para-1">
+            Thanks for your interest. Let’s start a conversation. Tell us a bit about
+            yourself and send an inquiry to us. We’ll get back to you as soon as
+            possible.
+          </p>
+          <p class="para-2">
+            Interested in working with us? Check out our
+            <a class="linkCareer" href="../pages/careers1.html">careers</a> page.
+          </p>
+      
+          <div class="contactUs-content1">
+            <h2 class="head1">Contact</h2>
+            <p class="email">Email: <a href="mailto:prozenpharmaceuticals@gmail.com">prozenpharmaceuticals@gmail.com</a></p>
+          </div>
+        </div>
+      
+        <!-- Contact Form -->
+        <div class="contactForm">
+          <form action="mailto:prozenpharmaceuticals@gmail.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="name">Your Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your Full name" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+      
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                pattern="[0-9]{10}"
+                required
+              />
+            </div>
+      
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Type your message here..."
+                required
+              ></textarea>
+            </div>
+      
+            <div class="form-group">
+              <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="bg-image">
+        <img class="img1" src="../Public/images/careers-img.jpg" alt="BackgroundImage">
+      </div>
+
+
+      <div class="footer-container">
+        <div class="footer">
+          <div class="footer-content">
+            <div class="newsletter">
+              <h2>Subscribe to Our Newsletter</h2>
+              <div class="newsletter-form">
+                <input class="newsletter-input" placeholder="Email here" />
+                <button class="newsletter-btn">Submit</button>
+              </div>
+            </div>
+            <div class="footer-row">
+              <div class="footer-column">
+                <div class="footer-about">
+                  <h3>About Us</h3>
+
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus imperdiet, nulla a consectetur dictum, metus elit
+                    hendrerit lectus, et venenatis elit dui nec lorem.
+                  </p>
+                </div>
+              </div>
+
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Useful Links</h3>
+                  <a href="/index.html">Home</a>
+                  <a href="/pages/products.html">Products</a>
+                  <a href="/pages/overview.html">Overview</a>
+                  <a href="/pages/careers1.html">Careers</a>
+                  <a href="/contact">Contact Us</a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-links">
+                  <h3>Service Area</h3>
+                  <a href="#">Mehndipatnam</a>
+                  <a href="#">Sadia Hospitals</a>
+                  <a href="#">Jublie hills</a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <div class="footer-contact">
+                  <h3>Get In Touch</h3>
+                  <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Admin Office : T-12/308. Sion Kolivada, Mumbai-400 002
+                  </p>
+                  <p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    Regional Office: H.No : 2-1298/1/1,Mnc,Nagole-500068
+                  </p>
+                  <p>
+                    <i class="fa fa-phone" aria-hidden="true"></i> +91
+                    8008156642
+                  </p>
+                  <p><i class="fa fa-envelope"></i> abcd@example.com</p>
+                  <div class="footer-social">
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-menu">
+            <div class="f-menu">
+              <a href="#">Terms of Use</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookies</a>
+              <a href="#">Help</a>
+              <a href="#">FAQs</a>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="footer-row">
+              <div class="footer-column">
+                <p>
+                  &copy; <a href="#">Shaik Sonia Made with Dedication</a>, All
+                  Rights Reserved.
+                </p>
+              </div>
+              <div class="footer-column">
+                <p>
+                  Developed & Maintained By
+                  <a href="#">SS Technology</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <!-- GSAP for animations -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- Custom JavaScript -->
+  <script src="../js/contactUs.js"></script>
+</body>
+</html>
