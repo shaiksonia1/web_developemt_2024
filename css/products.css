@@ -847,7 +847,17 @@ span{
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
-    margin-left: 30rem;
+    margin-left: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.mahafit-img-junior{
+    display: flex;
+    border-radius: 1rem;
+    justify-content: center;
+    margin-left: 3rem;
+
+    align-items: center;
     margin-top: 4rem;
     margin-bottom: 4rem;
 }
@@ -2529,9 +2539,7 @@ span {
     margin: 1rem;
     /* padding-bottom: 4rem; */
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -3445,9 +3453,7 @@ span {
     margin: 1rem;
     padding-bottom: 4rem;
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -3899,9 +3905,7 @@ span {
     margin: 1rem;
     padding-bottom: 4rem;
 }
-.mahfit-bg{
-    
-}
+
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
