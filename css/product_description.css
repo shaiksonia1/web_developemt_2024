@@ -17,27 +17,6 @@ html,body{
 
 }
 
-#cursor {
-    height: 20px;
-    width: 20px;
-    /* background-color: #1e49c1;  */
-    border-radius: 50%;
-    position: fixed;
-    /* z-index: 100; */
-    pointer-events: none; /* Prevents the cursor from blocking clicks */
-}
-#cursor-blur {
-    height: 400px;
-    width: 400px;
-    /* background-color: #4e6bc2;  */
-    border-radius: 50%;
-    position: fixed;
-    filter: blur(190px);
-    pointer-events: none;
-    z-index: 99;
-    
-}
-
 /* Style for the dropdown container */
 .dropdown {
     position: relative;

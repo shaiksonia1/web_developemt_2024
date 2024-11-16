@@ -492,8 +492,8 @@ h1{
 }
 
 video {
-    width: 40vw; /* Full width or adjust as needed */
-    height: 100vh;
+    width: 40%; /* Full width or adjust as needed */
+    height: 65%;
     margin-top: 10rem;
     margin-left: 6.5rem;
     z-index: 3;
@@ -946,6 +946,10 @@ hr{
   /* Product Card */
   .product-card {
     border: 1px solid #ddd;
+    background: rgba(25, 24, 24, 0.6); /* Semi-transparent black for glass effect */
+    backdrop-filter: blur(10px); /* Blurs the background content */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     border-radius: 8px;
     overflow: hidden;
     text-align: center;
