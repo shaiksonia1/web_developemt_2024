@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:' sans-serif','montserrat';   
+    color: #ffff;
+}
+
+html,body{
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Style for the dropdown container */
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+.link1{
+    text-decoration: none;
+}
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #191818;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #191818;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content1 a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+
+.dropdown-content a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dropdown-content a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+
+  }
+.dropdown-content1 a:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.dropdown-content1 a:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+
+  }
+.dropdown:hover h4  {
+    color: #b2d9ff;
+}
+.dropdown1:hover h4 a {
+    color: #b2d9ff;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+/* Hover effect for the main dropdown link */
+
+
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    gap: 2.5rem;
+    justify-content: flex-start;
+    z-index: 99;
+    letter-spacing: 0.5px;
+    padding-left: 500px;
+}
+.container {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 2.5px;
+    background-color: #e8e8e8;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  
+    
+#logo img{
+    height: 5rem;
+    
+
+}
+
+#nav h4:after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: #95c11e;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+
+
+
+}
+
+#nav h4:hover:after { 
+    width: 100%; 
+    left: 0; 
+    color: #95c11e;
+
+  }
+
+
+#cursor {
+    position: fixed;
+    z-index: -1;
+    background-color: #0085ff;
+    pointer-events: none;
+}
+#nav h4 a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1rem;
+}
+#nav h4 {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+/* Navbar Styles */
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: #fff;
+    position: fixed;
+  }
+  
+  
+  
+  /* Nav links container */
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  
+  
+  /* Hamburger Icon Styles */
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    transition: transform 0.4s;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.4s;
+  }
+  
+  /* Hamburger animation to "X" */
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      /* gap: 1rem; */
+      height: 70vh;
+      width: 80%;
+      position: absolute;
+      top: 30px;
+      right: 2rem;
+      background-color: #191818;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  }
+  
+
+  .contactUs{
+    display: flex;
+    margin: 10rem;
+    background: rgba(149, 193, 30, 0.2); /* Adjust opacity for transparency */
+  border: 1px solid rgba(149, 193, 30, 0.3); /* Subtle border with similar color */
+  backdrop-filter: blur(7px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 15px; 
+  padding: 20px;
+  
+}
+.head{
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #0085ff;
+}
+.head1{
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #0085ff;
+}
+.para-1{
+    font-size: 1.2rem;
+    padding: 1rem;
+
+    
+}
+.para-2{
+    font-size: 1.2rem;
+    padding: 1rem;
+
+    
+}
+.email{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+p .linkCareer {
+    text-decoration: none;
+    color: #95c11e;
+}
+p a {
+    text-decoration: none;
+}
+
+  .contactUs-content{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    color: #95c11e;
+
+  }
+
+
+
+  .contactForm {
+    width: 45%;
+    margin: 20px auto;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .submit-btn {
+    background-color: #95c11e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+
+
+  input[type="text"] {
+    color: #000; /* Black text color */
+   
+  }
+  
+  input[type="email"] {
+    color: #000; /* Black text color */
+   
+  }
+  
+  input[type="tel"] {
+    color: #000; /* Black text color */
+   
+  }
+  
+  textarea {
+    color: #000; /* Black text color */
+   
+  }
+  
+
+  .img1 {
+    width: 100%; /* Image takes full width of its container */
+    height: 50vh; /* Fixed height of 50% viewport height */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    display: block; /* Removes unwanted spacing for inline images */
+  }
+  
+
+
+
+
+
+
+
+
+
+.footer-container {
+    background: #000000;
+    color: #4c5166;
+    padding: 45px 15px;
+  }
+  
+  .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content {
+    margin-bottom: 45px;
+  }
+  
+  .newsletter {
+    /* background: #ffffff; */
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .newsletter h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .newsletter-input {
+    height: 50px;
+    /* border: 2px solid #cdcdcd; */
+    flex: 1;
+  }
+  
+  .newsletter-btn {
+    height: 50px;
+    padding: 0 20px;
+    /* background: #ffffff; */
+    color: #95c11e;
+    /* border: 2px solid #06965c; */
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .newsletter-btn:hover {
+    background: #000000;
+    color: #fff;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .footer-about,
+  .footer-links,
+  .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  .footer-about h3,
+  .footer-links h3,
+  .footer-contact h3 {
+    margin-bottom: 20px;
+    color: #95c11e;
+    font-size: 22px;
+  }
+  
+  .footer-links a,
+  .footer-contact p {
+    margin-bottom: 10px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .footer-links a:hover,
+  .footer-contact p:hover {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    /* or 267% */
+    letter-spacing: -0.03em;
+    /* text-decoration-line: underline; */
+  
+    color: #95c11e;
+  }
+  
+  .footer-social a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #0085ff;
+  }
+  
+  .footer-social a:hover {
+    color: #dddddd;
+  }
+  
+  .footer-menu {
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .f-menu a {
+    margin: 0 15px;
+    color: #b4b7bf;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  
+  .f-menu a:hover {
+    color: #4c5166;
+  }
+  
+  .footer-copyright {
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .footer-copyright p {
+    margin: 0;
+  }
+  
+  .footer-copyright a {
+    color: #4c5166;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .footer-copyright a:hover {
+    color: #fff;
+  }
+  
+
