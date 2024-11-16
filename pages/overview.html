@@ -47,17 +47,18 @@
 
     <!-- Background -->
     <div id="header">
-      <h1>Prozen Pharmaceuticals</h1>
       <img src="../Public/images/overview-bg.jpg" alt="overview-bg" />
-      <p class="header-para">
-        We offer a wide range of innovative, high-quality healthcare products.
-        Our solutions are crafted with a focus on safety, efficacy, and
-        enhancing patient well-being. We are committed to improving lives
-        through advanced medical solutions.
-      </p>
-     <a href="#page1"> <button class="btn" >Explore More<i class="fas fa-arrow-right"></i></button></a>
+      <div class="header-content">
+        <h1>Prozen Pharmaceuticals</h1>
+        <p class="header-para">
+          We offer a wide range of innovative, high-quality healthcare products. Our solutions are crafted with a focus on safety, efficacy, and enhancing patient well-being. We are committed to improving lives through advanced medical solutions.
+        </p>
+        <a href="#page1">
+          <button class="btn1">Explore More <i class="fas fa-arrow-right"></i></button>
+        </a>
+      </div>
     </div>
-
+    
     <!-- Page 1 -->
     <div id="main2">
       <div id="page1">
@@ -161,27 +162,50 @@
 
       <div id="page3">
         <h3 class="heading-2">Our Brands</h3>
-        <div id="image-container">
-          <div class="images1">
-            <img class="img1" src="../Public/images/zikrilrange.png" alt="" />
-            <a href="../pages/ourBrands.html#zikril">
+        <div id="image-container" class="brand-section">
+          <!-- Zikril Range -->
+          <div class="brand-card">
+            <img 
+              src="../Public/images/zikrilrange.png" 
+              alt="Zikril Range" 
+              class="brand-image"
+            />
+            <a href="../pages/ourBrands.html#zikril" class="brand-link">
               <button class="btn-5">
-                  <h4>Zikril Range</h4>
+                <h4>Zikril Range</h4>
               </button>
-          </a>
-                    </div>
-          <div class="images1">
-            <img class="img1" src="../Public/images/zulmolrange.png" alt="" />
-           <a href="../pages/ourBrands.html#zulmol"> <button class="btn-5"><h4>Zulmol Range</h4></button></a>
+            </a>
           </div>
-          <div class="images1">
-            <img class="img1" src="../Public/images/zelverange.png" alt="" />
-            <a href="../pages/ourBrands.html#zelve"><button class="btn-5">
-              <h4>Zelve Range</h4>
-            </button>
-          </a>
+        
+          <!-- Zulmol Range -->
+          <div class="brand-card">
+            <img 
+              src="../Public/images/zulmolrange.png" 
+              alt="Zulmol Range" 
+              class="brand-image"
+            />
+            <a href="../pages/ourBrands.html#zulmol" class="brand-link">
+              <button class="btn-5">
+                <h4>Zulmol Range</h4>
+              </button>
+            </a>
+          </div>
+        
+          <!-- Zelve Range -->
+          <div class="brand-card">
+            <img 
+              src="../Public/images/zelverange.png" 
+              alt="Zelve Range" 
+              class="brand-image"
+            />
+            <a href="../pages/ourBrands.html#zelve" class="brand-link">
+              <button class="btn-5">
+                <h4>Zelve Range</h4>
+              </button>
+            </a>
           </div>
         </div>
+        
       </div>
 
       <div id="page4">
@@ -193,11 +217,7 @@
           Our portfolio covers a broad range of therapeutic areas, including antibiotics, anti-cough, anti-inflamatory, and multi-vitamins.
           With a commitment to addressing unmet medical needs, we focus on both formulations and specialty pharmaceuticals that improve patient outcomes.
         </h6>
-      
       </div>
-
-
-
     </div>
 
 
