@@ -244,10 +244,6 @@ html,body{
     font-weight: 200;
 }
 
-/* #main{
-    background-color: #191818;
-} */
-
 .image-container {
     background-image: url('../Public/images/backgroundImg/products-bg.jpg');
     background-size:cover;          /* Makes the image cover the whole screen */
