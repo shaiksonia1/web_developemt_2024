@@ -296,11 +296,14 @@ html,body{
 .head{
     font-size: 2.5rem;
     padding: 1rem;
+    font-weight: 500;
     color: #0085ff;
 }
 .head1{
     font-size: 2.5rem;
     padding: 1rem;
+    font-weight: 500;
+
     color: #0085ff;
 }
 .para-1{
@@ -332,6 +335,7 @@ p a {
     width: 50%;
     flex-direction: column;
     color: #95c11e;
+    
 
   }
 
@@ -372,7 +376,7 @@ p a {
   }
   
   .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: #4b6900;
   }
 
 
@@ -405,7 +409,28 @@ p a {
   }
   
 
-
+  .email {
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 5px; /* Space between the icon and text */
+  }
+  
+  .email i {
+    font-size: 1.5rem;
+    color: #dddddd; /
+  }
+  
+  .email-link {
+    color: #95c11e; /* Matches your theme */
+    text-decoration: none;
+    font-weight: 300;
+    transition: color 0.3s ease;
+  }
+  
+  .email-link:hover {
+    color: #4b6900; /* Darker green on hover */
+  }
+  
 
 
 
