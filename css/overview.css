@@ -213,29 +213,14 @@ body{
 }
 
 #nav {
-    position: fixed;  /* Makes the navbar stick to the top */
     top: 0;
     width: 100%;
-    z-index: 10; 
-    border: 2px #ffff;
 }
-@keyframes scroll {
-    from {
-        transform: translateX(0); /* Start from the original position */
-    }
-    to {
-        transform: translateX(-100%); /* End with complete scroll */
-    }
-}
+
 .content-section{
     display: flex;
 }
-#main2{
-    position: relative;
-    /* background-color: rgba(0, 0, 0, 0.37); */
-    overflow-x: hidden;
 
-}
 /* Header Section */
 #header {
     position: relative;
