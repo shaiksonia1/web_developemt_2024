@@ -730,28 +730,18 @@ video{
 }
 
 .btn-2 {
-    background:none;
-    font-size: 1.5rem;
+    background-color: #95c11e;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1.2rem;
     border: none;
-    text-decoration: underline #95c11e;
 
 }
-.btn-2 button:after{
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    background: #95c11e;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+.btn-2:hover{
+background-color: #fff;
+color: #0085ff;
 }
-.btn-2 button:hover:after{
-    width: 100%; 
-    left: 0; 
-    color: #95c11e;
-}
+
 .page7 {
     margin-top: 3rem;
     display: flex;
@@ -759,10 +749,10 @@ video{
 }
 
 .product-lists1 {
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: flex;
-    gap: 1rem; /* Space between images */
+    gap: 0.5rem; /* Space between images */
 }
 
 .list1 {
