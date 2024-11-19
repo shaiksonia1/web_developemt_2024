@@ -1502,9 +1502,8 @@ h6 {
        
     }
 
-
     #heading h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         white-space: nowrap;
     }
 
@@ -1524,12 +1523,11 @@ h6 {
             border-radius: 5px;
         }    
         .overlay-text {
-            top: 4rem;
+            top: 3rem;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: #ffffff;
-          
         }
     
         .side-para {
@@ -1610,7 +1608,7 @@ h6 {
     text-align: center;
     font-size: 1.3rem;
     font-weight: 400;
-    padding-top: 1rem;
+    padding: 2rem;
     font-size: 1.4rem;
     width: auto;
     margin-left: 0rem;
@@ -1714,7 +1712,7 @@ h6 {
 
         .heading-2 {
             margin-left: 2rem;
-            font-size: 1.3rem;
+            font-size: 2.3rem;
             text-align: left;
             margin-bottom: 0rem;
             color: #ffffff;
@@ -1738,11 +1736,11 @@ h6 {
             text-align: center;
             border-radius: 8px;
             width: 90%;
-        }h4 {
-            font-size: 1rem;
+        }   
+         h4 {
+            font-size: 1.6rem;
             font-weight: 300;
         }
-
 #page4 {
     margin-top: 50rem;
     height: auto;
@@ -1760,11 +1758,8 @@ h6 {
     text-align: center;
 }
 h6 {
-    color: #000000;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
-    padding-top: 1rem;
+
+    padding: 2rem;
     font-size: 1.4rem;
     width: auto;
     margin-left: 0rem;
@@ -1812,10 +1807,9 @@ h6 {
 
 
     #heading h1 {
-        font-size: 1.4rem;
+        font-size: 2.5rem;
         white-space: nowrap;
     }
-
         #page2 {
             display: flex;
             flex-direction: column;
@@ -1928,7 +1922,15 @@ h6 {
 }
 @media (min-width: 768px) and (max-width: 991px) {
 
+    #logo img {
+        z-index: 10;
+        width: auto;
+        padding-right: 0rem;
+    }
 
+    #logo {
+        text-align: center; /* Ensures the logo is centered */
+    }
     #header img {
         position: absolute;
         top: 0;
@@ -1963,7 +1965,7 @@ h6 {
 
 
     #heading h1 {
-        font-size: 1.4rem;
+        font-size: 3rem;
         white-space: nowrap;
     }
 
@@ -1983,12 +1985,11 @@ h6 {
             border-radius: 5px;
         }    
         .overlay-text {
-            top: 4rem;
+            top: 11rem;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 2rem;
+            font-size: 3rem;
             color: #ffffff;
-          
         }
     
         .side-para {
@@ -2010,23 +2011,16 @@ h6 {
         }
     
         .side-para ul li {
-            font-size: 1rem;
+            font-size: 1.4rem;
             margin-bottom: 0.5rem;
             line-height: 1.4;
             text-align: left;
         }
     
-
         .heading-2 {
-            margin-left: 2rem;
-            font-size: 1.3rem;
-            text-align: left;
-            margin-bottom: 0rem;
-            color: #ffffff;
-            font-weight: 400;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            position: relative;
+            margin-left: 4rem;
+            font-size: 3.3rem;
+           
         }
 
         #image-container {
@@ -2042,19 +2036,24 @@ h6 {
         .brand-card {
             text-align: center;
             border-radius: 8px;
-            width: 90%;
-        }h4 {
-            font-size: 1rem;
+            width: 80%;
+        }
+            h4 {
+            font-size: 2rem;
             font-weight: 300;
         }
-
-#page4 {
-    margin-top: 50rem;
-    height: auto;
-    width: auto;
-    background-color: #95c11e;
-    transition: background-color 0.5s ease;
-}
+        .brand-image {
+            width: 67%;
+            height: auto;
+            border-radius: 10px;
+        }
+        #page4 {
+            margin-top: 50rem;
+            height: auto;
+            width: 100%;
+            background-color: #95c11e;
+            transition: background-color 0.5s ease;
+        }
 .head1 {
     text-transform: uppercase;
     color: #0C1844;
@@ -2065,21 +2064,30 @@ h6 {
     text-align: center;
 }
 h6 {
-    color: #000000;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
-    padding-top: 1rem;
+    padding: 3rem;
     font-size: 1.4rem;
-    width: auto;
-    margin-left: 0rem;
+text-align: center;
+
+width: auto;
+margin-left: 3rem;
 }
+
+
+
 
 
 }
 @media (min-width: 992px) and (max-width: 1199px) {
 
+    #logo img {
+        z-index: 10;
+        width: auto;
+        padding-right: 0rem;
+    }
 
+    #logo {
+        text-align: center; /* Ensures the logo is centered */
+    }
     #header img {
         position: absolute;
         top: 0;
@@ -2114,7 +2122,7 @@ h6 {
 
 
     #heading h1 {
-        font-size: 1.4rem;
+        font-size: 3rem;
         white-space: nowrap;
     }
 
@@ -2134,12 +2142,11 @@ h6 {
             border-radius: 5px;
         }    
         .overlay-text {
-            top: 4rem;
+            top: 11rem;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 2rem;
+            font-size: 3rem;
             color: #ffffff;
-          
         }
     
         .side-para {
@@ -2161,23 +2168,16 @@ h6 {
         }
     
         .side-para ul li {
-            font-size: 1rem;
+            font-size: 1.4rem;
             margin-bottom: 0.5rem;
             line-height: 1.4;
             text-align: left;
         }
     
-
         .heading-2 {
-            margin-left: 2rem;
-            font-size: 1.3rem;
-            text-align: left;
-            margin-bottom: 0rem;
-            color: #ffffff;
-            font-weight: 400;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            position: relative;
+            margin-left: 4rem;
+            font-size: 3.3rem;
+           
         }
 
         #image-container {
@@ -2193,19 +2193,24 @@ h6 {
         .brand-card {
             text-align: center;
             border-radius: 8px;
-            width: 90%;
-        }h4 {
-            font-size: 1rem;
+            width: 80%;
+        }
+            h4 {
+            font-size: 2rem;
             font-weight: 300;
         }
-
-#page4 {
-    margin-top: 50rem;
-    height: auto;
-    width: auto;
-    background-color: #95c11e;
-    transition: background-color 0.5s ease;
-}
+        .brand-image {
+            width: 67%;
+            height: auto;
+            border-radius: 10px;
+        }
+        #page4 {
+            margin-top: 50rem;
+            height: auto;
+            width: 100%;
+            background-color: #95c11e;
+            transition: background-color 0.5s ease;
+        }
 .head1 {
     text-transform: uppercase;
     color: #0C1844;
@@ -2216,19 +2221,19 @@ h6 {
     text-align: center;
 }
 h6 {
-    color: #000000;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 400;
-    padding-top: 1rem;
+    padding: 3rem;
     font-size: 1.4rem;
-    width: auto;
-    margin-left: 0rem;
+text-align: center;
+
+width: auto;
+margin-left: 3rem;
 }
 
 
-}
 
+
+
+}
 
 
 @media (min-width: 1200px) {
