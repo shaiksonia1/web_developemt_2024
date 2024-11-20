@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family:' sans-serif','montserrat';   
     color: #ffffff;
-    /* background-color: #191818; */
 }
 
 html,body{
@@ -15,27 +14,6 @@ html,body{
     scroll-behavior: smooth;
     overflow-x: hidden;
 
-}
-
-#cursor {
-    height: 20px;
-    width: 20px;
-    /* background-color: #1e49c1;  */
-    border-radius: 50%;
-    position: fixed;
-    z-index: 100;
-    /* pointer-events: none; */
-}
-#cursor-blur {
-    height: 400px;
-    width: 400px;
-    /* background-color: #4e6bc2;  */
-    border-radius: 50%;
-    position: fixed;
-    filter: blur(190px);
-    pointer-events: none;
-    z-index: 99;
-    
 }
 
 /* Style for the dropdown container */
@@ -57,7 +35,7 @@ html,body{
     position: absolute;
     background-color: #191818;
     min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
 }
@@ -66,7 +44,7 @@ html,body{
     position: absolute;
     background-color: #191818;
     min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
 }
@@ -210,13 +188,6 @@ html,body{
 
   }
 
-
-#cursor {
-    position: fixed;
-    z-index: -1;
-    background-color: #0085ff;
-    pointer-events: none;
-}
 #nav h4 a{
     text-decoration: none;
     text-transform: uppercase;
@@ -231,28 +202,32 @@ html,body{
 
 }
 .image-container {
-    background-image: url('../Public/images/backgroundImg/careers3.png');
-    background-repeat: no-repeat;   
-    width: 100vw; /* Full viewport width */
-    max-width: 100%; 
+  background-image: url('../Public/images/backgroundImg/careersBg.jpg');
+  background-repeat: no-repeat;   
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the background image */
+  width: 100%; /* Full width */
+  height: 88%; /* Set a reasonable height for responsiveness */
+}
 
-}
+/* Content Container */
 .content-container {
-    display: flex;
-    flex-direction: column;        /* Stack the content in a column */
-    justify-content: center;       /* Vertically centers the content */
-    align-items: flex-start;       /* Keeps the content left-aligned */
-    padding-left: 6rem;           
-    background-color: #ffff;
-    height: 90vh;
-    width: auto;
-    background-size: contain;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: A subtle shadow for emphasis */
-    background-color: rgba(34, 34, 34, 0.4); 
+  display: flex;
+  flex-direction: column; /* Stack content in a column */
+  justify-content: center; /* Vertically center content */
+  align-items: flex-start; /* Align content to the left */
+  padding: 2rem; /* Adjust padding for spacing */
+  background-color: rgba(34, 34, 34, 0.3); /* Semi-transparent background */
+  color: #fff; /* Ensure text is readable */
+  max-width: 100%; /* Prevent overflow */
+  width: auto;
+  
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
 }
+
 .head {
     display: flex;
-    color: #001F3F;    
+    color: #fff;    
     font-size: 2rem;
     text-decoration: underline #95c11e 0.7rem ; 
     text-underline-offset: 1rem; 
@@ -264,8 +239,8 @@ html,body{
 }
 .head1{
     padding-top: 2rem;
-    font-size: 3rem;
-    color: #001F3F;
+    font-size: 2.5rem;
+    color: #ffff;
 }
 .containers{
     display: flex;
@@ -757,7 +732,6 @@ padding-left: 2rem;
 .head1 {
   padding-top: 2rem;
   font-size: 1.5rem;
-  color: #001F3F;
 }
 .content-1 {
   margin-top: 5rem;
@@ -866,7 +840,6 @@ padding-left: 2rem;
 .head1 {
   padding-top: 2rem;
   font-size: 1.5rem;
-  color: #001F3F;
 }
 .content-1 {
   margin-top: 5rem;
@@ -978,7 +951,6 @@ padding-left: 2rem;
 .head1 {
   padding-top: 2rem;
   font-size: 1.5rem;
-  color: #001F3F;
 }
 .content-1 {
   margin-top: 5rem;
@@ -1089,7 +1061,6 @@ padding-left: 2rem;
 .head1 {
   padding-top: 2rem;
   font-size: 2rem;
-  color: #001F3F;
 }
 .content-1 {
   margin-top: 5rem;
@@ -1226,7 +1197,6 @@ padding-left: 2rem;
 .head1 {
   padding-top: 2rem;
   font-size: 2rem;
-  color: #001F3F;
 }
 .content-1 {
   margin-top: 5rem;
@@ -1340,7 +1310,6 @@ padding-left: 2rem;
 .head1 {
   padding-top: 2rem;
   font-size: 2rem;
-  color: #001F3F;
 }
 .content-1 {
   margin-top: 5rem;
@@ -1424,6 +1393,12 @@ padding-left: 2rem;
   font-size: 1.3rem;
   margin-right: 1rem;
 }
+.image-container {
+  height: 88vh; /* Reduce height for smaller devices */
+  width: auto;
+  background-size: cover; /* Ensure image scaling remains consistent */
+
+}
 
 }
 
@@ -1447,7 +1422,6 @@ padding-left: 2rem;
 .head1 {
   padding-top: 2rem;
   font-size: 3rem;
-  color: #001F3F;
   margin-left: 3rem;
 
 }
@@ -1496,7 +1470,55 @@ padding-left: 2rem;
 }
 
 
+.image-container {
+  height: 88vh; /* Reduce height for smaller devices */
+  width: auto;
+  background-size: cover; /* Ensure image scaling remains consistent */
+
+}
+
+
+}
 
 
 
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .image-container {
+      height: 88vh; /* Reduce height for smaller devices */
+      width: auto;
+      background-size: cover; /* Ensure image scaling remains consistent */
+  }
+
+  .content-container {
+      padding: 1.5rem; /* Adjust padding for smaller screens */
+      align-items: center; /* Center-align content */
+      text-align: center; /* Center-align text */
+  }
+}
+
+/* Media Query for Extra Small Screens */
+@media (max-width: 480px) {
+  .image-container {
+    height: 88vh; /* Reduce height for smaller devices */
+    width: auto;
+    background-size: cover; /* Ensure image scaling remains consistent */
+
+  }
+
+  .content-container {
+      padding: 1rem; /* Further reduce padding */
+  }
+}
+@media (max-width: 1024px) {
+  .image-container {
+    height: 88vh; /* Reduce height for smaller devices */
+    width: auto;
+    background-size: cover; /* Ensure image scaling remains consistent */
+
+  }
+
+  .content-container {
+      padding: 1rem; /* Further reduce padding */
+  }
 }

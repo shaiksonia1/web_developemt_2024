@@ -19,10 +19,6 @@ html,body{
 
 
 }
-body{
-
-}
-
 
 /* Style for the dropdown container */
 .dropdown {
@@ -38,7 +34,7 @@ body{
     text-decoration: none;
 }
 /* Dropdown content (hidden by default) */
-.dropdown-content {
+.dropdown-content, .dropdown-content1 {
     display: none;
     position: absolute;
     background-color: #191818;
@@ -47,15 +43,7 @@ body{
     z-index: 1;
     border-radius: 10px;
 }
-.dropdown-content1 {
-    display: none;
-    position: absolute;
-    background-color: #191818;
-    min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-}
+
 
 /* Links inside the dropdown */
 .dropdown-content a {
@@ -303,32 +291,7 @@ body{
     color: #fff;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #header {
-      margin-top: 5rem;
-      text-align: center;
-    }
-  
-    .header-content {
-      max-width: 90%;
-      padding: 1.5rem;
-    }
-  
-    #header h1 {
-      font-size: 2rem;
-    }
-  
-    .header-para {
-      font-size: 1rem;
-    }
-  
-    .btn1 {
-      padding: 0.6rem 1rem;
-      font-size: 0.9rem;
-    }
-  }
-  
+
 .content-para{
     z-index: 2; 
     position: absolute; 
@@ -369,7 +332,6 @@ body{
     z-index: 2;
     height: 10vh; /* Set height for the heading */
     width: 100vw;
-    /* background-color: #95c11e; */
     position: relative;
     padding: 5rem;
 }
@@ -380,26 +342,10 @@ body{
     align-content: center;
 }
 
-/* .para {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #ffffff;
-    padding: 0 10px;
-    background-color: rgb(85, 118, 118); 
-    width: auto; 
-    max-width: 80%; 
-    overflow: hidden;
-    padding-left: 2rem;
-    margin-right: 50rem;
-    z-index: 2;
-
-
-} */
 h1{
     font-size: 3rem;
-    padding-left: 0;  /* Center the heading */
-    text-align: center; /* Center text */
+    padding-left: 0;  
+    text-align: center; 
     margin-bottom: 1rem; 
     color: #95c11e;
     font-weight: 400;
@@ -408,7 +354,6 @@ h1{
 }
 
 
-/* Align the content boxes */
 #content1,#content2 ,#content3,#content4 {
     display: flex;
 
@@ -1285,7 +1230,30 @@ hr{
 
 
 
-
+  @media (max-width: 991px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      /* gap: 1rem; */
+      height: 70vh;
+      width: 70%;
+      position: absolute;
+      top: 30px;
+      right: 2rem;
+      background-color : #191818;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  }
+  
 
 
   @media  (max-width:320px){
@@ -2244,42 +2212,44 @@ margin-left: 3rem;
 
 }
 
-  /* Responsive Styles */
-  @media (max-width: 991px) {
-    .hamburger {
-      display: flex;
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #header {
+      margin-top: 5rem;
+      text-align: center;
     }
   
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      /* gap: 1rem; */
-      height: 70vh;
-      width: 70%;
-      position: absolute;
-      top: 30px;
-      right: 2rem;
-      background-color : #191818;
-      padding: 1rem;
-      border-radius: 8px;
+    .header-content {
+      max-width: 90%;
+      padding: 1.5rem;
     }
   
-    .nav-links.show {
-      display: flex;
+    #header h1 {
+      font-size: 2rem;
+    }
+  
+    .header-para {
+      font-size: 1rem;
+    }
+  
+    .btn1 {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
     }
   }
   
-
-
-
-
-
-
-
-
-
-
-
 
 
 

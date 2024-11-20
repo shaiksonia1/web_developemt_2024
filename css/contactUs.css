@@ -37,7 +37,7 @@ html,body{
     position: absolute;
     background-color: #191818;
     min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
 }
@@ -46,7 +46,7 @@ html,body{
     position: absolute;
     background-color: #191818;
     min-width: 250px;
-    box-shadow: 0px 8px 16px 0px rgbsa(0, 0, 0, 0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 10px;
 }
@@ -593,3 +593,161 @@ p a {
   }
   
 
+
+
+
+
+
+
+
+  @media (max-width: 991px) {
+    .hamburger {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      /* gap: 1rem; */
+      height: 70vh;
+      width: 70%;
+      position: absolute;
+      top: 30px;
+      right: 2rem;
+      background-color : #191818;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  }
+  
+
+
+  @media  (max-width:320px){
+    .contactUs {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      margin-top: 7rem;
+     
+  }
+
+.head {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  padding: 1rem;
+  font-weight: 500;
+  color: #0085ff;
+}
+.para-1 {
+  font-size: 1rem;
+  padding: 1rem;
+}
+.para-2 {
+  font-size: 1rem;
+  padding: 1rem;
+}
+.email i {
+  font-size: 1rem;
+  color: #dddddd;
+}
+  }
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  #nav {
+      padding: 0 30px;
+  }
+  
+  .contactUs {
+      flex-direction: column;
+      align-items: center;
+      margin: 8rem 2rem;
+  }
+  
+  .contactUs-content, .contactForm {
+      width: 100%;
+  }
+  .email-link {
+    color: #95c11e;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+}
+
+@media (max-width: 768px) {
+
+  .dropdown-content, .dropdown-content1 {
+      min-width: 200px;
+  }
+  
+  .hamburger {
+      display: flex;
+  }
+  .contactUs {
+    margin: 7rem 1rem;
+    padding: 15px;
+}
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #191818;
+      padding: 1rem;
+      width: 100%;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      border-radius: 0 0 8px 8px;
+  }
+  
+  .nav-links.show {
+      display: flex;
+  }
+
+  
+  .head, .head1 {
+      font-size: 1.8rem;
+  }
+  
+  .para-1, .para-2 {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #nav {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+  }
+  #logo{
+    display: none;
+  }
+  .hamburger {
+    margin-top: 1rem;
+    margin-left: 1rem;
+      align-self: flex-start;
+  }
+  
+  .contactUs {
+      margin: 4rem 1rem;
+      padding: 10px;
+  }
+  
+  .head, .head1 {
+      font-size: 1.5rem;
+  }
+  
+  .para-1, .para-2, .email {
+      font-size: 0.9rem;
+  }
+}

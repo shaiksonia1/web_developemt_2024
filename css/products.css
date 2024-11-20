@@ -677,7 +677,17 @@ span{
 
 
 
-
+.list1 {
+    text-align: left; /* Align the list to the left */
+    padding-left: 20px;
+  }
+  
+  .list1 li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #555555;
+  }
+  
 
 
 /* General styling */
@@ -709,7 +719,7 @@ span{
 
 /* Product image */
 .product-image {
-    width: 90%;
+    width: 60%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
