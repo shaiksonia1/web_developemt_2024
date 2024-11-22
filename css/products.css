@@ -861,7 +861,6 @@ span{
     z-index: 1;
 }
 .carousel-btn:hover{
-    /* background-color: #95c11e; */
     border-radius: 10rem;
     height: 10vh;
     width: 5vw;
@@ -880,7 +879,6 @@ span{
 
 
 .footer-container {
-    /* background: #000000; */
     color: #4c5166;
     padding: 45px 15px;
   }
@@ -895,7 +893,6 @@ span{
   }
   
   .newsletter {
-    /* background: #ffffff; */
     padding: 30px;
     text-align: center;
   }
