@@ -56,88 +56,84 @@ function toggleMenu() {
     // Toggle the "open" class on the hamburger icon to animate it
     hamburger.classList.toggle("open");
   }
-  function showContent(productId) {
+
+function showContent(productId) {
     const contentArea = document.getElementById('content-area');
     
     const products = {
-        mahafitGold: {
-          title: 'Mahafit Gold',
-          image: 'images/mahafit-gold.jpg',
-          description: 'Details about Mahafit Gold...',
-        },
         zulfix100: {
           title: 'ZULFIX 100',
-          image: 'images/zulfix-100.jpg',
+          image: '../Public/images/zulfix/zulfix100.png',
           description: 'Details about ZULFIX 100...',
         },
         zulfix200: {
           title: 'ZULFIX 200',
-          image: 'images/zulfix-200.jpg',
+          image: '../Public/images/zulfix/zulfix200.png',
           description: 'Details about ZULFIX 200...',
         },
         zulfixOds: {
           title: 'ZULFIX-O DS',
-          image: 'images/zulfix-ods.jpg',
+          image: '../Public/images/zulfix/zulfix-o.png',
           description: 'Details about ZULFIX-O DS...',
         },
         zulfix_dt: {
           title: 'ZULFIX DT',
-          image: 'images/zulfix-dt.jpg',
+          image: '../Public/images/zulfix/zulfix_dt.png',
           description: 'Details about ZULFIX DT...',
         },
         zulfixo200: {
           title: 'ZULFIXO 200',
-          image: 'images/zulfixo-200.jpg',
+          image: '../Public/images/zulfix/zulfixo200.png',
           description: 'Details about ZULFIXO 200...',
         },
         zulpod100: {
           title: 'ZULPOD 100',
-          image: 'images/zulpod-100.jpg',
-          description: 'Details about ZULPOD 100...',
+          image: '../Public/images/zulpod/zulpod100.png',
+          description: 'ZULPOD 200 is a powerful antibiotic used to treat a wide range of bacterial infections. It is indicated for the treatment of conditions such as pharyngitis/tonsillitis, acute sinusitis, community-acquired pneumonia, chronic bronchitis, urinary tract infections, skin and soft tissue infections, acute otitis media, and typhoid.',
         },
         zulpodcv50: {
           title: 'ZULPOD CV 50',
-          image: 'images/zulpod-cv50.jpg',
-          description: 'Details about ZULPOD CV 50...',
+          image: '../Public/images/zulpod/zulpodcv50.png',
+          description: 'Driven by a relentless dissatisfaction with the status quo, our mission is to redefine treatments for immune diseases by delivering transformational',
         },
         zulpod200: {
           title: 'ZULPOD 200',
-          image: 'images/zulpod-200.jpg',
+          image: '../Public/images/zulpod/zulpod200.png',
           description: 'Details about ZULPOD 200...',
         },
         zulpodcv100: {
           title: 'ZULPOD CV 100',
-          image: 'images/zulpod-cv100.jpg',
+          image: '../Public/images/zulpod/zulpodcv100.png',
           description: 'Details about ZULPOD CV 100...',
         },
         zulpodcv200: {
           title: 'ZULPOD CV 200',
-          image: 'images/zulpod-cv200.jpg',
+          image: '../Public/images/zulpod/zulpodcv200.png',
           description: 'Details about ZULPOD CV 200...',
         },
         mahafit_caps: {
           title: 'Mahafit Caps',
-          image: 'images/mahafit-caps.jpg',
+          image: '../Public/images/mahafit/mahafit-caps.png',
           description: 'Details about Mahafit Caps...',
         },
         mahafit_gold_injection: {
           title: 'Mahafit Gold Injection',
-          image: 'images/mahafit-gold-injection.jpg',
+          image: '../Public/images/mahafit/mahafit-gold-injection.png',
           description: 'Details about Mahafit Gold Injection...',
         },
         mahafit_gold_softgel: {
           title: 'Mahafit Gold Softgel',
-          image: 'images/mahafit-gold-softgel.jpg',
+          image: '../Public/images/mahafit/mahafit-gold-softgel.png',
           description: 'Details about Mahafit Gold Softgel...',
         },
         mahafit_syrup: {
           title: 'Mahafit Syrup',
-          image: 'images/mahafit-syrup.jpg',
+          image: '../Public/images/mahafit/mahafit-syrup.png',
           description: 'Details about Mahafit Syrup...',
         },
         mahafit_women: {
           title: 'Mahafit Women',
-          image: 'images/mahafit-women.jpg',
+          image: '../Public/images/mahafit/mahafit-women.png',
           description: 'Details about Mahafit Women...',
         },
       };
@@ -147,7 +143,6 @@ function toggleMenu() {
     if (product) {
       contentArea.innerHTML = `
         <div class="product-section active">
-          <h2>${product.title}</h2>
           <img src="${product.image}" alt="${product.title}">
           <p>${product.description}</p>
         </div>
@@ -155,3 +150,6 @@ function toggleMenu() {
     }
   }
   
+//   <h2>${product.title}</h2>
+// Set the current year dynamically
+document.getElementById("year").textContent = new Date().getFullYear();
