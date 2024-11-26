@@ -38,3 +38,5 @@ function toggleMenu() {
     // Toggle the "open" class on the hamburger icon to animate it
     hamburger.classList.toggle("open");
   }
+
+  document.getElementById("year").textContent = new Date().getFullYear();

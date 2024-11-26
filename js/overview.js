@@ -42,3 +42,5 @@ function toggleMenu() {
     hamburger.classList.toggle("open");
   }
   
+  // Set the current year dynamically
+document.getElementById("year").textContent = new Date().getFullYear();

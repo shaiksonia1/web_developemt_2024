@@ -71,3 +71,5 @@ prevButton.addEventListener('click', () => {
 
 // Initial slide display
 showSlide(currentSlideIndex);
+
+document.getElementById("year").textContent = new Date().getFullYear();

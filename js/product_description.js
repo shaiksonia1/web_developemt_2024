@@ -37,3 +37,4 @@ function toggleMenu() {
     hamburger.classList.toggle("open");
   }
   
+  document.getElementById("year").textContent = new Date().getFullYear();

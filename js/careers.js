@@ -37,3 +37,5 @@ function toggleMenu() {
   }
   
   
+
+  document.getElementById("year").textContent = new Date().getFullYear();

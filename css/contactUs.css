@@ -554,44 +554,69 @@ p a {
     color: #dddddd;
   }
   
+  .footer-column1 {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .footer-column1 p {
+    margin: 0;
+    display: flex; /* Arrange content in a single row */
+    align-items: center; /* Vertically center the content */
+    flex-wrap: nowrap; /* Prevent wrapping of content */
+    color: white; /* Ensure the text color is readable */
+  }
+
+  #year {
+    color: white;
+    font-size: 1rem;
+    width: auto;
+    /* padding-bottom: 0.4rem; */
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+
   .footer-menu {
     text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* padding: 10px 0; */
+    /* border-top: 1px solid rgba(255, 255, 255, 0.1); */
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
   }
   
   .f-menu a {
     margin: 0 15px;
-    color: #b4b7bf;
+    color: white;
     text-decoration: none;
     text-transform: capitalize;
   }
   
   .f-menu a:hover {
-    color: #4c5166;
+    color: #95c11e;
   }
   
   .footer-copyright {
     text-align: center;
-    padding: 30px 15px;
+    padding: 10px 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-  }
+}
   
   .footer-copyright p {
     margin: 0;
+
   }
   
   .footer-copyright a {
-    color: #4c5166;
+    color: white;
     text-decoration: none;
     font-weight: 500;
   }
   
   .footer-copyright a:hover {
-    color: #fff;
+    color: #95c11e;
   }
-  
+
+
 
 
 
