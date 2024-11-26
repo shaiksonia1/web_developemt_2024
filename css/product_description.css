@@ -347,7 +347,22 @@ html,body{
     padding: 6rem;
 }
 
+.btn-1 {
+  font-size: 1rem;
+  background-color: #95c11e;
+  padding: 1rem;
+  /* color: #95c11e; */
+  /* background: transparent; */
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 1rem;
+}
 
+.btn-1:hover {
+  color: #95c11e;
+  background-color: white;
+}
 
 
 
