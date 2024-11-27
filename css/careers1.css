@@ -161,6 +161,7 @@ html,body{
     
 #logo img{
     height: 5rem;
+    padding-right: 0rem;
     
 
 }
@@ -1384,7 +1385,7 @@ padding-left: 2rem;
 }
 #logo img {
   height: 5rem;
-  padding-right: 10rem;
+  padding-right: 0rem;
 }
 .content-container {
 
@@ -1495,7 +1496,7 @@ padding-left: 2rem;
 
 #logo img {
   height: 5rem;
-  padding-right: 10rem;
+  /* padding-right: 10rem; */
 }
 .content-container {
 
