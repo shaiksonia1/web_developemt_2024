@@ -441,7 +441,7 @@ margin-right: 6rem;
 }
 
 .intro-section p {
-  font-size: 1.6em;
+  font-size:2em;
   margin-top: 10px;
 }
 
@@ -478,7 +478,7 @@ margin-right: 6rem;
 }
 
 .btn:hover {
-  background-color: #45a049;
+  background-color: #0085ff;
 }
 
 

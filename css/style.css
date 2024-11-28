@@ -772,7 +772,7 @@ color: #0085ff;
     right: 0;
     bottom: 0;
     opacity: 0; /* Initially hidden */
-    background-color: rgba(0, 0, 0, 0.37); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
     transition: opacity 0.3s ease; /* Smooth transition */
 }
 
