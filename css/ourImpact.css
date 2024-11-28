@@ -9,6 +9,7 @@
 }
 
 html,body{
+  background-color: #191818;
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
@@ -201,11 +202,132 @@ html,body{
 
 }
 
+#sub-section{
+  background-color: #191818;
+  
+}
+.sub-head1{
+  margin-bottom: 4rem;
+  letter-spacing: 0.1rem;
+  font-size: 3rem;
+  margin-top: 5rem;
+  margin-left: 6rem;
+  padding-top: 5rem;
+}
+.logo-head{
+  color: #95c11e;
+  text-transform: uppercase;
+}
+.logo-head1{
+  color: #0085ff;
+  text-transform: uppercase;
+}
+.sub-para{
+  margin-left: 6rem;
+  margin-right: 6rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+
+}
 
 
+#section {
+  margin-top: 10rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* background-color: #191818; */
+  padding: 1rem;
+}
+.vision {
+  display: flex;
+  gap: 7rem; /* Space between image and text */
+}
+
+.vision img {
+  margin-top: 5rem;
+  width: 30rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.text-content {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 10rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 40rem;
+}
+
+.text-content p {
+
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.vision1 {
+  color: #95c11e;
+  text-transform: uppercase;
+  margin: 0;
+  white-space:nowrap ;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+#section1 {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  /* background-color: #191818; */
+  padding: 1rem;
+}
+.mission img {
+  margin-top: 5rem;
+
+  width: 35rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+}
 
 
+.mission {
+  display: flex;
+  gap: 10rem; /* Space between image and text */
+}
+.text-content1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 15rem;
 
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 40rem;
+}
+
+.text-content1 p {
+  padding-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.mission1 {
+  color: #95c11e;
+  text-transform: uppercase;
+  margin: 0;
+  white-space:nowrap ;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: left;
+}
 
 
 
