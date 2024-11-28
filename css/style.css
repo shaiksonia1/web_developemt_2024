@@ -509,7 +509,7 @@ video{
   }
   
   #page3 {
-    margin-top: 20rem;
+    margin-top: 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -801,7 +801,7 @@ color: #0085ff;
     justify-content: center;
     text-align: center;
     margin: 6rem;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     
 
 }

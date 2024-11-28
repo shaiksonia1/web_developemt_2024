@@ -209,10 +209,8 @@ html,body{
 .sub-head1{
   margin-bottom: 4rem;
   letter-spacing: 0.1rem;
-  font-size: 3rem;
-  margin-top: 5rem;
-  margin-left: 6rem;
-  padding-top: 5rem;
+  font-size: 2.5rem;
+  white-space: nowrap;
 }
 .logo-head{
   color: #95c11e;
@@ -223,116 +221,76 @@ html,body{
   text-transform: uppercase;
 }
 .sub-para{
-  margin-left: 6rem;
-  margin-right: 6rem;
-  font-size: 1.5rem;
+
+  font-size: 1.1rem;
   letter-spacing: 0.1rem;
-  padding-top: 2rem;
-  padding-bottom: 4rem;
+  padding: 4rem;
+  padding-top: 1rem;
 
-}
-
-
-#section {
-  margin-top: 10rem;
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  /* background-color: #191818; */
-  padding: 1rem;
-}
-.vision {
-  display: flex;
-  gap: 7rem; /* Space between image and text */
-}
-
-.vision img {
-  margin-top: 5rem;
-  width: 30rem;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-.text-content {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-top: 10rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 40rem;
-}
-
-.text-content p {
-
-  padding-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-.vision1 {
-  color: #95c11e;
-  text-transform: uppercase;
-  margin: 0;
-  white-space:nowrap ;
-  font-size: 4rem;
-  font-weight: bold;
   text-align: left;
+
 }
 
-#section1 {
+
+img{
+  width: 100%; /* Image takes full width of its container */
+  height: 50vh; /* Fixed height of 50% viewport height */
+  object-fit: cover; /* Ensures the image fits without distortion */
+  display: block; /* Removes unwanted spacing for inline images */
+}
+/* About Us Section */
+.aboutUs {
   display: flex;
-  justify-content:center;
-  align-items: center;
-  /* background-color: #191818; */
-  padding: 1rem;
-}
-.mission img {
-  margin-top: 5rem;
-
-  width: 35rem;
-  height: auto;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-
-
-.mission {
-  display: flex;
-  gap: 10rem; /* Space between image and text */
-}
-.text-content1 {
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  /* background-color: #95c11e; */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 5rem;
+}
+.aboutUs1 {
   display: flex;
-  margin-top: 15rem;
-
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 40rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin-top: 5rem;
 }
 
-.text-content1 p {
-  padding-top: 2rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
+.aboutUs-Sub {
+  padding: 20px;
 }
 
-.mission1 {
+.head {
+  font-size: 2.5rem;
   color: #95c11e;
-  text-transform: uppercase;
-  margin: 0;
-  white-space:nowrap ;
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: left;
+  margin-bottom: 20px;
 }
 
+.para1, .para2 {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
 
-
-
-
+/* Optional: Hover effect for a subtle animation */
+.aboutUs:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
+.aboutUs1:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease-in-out;
+}
 
 
 
