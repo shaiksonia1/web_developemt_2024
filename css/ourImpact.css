@@ -160,12 +160,15 @@ html,body{
   }
   
     
-#logo img{
-    height: 5rem;
-    padding-right: 0rem;
-    
 
-}
+  
+  #logo img {
+    width: 150px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+
+
 
 #nav h4:after{
     background: none repeat scroll 0 0 transparent;
@@ -593,5 +596,3 @@ img{
 
 
 
-
-  
