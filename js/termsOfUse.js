@@ -24,3 +24,5 @@ gsap.to("#main",{
         scrub:2
     }
 })
+
+document.getElementById("year").textContent = new Date().getFullYear();
