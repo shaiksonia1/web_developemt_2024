@@ -276,7 +276,7 @@ html,body{
     margin-left: 6rem;
     padding-right: 3rem;
     padding-top: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1rem;
     width: 50vw;
 
@@ -295,7 +295,7 @@ html,body{
     text-align: left;
     margin-left: 6rem;
     padding-right: 4rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1rem;
 
 }
@@ -1515,40 +1515,6 @@ padding-left: 2rem;
   margin-left: 3rem;
 
 }
-.content-1 {
-  margin-top: 5rem;
-  display: flex;
-  margin-right: 4rem;
-  /* flex-direction: column; */
-}
-.head-1 {
-  margin-left: 2rem;
-  width: 74vw;
-  font-size: 4rem;
-}
-.para-1 {
-  /* text-align: left; */
-  margin-left: 2rem;
-  padding-right: 0rem;
-  padding-top: 1rem;
-  font-size: 1.7rem;
-  letter-spacing: 0.1rem;
-  width: 80vw;
-}
-.content-2 {
-  margin-top: 3rem;
-  display: flex;
-  margin-right: 4rem;
-  /* flex-direction: column; */
-}
-.para-2 {
-  /* text-align: left; */
-  margin-left: 2rem;
-  padding-right: 2rem;
-  font-size: 1.7rem;
-  letter-spacing: 0.1rem;
-}
-
 
 .head-2 {
   /* margin-right: 1rem; */

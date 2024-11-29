@@ -291,11 +291,11 @@ html,body{
 
 }
 .para1{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1rem;
 }
 .para2{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1rem;
 }
 .page3{
@@ -312,7 +312,7 @@ height: auto;
 }
 .container_page3{
     display: flex;
-    height: 75vh;
+    height: 65vh;
     width: 90vw;
     background-color: rgba(34, 34, 34, 0.6); 
     margin-left: 6rem;
@@ -361,7 +361,7 @@ span{
     display: flex;
     width: 50vw;
     padding-right: 4rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 
     
 }
@@ -377,7 +377,7 @@ span{
     margin-left: 6rem;
     margin-right: 6rem;
     height: auto;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 .para-7{
     padding: 2rem;
@@ -418,8 +418,9 @@ span{
     padding-top: 2rem;
     display: flex;
     margin-left: 6rem;
-    font-size: 1.2rem;  
+    font-size: 1.1rem;  
     margin-right: 4rem;
+    line-height: 1.6rem;
     letter-spacing: 0.01rem;
 
 }
@@ -607,7 +608,7 @@ span{
     text-align:left;
     padding-left: 5rem;
     margin-right: 3rem;
-    font-size: 1.5rem;  
+    font-size: 1.1rem;  
     letter-spacing: 0.01rem;
 }
 .para-12{
@@ -617,7 +618,7 @@ span{
     text-align:left;
     padding-left: 5rem;
     margin-right: 3rem;
-    font-size: 1.5rem;  
+    font-size: 1.1rem;  
     letter-spacing: 0.01rem;
 }
 .page7 {
@@ -663,7 +664,7 @@ span{
     left: 50%;
     transform: translate(-50%, -50%); /* Center text */
     color: white; /* White text color */
-    font-size: 1.3rem; /* Font size */
+    font-size: 1.1rem; /* Font size */
     opacity: 0; /* Hidden by default */
     transition: opacity 0.3s ease; /* Smooth transition */
 }
@@ -802,13 +803,13 @@ span{
   }
   
   .product-card h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #95c11e;
     margin-bottom: 10px;
   }
   
   .product-card p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6;
   }
   
