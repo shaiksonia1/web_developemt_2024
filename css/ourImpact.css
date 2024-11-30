@@ -276,10 +276,11 @@ img{
 }
 
 .head {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #95c11e;
   margin-bottom: 20px;
 }
+
 
 .para1, .para2 {
   font-size: 1.1rem;
@@ -296,12 +297,19 @@ img{
   transform: scale(1.02);
   transition: all 0.3s ease-in-out;
 }
-
-
-
-
-
-
+.btn{
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 1rem;
+  padding: 1rem;
+ 
+  background-color: #0085ff;
+color: wheat;
+}
+.btn:hover{
+  color: #000000;
+  background-color: #95c11e;
+}
 
 
 
