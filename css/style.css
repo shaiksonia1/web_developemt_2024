@@ -295,10 +295,10 @@ video{
 
 @keyframes scroll {
     from {
-        transform: translateX(0); /* Start from the original position */
+        transform: translateX(0); 
     }
     to {
-        transform: translateX(-100%); /* End with complete scroll */
+        transform: translateX(-100%); 
     }
 }
 /* About Us Section */
