@@ -563,10 +563,27 @@ color: wheat;
 
 
 
+@media (min-width:481px) and (max-width: 575px){
 
+  
+  .head {
+    font-size: 1.6rem;
+    color: #95c11e;
+    margin-bottom: 20px;
+  }
+  
+  
+  .para1, .para2 {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+  }
+  
 
+  
+  
 
-
+}
 
 
 
