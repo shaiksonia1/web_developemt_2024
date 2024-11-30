@@ -10,7 +10,7 @@
 
 html,body{
     /* background-color: #000; */
-
+overflow-x: hidden;
     height: 100vh;
     width: 100vw;
     scroll-behavior: smooth;
@@ -566,3 +566,139 @@ html,body{
   }
 
 
+  /* Base styles */
+#zulfix {
+  padding: 10rem 6rem;
+}
+
+.desc1 {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+}
+
+#zikril-ls, #mahafit-gold, #mahafit-women, #boltsp {
+  padding: 6rem;
+}
+
+.btn-1 {
+  font-size: 1rem;
+  background-color: #95c11e;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.btn-1:hover {
+  color: #95c11e;
+  background-color: white;
+}
+
+/* Responsive adjustments */
+
+/* For large desktops (above 1200px) */
+@media (max-width: 1200px) {
+  #zulfix, #zikril-ls, #mahafit-gold, #mahafit-women, #boltsp,#bolt-th  {
+      padding: 8rem 5rem; /* Adjusted padding for large screens */
+  }
+
+  .desc1 {
+      font-size: 1.15rem; /* Slightly adjusted font size for large screens */
+  }
+  #zulpodCv {
+    /* background-color: #191818; */
+    padding: 9rem 3rem;
+}
+  .btn-1 {
+      font-size: 1.05rem; /* Slightly larger button font size */
+      padding: 1.1rem; /* Slightly larger padding */
+      margin: 1rem; /* Same margin */
+  }
+}
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  #zulfix, #zikril-ls, #mahafit-gold, #mahafit-women, #boltsp,#bolt-th  {
+      padding: 5rem 3rem; /* Reduced padding for tablet size */
+  }
+  .head1{
+    white-space: nowrap;
+    font-size: 1.4rem;
+  }
+  .head2{
+    font-size: 1.2rem;
+  }
+    .desc1 {
+        font-size: 1rem; /* Further reduced font size for mobile */
+    }
+    .description1{
+      width: 100%;
+    }
+  .desc1 {
+      font-size: 1.1rem; /* Adjusted font size for better readability */
+  }
+#zulpodCv {
+    /* background-color: #191818; */
+    padding: 9rem 3rem;
+}
+  .btn-1 {
+      font-size: 0.95rem; /* Slightly smaller font size for buttons */
+      padding: 0.9rem; /* Reduced padding for buttons */
+      margin: 0.9rem; /* Slightly reduced margin */
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  #zulfix, #zikril-ls, #mahafit-gold, #mahafit-women, #boltsp, #bolt-th {
+      padding: 3rem 1.5rem; /* Further reduced padding for mobile */
+  }
+.head1{
+  white-space: nowrap;
+  font-size: 1.4rem;
+}
+.head2{
+  font-size: 1.2rem;
+}
+  .desc1 {
+      font-size: 1rem; /* Further reduced font size for mobile */
+  }
+  .description1{
+    width: 100%;
+  }
+  #zulpodCv {
+    /* background-color: #191818; */
+    padding: 8rem 2rem;
+}
+
+  .btn-1 {
+      font-size: 0.85rem; /* Further reduced button text size */
+      padding: 0.7rem; /* More compact button padding */
+      margin: 0.7rem; /* Reduced button margin */
+  }
+}
+
+/* For very small mobile screens (max-width: 320px) */
+@media (max-width: 320px) {
+  #zulfix, #zikril-ls, #mahafit-gold, #mahafit-women, #boltsp {
+      padding: 2rem 1rem; /* Compact padding for very small screens */
+  }
+  .head1{
+    font-size: 1.2rem;
+  }
+  .head2{
+    font-size: 1rem;
+  }
+
+  .desc1 {
+      font-size: 0.9rem; /* Optimized font size for small screens */
+  }
+
+  .btn-1 {
+      font-size: 0.8rem; /* Further smaller button font size */
+      padding: 0.6rem; /* Reduced padding */
+      margin: 0.6rem; /* Reduced margin */
+  }
+}
