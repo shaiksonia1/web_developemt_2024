@@ -1253,9 +1253,8 @@ display: none;
   font-size: 3rem;
 }
 
-
 #about-us h1 {
-  padding-left: 5rem;
+  padding-left: 3rem;
   font-size: 1.5rem;
   width: 87%;
 }
@@ -1445,12 +1444,11 @@ display: none;
 #about-us h1 {
   font-size: 2rem;
   width: 100vw;
-  padding-right: 2rem;
+  padding-right: 0rem;
 }
 
-
 .btn {
-  position: relative;
+  position: unset;
   margin-top: 1rem;
   right: -6.5rem;
   height: auto;
