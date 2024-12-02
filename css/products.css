@@ -1944,12 +1944,12 @@ span {
     letter-spacing: 0.01rem;
 }
 .product-lists1 {
-    margin-left: 3rem;
-    /* margin-right: 6rem; */
+    margin-left: 1rem; /* Left margin for spacing */
+    margin-right: 6rem; /* Right margin for spacing */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
+    flex-direction: column; /* Ensure items are stacked by default */
+    justify-content: center; /* Center items vertically */
+    gap: 1rem; /* Uniform spacing between items */
 }
 .para-9 {
     padding-top: 2rem;
@@ -2039,8 +2039,20 @@ span {
     /* display: inline; */
     font-weight: 300;
 }
-.mahafit-title {
+.mahafit-intro {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #95c11e;
+    padding: 16px;
+    width: auto;
+    margin: 3rem auto;
+    white-space: unset;
+}
+.mahafit-title {
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     color: #95c11e;
@@ -2048,9 +2060,8 @@ span {
     margin-left: 0rem;
     margin-top: 0;
     width: auto;
-    text-align: left;
+    text-align: center;
     font-size: 0.7rem;
-
 }
 .mahafit-images {
     display: flex;
