@@ -969,16 +969,15 @@ hr{
       margin-left: 1rem;
   }
   .slide img {
-      width: 36%;
-      height: auto;
-      margin-right: 1rem;
-      margin-left: 1rem;
-  }
-  
-  .arrow.right {
-    position: absolute;
-    right: 81px;
-    top: 75px;
+    width: 30%;
+    height: auto;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.arrow.right {
+  position: absolute;
+  right: 45px;
+  top: 58px;
 }
 
   .zulmol-section {
