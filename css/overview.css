@@ -1224,6 +1224,7 @@ hr{
 
 
 
+
   @media (max-width: 991px) {
     .hamburger {
       display: flex;
@@ -1246,6 +1247,20 @@ hr{
     .nav-links.show {
       display: flex;
     }
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      /* gap: 1rem; */
+      height: 70vh;
+      width: 80%;
+      position: absolute;
+      top: 30px;
+      right: 2rem;
+      background-color: #191818;
+      padding: 1rem;
+      border-radius: 8px;
+  }
+
   }
   
 

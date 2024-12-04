@@ -407,46 +407,6 @@ overflow-x: hidden;
   .footer-content {
     margin-bottom: 45px;
   }
-  
-  .newsletter {
-    /* background: #ffffff; */
-    padding: 30px;
-    text-align: center;
-  }
-  
-  .newsletter h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
-  }
-  
-  .newsletter-form {
-    max-width: 400px;
-    margin: 0 auto;
-    display: flex;
-    gap: 5px;
-  }
-  
-  .newsletter-input {
-    height: 50px;
-    /* border: 2px solid #cdcdcd; */
-    flex: 1;
-  }
-  
-  .newsletter-btn {
-    height: 50px;
-    padding: 0 20px;
-    /* background: #ffffff; */
-    color: #95c11e;
-    /* border: 2px solid #06965c; */
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  .newsletter-btn:hover {
-    background: #000000;
-    color: #fff;
-  }
-  
   .footer-row {
     display: flex;
     flex-wrap: wrap;
@@ -701,4 +661,43 @@ overflow-x: hidden;
       padding: 0.6rem; /* Reduced padding */
       margin: 0.6rem; /* Reduced margin */
   }
+}
+
+
+@media (max-width: 991px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    /* gap: 1rem; */
+    height: 70vh;
+    width: 70%;
+    position: absolute;
+    top: 30px;
+    right: 2rem;
+    background-color : #191818;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    /* gap: 1rem; */
+    height: 70vh;
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    right: 2rem;
+    background-color: #191818;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
 }
