@@ -1243,26 +1243,30 @@ padding-left: 2rem;
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
   /* Nav links container */
-.nav-links {
-  gap: 1rem;
- 
+  .hamburger {
+    display: flex;
+  }
 
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    /* gap: 1rem; */
+    height: 70vh;
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    right: 2rem;
+    background-color: #191818;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  #logo img {
+    height: 5rem;
+    padding-right: 0rem;
 }
-#nav h4 a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 200;
-  font-size: 0.7rem;
-}
-
-#nav h4 {
-  text-transform: uppercase;
-  font-weight: 200;
-  text-decoration: none;
-  font-size: 0.7rem;
-  white-space: nowrap;
-}
-
+  .nav-links.show {
+    display: flex;
+  }
 
   .image-container {
     background-size: contain; /* Ensures the image fits within the container without cropping */
@@ -1270,10 +1274,7 @@ padding-left: 2rem;
     height: auto; /* Set a fixed height, you can adjust this based on how much of the image you want visible */
     width: 171vw; /* Maintain full width of the viewport */
 }
-#logo img {
-  height: 5rem;
-  padding-right: 10rem;
-}
+
 .content-container {
 
 padding-left: 2rem;

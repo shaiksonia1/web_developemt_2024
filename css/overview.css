@@ -1254,9 +1254,9 @@ hr{
 
     #logo img {
         z-index: 10; /* Keep z-index */
-        height: 3rem; /* Reduce height for smaller screens */
-        width: 30vw; /* Adjust width for proper scaling */
-        padding-right: 1rem; /* Reduce padding to avoid overflowing */
+        height: 5rem; /* Reduce height for smaller screens */
+        width: 37vw; /* Adjust width for proper scaling */
+        padding-right: 0rem; /* Reduce padding to avoid overflowing */
     }
     #logo {
         text-align: center; /* Ensures the logo is centered */
@@ -1582,7 +1582,11 @@ h6 {
 
 
 @media (min-width:481px) and (max-width: 575px) {
-
+    #logo img {
+        height: 5rem;
+        width: auto;
+        padding-right: 0rem;
+    }
 
     #header img {
         position: absolute;
@@ -1735,6 +1739,11 @@ h6 {
 @media (min-width: 576px) and (max-width: 767px) {
 
 
+    #logo img {
+        height: 5rem;
+        width: auto;
+        padding-right: 0rem;
+    }
     #header img {
         position: absolute;
         top: 0;
