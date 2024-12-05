@@ -1261,7 +1261,7 @@ span{
         white-space: nowrap;
         display: flex;
         flex-direction: row;
-        margin-left: -50px;
+        margin-left: -15px;
         font-size: 1rem;
         color: #0085ff;
         width: 50vw;
@@ -1274,6 +1274,9 @@ span{
         margin-top: 2rem;
      
         
+    }
+    .next {
+        right: 30px;
     }
     .products-list3{
 
@@ -1561,7 +1564,7 @@ span {
     font-weight: 300;
 }
 .mahafit-title {
-    display: flex;
+    display: unset;
     justify-content: center;
     align-items: center;
     color: #95c11e;
@@ -1583,9 +1586,46 @@ span {
     margin: 2rem;
     gap: 0.5rem;
 }
+.mahafit-intro {
+    display: unset;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #95c11e;
+    padding: 20px;
+    width: 90%;
+    margin: 3rem auto;
+    white-space: nowrap;
+}
 
+.mahafit-subtitle {
+    /* display: block; */
+    font-size: 0.4rem;
+    color: #95c11e;
+    margin-top: 5px;
+    width: 41%;
+}
+
+    span {
+        /* margin-top: 1rem; */
+        padding-left: 1rem;
+        display: flex;
+        margin-left: 0;
+        /* width: 28vw; */
+        color: #95c11e;
+        /* font-size: 1.5rem; */
+    }
+.product-title{
+    font-size: 1.5rem;
+    color: #95c11e;
+    margin-bottom: 10px;
+}
+.product-card h3 {
+    font-size: 1.5rem;
+    color: #95c11e;
+    margin-bottom: 10px;
+}
 #page9 {
-    height: 300vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
 }
@@ -1718,6 +1758,21 @@ span {
     margin-top: 95rem;
     overflow: hidden;
 }
+.overlay-text {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-card {
+    flex: 1 1 40%;
+    margin-left: 1rem;
+}
 }
 @media (min-width: 321px) and (max-width: 480px) 
     {
@@ -1779,7 +1834,7 @@ span {
         
     }
     .products-list3{
-padding: 2rem;
+        padding: 2rem;
         margin-right: 1rem;
    
         margin-left: 1rem;
@@ -2048,9 +2103,16 @@ span {
     text-align: center;
     border: 2px solid #95c11e;
     padding: 16px;
-    width: auto;
+    width: 100%;
     margin: 3rem auto;
     white-space: unset;
+}
+.sub-heading1 {
+    margin-top: 1.5rem;
+    color: #95c11e;
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: 300;
 }
 .mahafit-title {
     /* display: flex; */
@@ -2074,7 +2136,11 @@ span {
     margin: 2rem;
     gap: 0.5rem;
 }
-
+.product-title {
+    font-size: 2rem;
+    color: #95c11e;
+    margin-bottom: 10px;
+}
 #page9 {
     height: auto;
     display: flex;
@@ -2089,6 +2155,9 @@ span {
     width: 92%;
     height: auto;
 }
+.next {
+    right: 28px;
+}
 .mahafit-img-inj {
     display: block;
     justify-content: center;
@@ -2096,6 +2165,10 @@ span {
     margin: 0rem;
     width: 100%;
     height: auto;
+}
+.product-row {
+    flex-direction: column;
+    margin-left: 2rem;
 }
 .mahafit-images1 {
     display: flex;
@@ -2164,7 +2237,12 @@ span {
     margin: 1rem;
     /* padding-bottom: 4rem; */
 }
-
+.mahafit-subtitle {
+    display: block;
+    font-size: 1rem;
+    color: #95c11e;
+    margin-top: 5px;
+}
 .para-10 {
     /* display: flex; */
     /* justify-content: center; */
@@ -2206,6 +2284,17 @@ span {
     width: 80%;
     margin-top: 0rem;
     overflow: hidden;
+}
+.overlay-text {
+    position: absolute;
+    text-align: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 }
 
@@ -2351,6 +2440,14 @@ span {
     font-size: 2rem;
     font-weight: 300;
 }
+.list1 {
+    position: relative;
+    width: auto;
+    overflow: unset;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
 .heading {
     display: flex;
     padding-left: 3rem;
@@ -2639,6 +2736,29 @@ span {
     border-radius: 1rem;
     margin-top: 33rem;
 }
+.mahafit-title {
+    display: unset;
+    justify-content: center;
+    align-items: center;
+    color: #95c11e;
+    font-weight: 500;
+    margin-left: 7rem;
+    margin-top: 0;
+    width: auto;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.mahafit-intro {
+    display: unset;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #95c11e;
+    padding: 20px;
+    width: auto;
+    margin: 3rem auto;
+    white-space: nowrap;
+}
 .mahafit-img-women {
     display: flex;
     border-radius: 1rem;
@@ -2662,13 +2782,7 @@ span {
     margin-top: 0rem;
     overflow: hidden;
 }
-.list1 {
-    position: relative;
-    width: auto;
-    overflow: unset;
-    margin-left: 1rem;
-    margin-right: -2rem;
-}
+
 #page9 {
     margin-top: 15rem;
     height: auto;
@@ -3576,7 +3690,7 @@ span {
     overflow: hidden;
 }
 #page9 {
-    height: 400vh;
+    height: 230vh;
     display: flex;
     flex-direction: column;
 }
