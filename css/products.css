@@ -756,7 +756,7 @@ span{
     text-align: center;
     border: 2px solid #95c11e; /* Green border */
     padding: 20px; /* Adds spacing inside the border */
-    width: auto; /* Optional: Set a width to center it better */
+    width: 100%; /* Optional: Set a width to center it better */
     margin: 3rem auto; /* Centers the section horizontally in the page */
     white-space: nowrap;
   }
@@ -819,17 +819,6 @@ span{
     height: auto;
     border-radius: 8px;
     margin: 15px;
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .product-row {
-      flex-direction: column;
-    }
-  
-    .product-card {
-      flex: 1 1 100%;
-    }
   }
   
 /* ---------------------- */
@@ -924,48 +913,7 @@ span{
     margin-left: 10rem;
   }
   
-  /* Media Query for Tablets (768px and below) */
-  @media screen and (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
-  
-    .sidebar {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      justify-content: center;
-    }
-  
-    .sidebar button {
-      width: auto;
-      flex: 1 1 45%; /* Two buttons per row */
-      text-align: center;
-    }
-  
-    .content {
-      width: 100%;
-      padding: 15px;
-    }
-  }
-  
-  /* Media Query for Mobile (480px and below) */
-  @media screen and (max-width: 480px) {
-    .sidebar button {
-      flex: 1 1 100%; /* Full-width buttons */
-      margin-bottom: 5px;
-    }
-  
-    .content {
-      padding: 10px;
-    }
-  
-    .product-section img {
-      margin-bottom: 10px;
-    }
-  }
-  
+
 .footer-container {
     color: #4c5166;
     padding: 45px 15px;
@@ -1194,39 +1142,87 @@ span{
   .hamburger.open .bar:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .hamburger {
-      display: flex;
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      /* gap: 1rem; */
-      height: 70vh;
-      width: 80%;
-      position: absolute;
-      top: 30px;
-      right: 2rem;
-      background-color: #191818;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-  
-    .nav-links.show {
-      display: flex;
-    }
+
+  @media screen and (max-width: 767px) {
+    .product-row {
+        flex-direction: column;
+      }
+    
+      .product-card {
+        flex: 1 1 100%;
+      }
   }
-  
+    /* Media Query for Tablets (768px and below) */
+    @media screen and (max-width: 768px) {
+        .container {
+          flex-direction: column;
+        }
+      
+        .sidebar {
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 5px;
+          justify-content: center;
+        }
+      
+        .sidebar button {
+          width: auto;
+          flex: 1 1 45%; /* Two buttons per row */
+          text-align: center;
+        }
+      
+        .content {
+          width: 100%;
+          padding: 15px;
+        }
+    
+        .hamburger {
+            display: flex;
+          }
+        
+          .nav-links {
+            display: none;
+            flex-direction: column;
+            /* gap: 1rem; */
+            height: 70vh;
+            width: 80%;
+            position: absolute;
+            top: 30px;
+            right: 2rem;
+            background-color: #191818;
+            padding: 1rem;
+            border-radius: 8px;
+          }
+        
+          .nav-links.show {
+            display: flex;
+          }
+      }
+      
+      /* Media Query for Mobile (480px and below) */
+      @media screen and (max-width: 480px) {
+        .sidebar button {
+          flex: 1 1 100%; /* Full-width buttons */
+          margin-bottom: 5px;
+        }
+      
+        .content {
+          padding: 10px;
+        }
+      
+        .product-section img {
+          margin-bottom: 10px;
+        }
+      }
+      
+
 
 
   @media (min-width:250px)and (max-width:320px){
   
     #logo img {
         height: 5rem;
-        /* padding-right: 14rem; */
     }
     .hamburger {
         display: flex;
@@ -1235,7 +1231,6 @@ span{
       .nav-links {
         display: none;
         flex-direction: column;
-        /* gap: 1rem; */
         height: 70vh;
         width: 80%;
         position: absolute;
@@ -1300,17 +1295,14 @@ span{
         font-size: 0.7rem;
         margin-left: 0;
         margin-right: 2rem;
-        /* letter-spacing: 0.1rem; */
     }
     .page4{
-        /* display: flex; */
         height: auto;
     }
     .content-para {
         flex-direction: column;
         margin-top: 3rem;
         display: flex;
-        /* justify-content: center; */
         align-items: center;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -1376,6 +1368,7 @@ span{
     font-size: 1rem;
     margin-right: 1rem;
     letter-spacing: 0.01rem;
+    text-align: left;
 }
 .list {
     display: flex;
@@ -1418,8 +1411,6 @@ span {
     width: 37vw;
     font-weight: 300;
     justify-content: center;
-    /* text-align: center; */
-    /* align-items: center; */
     margin-left: 7rem;
     font-size: 1rem;
 }
@@ -2880,9 +2871,9 @@ span {
         flex-direction: column;
     }
     .img7 {
-        margin-left: 4rem ;
-        height: 25%;
-        width: 80%;
+        margin-left: 4rem;
+        height: auto;
+        width: 70%;
     }
 .sub-heading1 {
     margin-top: 1.5rem;
@@ -3021,6 +3012,12 @@ span {
     font-size: 1.2rem;
     letter-spacing: 0.01rem;
 }
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin-top: 33rem;
+    overflow: hidden;
+}
 .products-list {
     display: flex;
     height: 80vh;
@@ -3056,6 +3053,15 @@ span {
     display: flex;
     margin-left: 3rem;
 }
+
+.footer-column1 p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: white;
+    white-space: nowrap;
+}
 .products-list3 {
     border-radius: 3rem;
     background-color: #191818;
@@ -3083,24 +3089,29 @@ span {
 }
 span {
     /* margin-top: 1rem; */
-    padding-left: 3rem;
+    padding-left: 0rem;
     display: flex;
     margin-left: 0;
     /* width: 28vw; */
     color: #95c11e;
     /* font-size: 1.5rem; */
 }
+.mahafit-subtitle {
+    display: block;
+    font-size: 1rem;
+    color: #95c11e;
+    margin-top: 5px;
+}
 .mahafit-title {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     color: #95c11e;
     font-weight: 500;
-    margin-left: 0rem;
-    margin-top: 0;
+
     width: auto;
     text-align: left;
-    font-size: 1rem;
+    font-size: 2rem;
 
 }
 .products-list3 {
@@ -3175,12 +3186,7 @@ height: 90vh;
     width: 88%;
     height: 60%;
 }
-.carousel-container {
-    position: relative;
-    width: 80%;
-    margin-top: 78rem;
-    overflow: hidden;
-}
+
 .mahafit-img-syrup {
     display: flex;
     justify-content: center;
@@ -3242,12 +3248,7 @@ height: 90vh;
     transition: transform 0.5s ease-in-out;
     width: 100%;
 }
-.carousel-container {
-    position: relative;
-    width: 80%;
-    /* margin-top: 90rem; */
-    overflow: hidden;
-}
+
 #page9 {
     height: 400vh;
     display: flex;
@@ -3348,14 +3349,14 @@ height: 90vh;
         flex-direction: column;
     }
     .img7 {
-        margin-left: 13rem ;
+        margin-left: 6rem ;
         height: 25%;
         width: 58%;
     }
     .sub-heading1 {
         margin-top: 2.5rem;
         color: #95c11e;
-        margin-left: 24rem;
+        margin-left: 6rem;
         font-size: 2rem;
         font-weight: 300;
     }
@@ -3371,7 +3372,7 @@ height: 90vh;
     font-size: 1.2rem;
     margin-right: 3rem;
     letter-spacing: 0.01rem;
-    text-align: center;
+    text-align: left;
 }
 .list {
     display: flex;
@@ -3407,7 +3408,7 @@ height: 90vh;
 }
 .heading {
     display: flex;
-    margin-left: 20rem;
+    margin-left: 0rem;
     width: 50vw;
     color: #95c11e;
     display: inline;
@@ -3421,6 +3422,16 @@ span {
     width: 86vw;
     color: #95c11e;
     font-size: 1.5rem;
+}
+.mahafit-intro {
+    display: block;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #95c11e;
+    padding: 20px;
+    width: 100%;
+    margin: 3rem auto;
+    white-space: nowrap;
 }
 
 .head1-page5 {
@@ -3459,10 +3470,10 @@ span {
     font-weight: 500;
 }
 .product-lists1 {
-    margin-left: 0rem;
-    margin-right: 0rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     gap: 1rem;
 }
@@ -3552,26 +3563,22 @@ span {
 }
 span {
     /* margin-top: 1rem; */
-    /* padding-left: 3rem; */
+    padding-left: 0rem;
     display: flex;
-    margin-left: 0;
-    /* width: 28vw; */
+    width: auto;
     color: #95c11e;
-    /* font-size: 1.5rem; */
+    font-size: 1.5rem;
 }
 .mahafit-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+
     color: #95c11e;
     font-weight: 500;
     margin-left: 0rem;
     padding-left: 0rem;
     margin-top: 0;
     width: auto;
-    text-align: left;
-    font-size: 1rem;
-
+    /* font-size: 1rem; */
 }
 .mahafit-images {
     display: flex;
@@ -3621,6 +3628,9 @@ span {
     margin-top: 50rem;
     /* border-radius: 1rem; */
 }
+.product-row {
+        flex-direction: unset;
+    }
 .mahafit-img-softgel {
     display: flex;
     justify-content: center;
@@ -3645,7 +3655,11 @@ span {
     margin-left: 3rem;
     height: 64%;
 }
-
+.list1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
 .mahafit-images2 {
     display: flex;
     background-color: #191818;
@@ -3700,7 +3714,7 @@ span {
 .carousel-container {
     position: relative;
     width: 80%;
-    margin-top: 98rem;
+    margin-top: 0rem;
     overflow: hidden;
 }
 #page9 {
@@ -3801,14 +3815,14 @@ span {
         flex-direction: column;
     }
     .img7 {
-        margin-left: 13rem ;
-        height: 25%;
-        width: 58%;
+        margin-left: 6rem;
+        height: auto;
+        width: 60%;
     }
     .sub-heading1 {
         margin-top: 2.5rem;
         color: #95c11e;
-        margin-left: 24rem;
+        margin-left: 6rem;
         font-size: 2rem;
         font-weight: 300;
     }
@@ -3824,7 +3838,7 @@ span {
     font-size: 1.2rem;
     margin-right: 3rem;
     letter-spacing: 0.01rem;
-    text-align: center;
+    text-align: left;
 }
 .list {
     display: flex;
@@ -3860,7 +3874,7 @@ span {
 }
 .heading {
     display: flex;
-    margin-left: 20rem;
+    margin-left: 0rem;
     width: 50vw;
     color: #95c11e;
     display: inline;
