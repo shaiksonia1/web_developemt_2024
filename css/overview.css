@@ -475,7 +475,7 @@ video {
 .overlay-text {
     
     position: absolute;
-    top: 50%; 
+    top: 35%; 
     left: 27%;
     text-transform: uppercase;
     font-weight: 600;
@@ -492,7 +492,7 @@ video {
 
 .values{
     display: flex;
-    margin-left: 60rem;
+    margin-left: 55rem;
     font-size: 2.4rem;
     margin-top: 12rem;
     margin-right: 10rem;
