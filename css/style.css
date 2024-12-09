@@ -312,10 +312,13 @@ video{
 }
 
 .about-us-content {
-  flex: 1; 
+  flex: 1;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 /* Heading */
 #about-us h1 {
   text-transform: uppercase;
@@ -372,34 +375,6 @@ video{
 
 #about-us img:hover {
   transform: scale(1.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  #about-us {
-    flex-direction: column; /* Stacks the content vertically */
-    align-items: center;
-    padding: 2rem;
-  }
-
-  .about-us-content {
-    text-align: center;
-  }
-
-  #about-us h1 {
-    font-size: 2.5rem;
-  }
-
-  #about-us img {
-    margin-top: 2rem;
-    height: 40vh;
-  }
-
-  #about-us .btn {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    padding: 0.6rem 1rem;
-  }
 }
 
 .heading-3{
@@ -574,17 +549,6 @@ video{
     margin-left: 5px;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    #page3 {
-      flex-direction: column;
-      align-items: center;
-    }
-    #page3 .box {
-      width: 80%;
-      height: auto;
-    }
-  }
   
 
 /* Navbar Styles */
@@ -636,46 +600,6 @@ video{
 .hamburger.open .bar:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    /* gap: 1rem; */
-    height: 70vh;
-    width: 80%;
-    position: absolute;
-    top: 30px;
-    right: 2rem;
-    background-color: #191818;
-    padding: 1rem;
-    border-radius: 8px;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #page3 #box3 button:hover {
     text-decoration-color: green; 
@@ -743,6 +667,8 @@ color: #0085ff;
 .page7 {
     margin-top: 3rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50vh;
 }
 
@@ -1002,18 +928,8 @@ color: #0085ff;
 
 
 
-
-
-
-
-
-  @media (max-width: 768px) {
-    .footer-row {
-      flex-direction: column;
-    }
-  }
   
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
     #page1 h1, #page1 h2 {
         font-size: 60px;
         padding-right: 500px;
@@ -1046,7 +962,7 @@ color: #0085ff;
         font-size: 1rem;
         margin-left: 30px;
     }
-}
+} */
 
 
 
@@ -1195,7 +1111,7 @@ color: #0085ff;
 .btn {
   position: static;
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
   right: 550px;
   height: auto;
   font-size: 1.2rem;
@@ -1248,7 +1164,6 @@ display: none;
 #about-us h1 {
   padding-left: 1rem;
   font-size: 1.5rem;
-  width: 87%;
 }
 .sub-head1 {
   margin-bottom: 1rem;
@@ -1372,12 +1287,7 @@ display: none;
   display: flex;
   flex-direction: column;
 }
-#about-us .btn {
-  margin-top: 0rem;
-  font-size: 0.9rem;
-  padding: 0.6rem 1rem;
-  margin-left: 0rem;
-}
+
 #about-us img {
   display: none;
   }
@@ -1504,9 +1414,9 @@ display: none;
   font-size: 1rem;
 }
 #page4 h1 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  padding-left: 1rem;
+  padding-left: 3rem;
 }
 .page7 {
   display: flex;
@@ -1627,8 +1537,6 @@ display: none;
 /* Small devices (large phones) */
 @media (min-width: 576px) and (max-width: 767px) {
 
-
-
 .container {
 display: inline-block; /* Show menu icon */
 }
@@ -1642,14 +1550,8 @@ display: none; /* Hide navigation links on small screens */
 display: none; 
 }
 
-
-
-
-
-
-
 #page1 h1, #page1 h2 {
-    font-size:3rem;
+    font-size:2rem;
     padding-right: 2rem;
   
 }
@@ -1661,7 +1563,7 @@ display: none;
   font-size: 3.5rem;
 }
 #page1 .page1-h1{
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 
 }
 
@@ -1670,7 +1572,7 @@ display: none;
   flex-direction: column;
 }
 #about-us h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   width: 100vw;
 }
 
@@ -1682,9 +1584,8 @@ margin-top: 0;
 .btn {
   position:unset;
   margin-top: 1rem;
-  right: -7rem;
   height: auto;
-  margin-left: 6rem;
+  margin-left: 0rem;
   font-size: 1.7rem;
   border: none;
   background: none;
@@ -1740,10 +1641,12 @@ margin-top: 0;
     color: #95c11e;
 }
 .page7 {
-    margin-top: 3rem;
-    display: flex;
-    height: 50vh;
+  display: flex;
+  height: auto;
+  margin-left: 3rem;
+  width: 80%;
 }
+
 
 .product-lists1 {
     margin-left: 2rem;
@@ -1761,11 +1664,7 @@ margin-top: 0;
     max-height: 100%; /* Maintain aspect ratio */
     object-fit: contain;
 }
-.page7 {
-  display: flex;
-  height: auto;
-  margin-left: 4rem;
-}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -1909,7 +1808,7 @@ margin-left: 2rem;
   .btn {
     position: unset;
     margin-top: 3rem;
-    margin-left: 27rem;
+    margin-left: 0rem;
     height: auto;
     font-size: 1.7rem;
     border: none;
@@ -1934,30 +1833,7 @@ margin-left: 2rem;
     
 }
 
-.hamburger {
-  display: flex;
-}
 
-.nav-links {
-  display: none;
-  flex-direction: column;
-  /* gap: 1rem; */
-  height: 60vh;
-  width: 50%;
-  position: absolute;
-  top: 30px;
-  right: 18rem;
-  background-color: #191818;
-  padding: 1rem;
-  border-radius: 8px;
-}
-.nav-links.show {
-  display: flex;
-}
-#about-us {
-  display: flex;
-  flex-direction: column;
-}
 
 #about-us img {
   display: none;
@@ -1980,18 +1856,25 @@ margin-left: 2rem;
   
   }
   
-
   #about-us h1 {
-    font-size: 2.5rem;
-    padding-left: 8rem;
-    width: auto;
+    font-size: 2rem;
+    /* padding-left: 5rem; */
+    text-align: center;
+    white-space: nowrap;
+    /* width: auto; */
 }
-
   #scroller h4 {
       font-size: 3rem;
   margin-top: 0;
   }
-  
+  #page3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #page3 .box {
+    width: 60%;
+    height: auto;
+  }
 
   
   .sub-head1{
@@ -2044,11 +1927,13 @@ margin-left: 2rem;
   .page7 {
     display: flex;
     height: auto;
-    margin-left: 10rem;
-  }
+    margin-left: 14rem;
+    width: 50%;
+}
     
   .product-lists1 {
-      margin-left: 2rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
       display: flex;
       flex-direction: column;
   }
@@ -2241,15 +2126,22 @@ margin-left: 2rem;
   
   }
   
-  
+  #page3 .box {
+    height: auto;
+    width: 30%;
+    border: 0.5px solid #95c11e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
   #about-us h1 {
     font-size: 3rem;
-    width: 100vw;
+    width: auto;
   }
   .btn {
     position: relative;
     margin-top: 25rem;
-    right: 540px;
     height: auto;
     white-space: nowrap;
     font-size: 1.7rem;
@@ -2272,10 +2164,7 @@ margin-left: 2rem;
   .sub-para{
     font-size: 1rem;
   }
-  #page3 #box1, #page3 #box2, #page3 #box3 {
-      width: 70%;
-      margin-left: 6rem;
-  }
+
   
   #page4{
       display: flex;
@@ -2324,13 +2213,15 @@ margin-left: 2rem;
   .page7 {
     display: flex;
     height: auto;
-    margin-left: 10rem;
-  }
+    margin-left: 5rem;
+}
+
   
   .product-lists1 {
-      margin-left: 2rem;
+      margin-left: 0rem;
+      margin-right: 4rem;
       display: flex;
-      flex-direction: column;
+      flex-direction: unset;
   }
   
   .list1 {
@@ -2617,6 +2508,14 @@ margin-left: 2rem;
     font-size: 1rem;
   
   }   
+  #about-us img {
+    flex: 1;
+    height: 50vh;
+    object-fit: contain;
+    border-radius: 10px;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease-in-out;
+}
   
     
 }
@@ -2657,5 +2556,61 @@ margin-left: 2rem;
     padding: 1rem;
     border-radius: 8px;
 }
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    /* gap: 1rem; */
+    height: 70vh;
+    width: 80%;
+    position: absolute;
+    top: 30px;
+    right: 2rem;
+    background-color: #191818;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+  #page3 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #page3 .box {
+    width: 60%;
+    height: auto;
+  }
+  .footer-row {
+    flex-direction: column;
+  }
+  #about-us {
+    flex-direction: column; /* Stacks the content vertically */
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .about-us-content {
+    text-align: center;
+  }
+
+  #about-us h1 {
+    font-size: 2.5rem;
+  }
+
+  #about-us img {
+    margin-top: 2rem;
+    height: 40vh;
+  }
+
 
 }
