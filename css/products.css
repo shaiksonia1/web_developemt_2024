@@ -828,13 +828,13 @@ span{
 
 .carousel-container {
     position: relative;
-    width: 80%;  /* Adjust as needed */
+    width: 50%;  /* Adjust as needed */
     margin: auto;
     overflow: hidden;
 }
 .carousel-track {
     display: flex;
-    height: 80vh;
+    height: 60vh;
     transition: transform 0.5s ease-in-out;
     width: 100%; /* For 3 images */
 }

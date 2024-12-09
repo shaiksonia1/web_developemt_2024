@@ -417,8 +417,9 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: left;
     font-size: 1.2rem;
-    width: 90%;
+    width: 100%;
 }
 .zelve-head{
     color: #95c11e;
@@ -463,20 +464,21 @@ img{
     transform: scale(1.1);
     z-index: 1;
 }
-.zelve-img{
+.zulmox-img{
     transition: transform 0.2s;
     z-index: 0;
 }
-.zelve-img:hover {
+.zulmox-img:hover {
     transform: scale(1.1);
     z-index: 1;
 }
-.zelve-para{
+.zulmox-para{
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    text-align: left;
     width: 90%;
 }
 .btn-1 {

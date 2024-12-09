@@ -273,6 +273,10 @@ img{
 
 .aboutUs-Sub {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .head {
@@ -310,7 +314,10 @@ color: wheat;
   color: #000000;
   background-color: #95c11e;
 }
-
+.image1{
+  height: 40%;
+  width: 30%;
+}
 
 
 
