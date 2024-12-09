@@ -458,8 +458,8 @@ h1{
 }
 
 video {
-    width: 40%; /* Full width or adjust as needed */
-    height: 65%;
+    width: 35%; /* Full width or adjust as needed */
+    height: 60%;
     margin-top: 10rem;
     margin-left: 6.5rem;
     z-index: 3;
@@ -760,10 +760,9 @@ a {
 }
 
 
-h6{
+.head1Para{
     color: #000000;
     text-align: center;
-    font-size: 2rem;
     font-weight: 400;
     padding-top: 1rem;
     font-size: 1.4rem;
@@ -1268,10 +1267,10 @@ hr{
   @media  (max-width:320px){
 
     #logo img {
-        z-index: 10; /* Keep z-index */
-        height: 5rem; /* Reduce height for smaller screens */
-        width: 37vw; /* Adjust width for proper scaling */
-        padding-right: 0rem; /* Reduce padding to avoid overflowing */
+        z-index: 10;
+        height: 4rem;
+        width: auto;
+        padding-right: 0rem;
     }
     #logo {
         text-align: center; /* Ensures the logo is centered */
@@ -1289,11 +1288,14 @@ hr{
     }
     .header-content {
         position: relative;
-        margin-left: 0rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         z-index: 2;
         background-color: rgba(25, 24, 24, 0.7);
         padding: 2rem;
         border-radius: 1rem;
+        max-width: 85%;
+        padding: 1.5rem;
     }
     #header h1 {
         font-size: 1.2rem;
@@ -1302,6 +1304,16 @@ hr{
         margin-bottom: 1rem;
         letter-spacing: 1.3px;
         white-space: unset;
+    }
+    .heading-2::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -25px;
+        width: 90%;
+        height: 1px;
+        background-color: #95c11e;
+        z-index: -1;
     }
   
     .btn1 {
@@ -1337,14 +1349,15 @@ hr{
         }    
         .overlay-text {
             position: absolute;
-            top: 2rem;
-            left: 50%;
+            top: 4rem;
+            left: 38%;
             transform: translateX(-50%);
             font-size: 1rem;
-            color: #ffffff;
+            white-space: nowrap;
+            /* color: #ffffff; */
             font-weight: bold;
             z-index: 4;
-            background: rgba(0, 0, 0, 0.5);
+            /* background: rgba(0, 0, 0, 0.5); */
             padding: 0.5rem 1rem;
             border-radius: 5px;
         }
@@ -1423,13 +1436,12 @@ hr{
     font-size: 1.3rem;
     text-align: center;
 }
-h6 {
-    color: #000000;
+.head1Para {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
-    padding-top: 1rem;
-    font-size: 1.4rem;
+    padding: 2rem;
+    font-size: 0.9rem;
     width: auto;
     margin-left: 0rem;
 }
@@ -1438,8 +1450,8 @@ h6 {
 }
 @media (min-width: 321px) and (max-width: 480px){
     #logo img {
-        z-index: 10;
         width: auto;
+        height: 4rem;
         padding-right: 0rem;
     }
 
@@ -1458,11 +1470,14 @@ h6 {
     }
     .header-content {
         position: relative;
-        margin-left: 0rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         z-index: 2;
         background-color: rgba(25, 24, 24, 0.7);
         padding: 2rem;
         border-radius: 1rem;
+        max-width: 85%;
+        padding: 1.5rem;
     }
     #header h1 {
         font-size: 1.2rem;
@@ -1491,20 +1506,21 @@ h6 {
             text-align: center;
         }
         video {
-            width: 92%;
+            width: 64%;
             height: auto;
             margin-top: 1rem;
             margin-left: 1rem;
             margin-right: 1rem;
             position: relative;
             border-radius: 5px;
-        }    
+        }
         .overlay-text {
-            top: 3rem;
-            left: 50%;
+            top: 2rem;
+            left: 48%;
             transform: translateX(-50%);
-            font-size: 1.5rem;
-            color: #ffffff;
+            font-size: 1rem;
+            /* color: #ffffff; */
+            white-space: nowrap;
         }
     
         .side-para {
@@ -1580,17 +1596,15 @@ h6 {
     font-size: 2rem;
     text-align: center;
 }
-h6 {
-    color: #000000;
+.head1Para {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     padding: 2rem;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     width: auto;
     margin-left: 0rem;
 }
-
 
 }
 
@@ -1598,7 +1612,7 @@ h6 {
 
 @media (min-width:481px) and (max-width: 575px) {
     #logo img {
-        height: 5rem;
+        height: 4rem;
         width: auto;
         padding-right: 0rem;
     }
@@ -1648,21 +1662,21 @@ h6 {
             text-align: center;
         }
         video {
-            width: 92%;
+            width: 73%;
             height: auto;
             margin-top: 1rem;
             margin-left: 1rem;
             margin-right: 1rem;
             position: relative;
             border-radius: 5px;
-        }    
+        }
         .overlay-text {
-            top: 4rem;
-            left: 50%;
+            top: 3rem;
+            left: 44%;
             transform: translateX(-50%);
-            font-size: 2rem;
-            color: #ffffff;
-          
+            font-size: 1.5rem;
+            /* color: #ffffff; */
+            white-space: nowrap;
         }
     
         .side-para {
@@ -1738,15 +1752,27 @@ h6 {
     font-size: 2rem;
     text-align: center;
 }
-h6 {
-
+.head1Para {
+    color: #000000;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
     padding: 2rem;
-    font-size: 1.4rem;
+    font-size: 0.9rem;
     width: auto;
     margin-left: 0rem;
 }
-
-
+.header-content {
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    z-index: 2;
+    background-color: rgba(25, 24, 24, 0.7);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 85%;
+    padding: 1.5rem;
+}
 }
 
 
@@ -1755,27 +1781,31 @@ h6 {
 
 
     #logo img {
-        height: 5rem;
+        height: 4rem;
         width: auto;
         padding-right: 0rem;
     }
     #header img {
         position: absolute;
         top: 0;
-        left: 1rem;
-        width: 94%;
+        left: 2rem;
+        width: 92%;
         height: auto;
         object-fit: cover;
         z-index: 1;
     }
     .header-content {
         position: relative;
-        margin-left: 0rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
         z-index: 2;
         background-color: rgba(25, 24, 24, 0.7);
         padding: 2rem;
         border-radius: 1rem;
+        max-width: 85%;
+        padding: 1.5rem;
     }
+
     #header h1 {
         font-size: 1.2rem;
         color: #95c11e;
@@ -1793,7 +1823,7 @@ h6 {
 
 
     #heading h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         white-space: nowrap;
     }
         #page2 {
@@ -1812,13 +1842,15 @@ h6 {
             border-radius: 5px;
         }    
         .overlay-text {
-            top: 4rem;
-            left: 50%;
+            top: 3rem;
+            left: 45%;
             transform: translateX(-50%);
-            font-size: 2rem;
-            color: #ffffff;
-          
+            font-size: 1.5rem;
+            /* color: #ffffff; */
+            white-space: nowrap;
         }
+    
+    
     
         .side-para {
             padding: 1rem;
@@ -1847,17 +1879,15 @@ h6 {
     
 
         .heading-2 {
-            margin-left: 2rem;
-            font-size: 1.3rem;
+            margin-left: 3rem;
+            font-size: 2.3rem;
             text-align: left;
             margin-bottom: 0rem;
-            color: #ffffff;
             font-weight: 400;
             letter-spacing: 3px;
             text-transform: uppercase;
             position: relative;
         }
-
         #image-container {
             display: flex;
             /* flex-direction: column; */
@@ -1893,23 +1923,30 @@ h6 {
     font-size: 2rem;
     text-align: center;
 }
-h6 {
-    color: #000000;
+.head1Para {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
-    padding-top: 1rem;
-    font-size: 1.4rem;
+    padding: 4rem;
+    font-size: 1.1rem;
     width: auto;
     margin-left: 0rem;
 }
-
+video {
+    width: 65%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    position: relative;
+    /* border-radius: 5px; */
+}
 
 }
 @media (min-width: 768px) and (max-width: 991px) {
 
     #logo img {
-        z-index: 10;
+        height: 4rem;
         width: auto;
         padding-right: 0rem;
     }
@@ -1920,20 +1957,13 @@ h6 {
     #header img {
         position: absolute;
         top: 0;
-        left: 1rem;
-        width: 94%;
+        left: 2rem;
+        width: 93%;
         height: auto;
         object-fit: cover;
         z-index: 1;
     }
-    /* .header-content {
-        position: relative;
-        margin-left: 0rem;
-        z-index: 2;
-        background-color: rgba(25, 24, 24, 0.7);
-        padding: 2rem;
-        border-radius: 1rem;
-    } */
+ 
     #header h1 {
         font-size: 1.2rem;
         color: #95c11e;
@@ -1946,10 +1976,9 @@ h6 {
   
 
     #heading h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         white-space: nowrap;
     }
-
         #page2 {
             display: flex;
             flex-direction: column;
@@ -2044,13 +2073,14 @@ h6 {
     font-size: 2rem;
     text-align: center;
 }
-h6 {
-    padding: 3rem;
-    font-size: 1.4rem;
-text-align: center;
-
-width: auto;
-margin-left: 3rem;
+.head1Para {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 2rem;
+    font-size: 0.9rem;
+    width: auto;
+    margin-left: 0rem;
 }
 
 
@@ -2064,7 +2094,7 @@ margin-left: 3rem;
     max-width: 85vw;
 }
 .btn1 {
-    margin-left: 15rem;
+    margin-left: 0rem;
 }
 
 }
@@ -2211,35 +2241,18 @@ margin-left: 3rem;
     font-size: 2rem;
     text-align: center;
 }
-h6 {
-    padding: 3rem;
-    font-size: 1.4rem;
-text-align: center;
-
-width: auto;
-margin-left: 3rem;
+.head1Para {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 2rem;
+    font-size: 0.9rem;
+    width: auto;
+    margin-left: 0rem;
 }
 
 
-
-
-
 }
-
-
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1200px){
-
-}
-
-
-
-
-
-
 
 
 
@@ -2253,16 +2266,7 @@ margin-left: 3rem;
       margin-top: 5rem;
       text-align: center;
     }
-  
-    .header-content {
-      max-width: 90%;
-      padding: 1.5rem;
-    }
-  
-    /* #header h1 {
-      font-size: 2rem;
-    }
-   */
+
     .header-para {
       font-size: 1rem;
     }
