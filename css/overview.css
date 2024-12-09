@@ -473,13 +473,12 @@ video {
 
 
 .overlay-text {
-    
     position: absolute;
-    top: 35%; 
-    left: 27%;
+    top: 30%;
+    left: 24%;
     text-transform: uppercase;
     font-weight: 600;
-    transform: translate(-50%, -50%); /* Centers the text */
+    transform: translate(-50%, -50%);
     color: #0C1844;
     width: 40vw;
     font-size: 3rem;
@@ -487,8 +486,7 @@ video {
     padding: 10px 20px;
     border-radius: 10px;
     z-index: 5;
-    
-  }
+}
 
 .values{
     display: flex;
