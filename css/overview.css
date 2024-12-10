@@ -1923,7 +1923,6 @@ hr{
 }
 .head1Para {
     text-align: center;
-    font-size: 1rem;
     font-weight: 400;
     padding: 4rem;
     font-size: 1.1rem;
@@ -2073,9 +2072,9 @@ video {
 }
 .head1Para {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
-    padding: 2rem;
+    padding: 4rem;
     font-size: 0.9rem;
     width: auto;
     margin-left: 0rem;

@@ -633,6 +633,7 @@ color: #0085ff;
     width: 100%; /* Full width of the container */
     height: 100%; /* Maintain aspect ratio */
     object-fit: contain;
+    border-radius: 1rem;
 
 }
 
